@@ -37,76 +37,76 @@
 }
 .symptom {
   border: 2px solid black;
-  height: 350px;
+  height: 32.41vh;
   background-color: MediumSeaGreen;
 }
 .subtext {
   position: relative;
-  top: -13px;
+  top: -1.2vh;
   border-top:1px solid black;
 }
 .symptomName {
   width: 100%;
-  height: 49px;
+  height: 4.54vh;
   background-color: MediumSeaGreen;
   text-align: center;
   cursor: pointer;
 }
 .symptomName span  {
   position: relative;
-  top: 10px;
-  font-size: 20px;
+  top: 0.93vh;
+  font-size: 1.85vh;
   color: 	black;
   font-family: 'Tahoma', serif;
 }
 .symptom img {
   width: 100%;
-  height: 309px;
+  height: 28.6vh;
   cursor: pointer;
 }
 .symptomName input {
   position: relative;
-  top: 10px;
+  top: 0.93vh;
 }
 .disease {
   border: 1px solid black;
-  height: 350px;
+  height: 32.41vh;
   background-color: MediumSeaGreen;
   display: none;
 }
 .diseasesubtext {
   position: relative;
-  top: -13px;
+  top: -1.2vh;
   border-top:1px solid black;
   width: 50%;
 }
 .diseaseName {
   width: 100%;
-  height: 49px;
+  height: 4.54vh;
   background-color: tomato;
   text-align: center;
   cursor: pointer;
 }
 .diseaseName span {
   position: relative;
-  top: 10px;
-  font-size: 20px;
+  top: 0.93vh;
+  font-size: 1.85vh;
   font-family: 'Tahoma', serif;
 }
 .disease img {
   width: 50%;
-  height: 309px;
+  height: 28.61vh;
   cursor: pointer;
 }
 .diseaseemergency {
   border: 1px solid black;
-  height: 350px;
+  height: 32.41vh;
   background-color: MediumSeaGreen;
   display: none;
 }
 .diseaseemergency img {
   width: 50%;
-  height: 309px;
+  height: 28.61vh;
   cursor: pointer;
 }
 .semptomlar {
