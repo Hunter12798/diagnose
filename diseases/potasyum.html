@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Potasyum Klorür</title>
+    <script>
+      function hide(){
+        let gizle = document.getElementById("bulgu");
+        gizle.style.display = (gizle.style.display === "none") ? "block" : "none";
+      }
+      function hide4(){
+        let gizle4 = document.getElementById("genel");
+        gizle4.style.display = (gizle4.style.display === "none") ? "block" : "none";
+      }
+      function hide8(){
+        let gizle8 = document.getElementById("etyoloji");
+        gizle8.style.display = (gizle8.style.display === "none") ? "block" : "none";
+      }
+      function hide10(){
+        let gizle10 = document.getElementById("tanı");
+        gizle10.style.display = (gizle10.style.display === "none") ? "block" : "none";
+      }
+    </script>
+  </head>
+  <body>
+    <h1 style="text-align:center;">Potasyum Klorür</h1>
+
+    <label style="font-size:1.5vw;cursor:pointer;" onclick="hide4()" for="genel">Genel Bilgiler : </label>
+    <div label="genel" id="genel">
+      <p>
+        <ul>
+          <li><img src="../symptomPhotos/potasyum1.jpg" alt="Potasyum Klorür image" style="width:100%;max-width:600px;"></li>
+        </ul>
+      </p>
+    </div>
+
+    <br>
+
+    <label style="font-size:1.5vw;cursor:pointer;" onclick="hide8()" for="etyoloji">Kontrendikasyonlar : </label>
+    <div label="etyoloji" id="etyoloji">
+      <p><ul></ul></p>
+    </div>
+
+    <br>
+
+    <label style="font-size:1.5vw;cursor:pointer;" onclick="hide10()" for="tanı">Yan etkiler : </label>
+    <div label="tanı" id="tanı">
+      <p><ul></ul></p>
+    </div>
+
+    <br>
+
+    <label style="font-size:1.5vw;cursor:pointer;" onclick="hide()" for="bulgu">İlaç - ilaç etkileşimleri : </label>
+    <div label="bulgu" id="bulgu">
+      <p><ul></ul></p>
+    </div>
+
+  </body>
+</html>

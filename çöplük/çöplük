@@ -1,0 +1,27 @@
+<div id="b12eksikliği" class="disease" style="overflow-y:scroll;">
+  <div class="semptomlar">
+    <ol>
+      <li class="halsizlik">halsizlik</li>
+      <li class="başağrısı">baş ağrısı</li>
+      <li class="glossit">glossit, </li>
+      <li class="b12eksikliği">b12eksikliği</li>
+      <li class="b12eksikliği">b12eksikliği</li>
+      <li class="b12eksikliği">b12eksikliği</li>
+      <li class="b12eksikliği">b12eksikliği</li>
+      <li class="b12eksikliği">b12eksikliği</li>
+      <li class="b12eksikliği">b12eksikliği</li>
+      <li class="b12eksikliği">b12eksikliği</li>
+      <li class="b12eksikliği">b12eksikliği</li>
+    </ol>
+  </div>
+  <a style="color:black" href="diseases/b12eksikliği.htm" target="_blank">
+  <label onclick="diseasecolor()" for="b12eksikliği">
+  <img src="symptomPhotos/b12eksikliği.jpg" alt="b12eksikliği">
+  <div class="diseasesubtext">
+    <div class="diseaseName">
+      <span>b12 eksikliği<i style="display:none;">vitamin eksikliği, vitamin b12 eksikliği, b12 eksikliği</i></span>
+    </div>
+  </div>
+  </label>
+  </a>
+</div>

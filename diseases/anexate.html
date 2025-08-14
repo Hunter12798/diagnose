@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Anexate (Flumazenil)</title>
+    <script>
+      function hide(){
+        let gizle = document.getElementById("bulgu");
+        if (gizle.style.display === "none") {
+          gizle.style.display = "block";
+        }
+        else {
+          gizle.style.display = "none";
+        }
+      }
+      function hide4(){
+        let gizle4 = document.getElementById("genel");
+        if (gizle4.style.display === "none") {
+          gizle4.style.display = "block";
+        }
+        else {
+          gizle4.style.display = "none";
+        }
+      }
+      function hide8(){
+        let gizle8 = document.getElementById("etyoloji");
+        if (gizle8.style.display === "none") {
+          gizle8.style.display = "block";
+        }
+        else {
+          gizle8.style.display = "none";
+        }
+      }
+      function hide10(){
+        let gizle10 = document.getElementById("tanı");
+        if (gizle10.style.display === "none") {
+          gizle10.style.display = "block";
+        }
+        else {
+          gizle10.style.display = "none";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <h1 style="text-align:center;">Anexate (Flumazenil)</h1>
+
+    <label style="font-size:1.5vw;cursor:pointer;" onclick="hide4()" for="genel">Genel Bilgiler : </label>
+    <div label="genel" id="genel">
+      <p>
+        <ul>
+          <li>Benzodiazepin doz aşımının tedavisinde kullanılır.</li>
+          <li>GABA-A reseptörlerine bağlanarak benzodiazepinlerin etkisini antagonize eder.</li>
+          <li>Başlangıç dozu 0.2 mg IV, 15 saniyede uygulanır.</li>
+          <li>Gerekirse 0.3 mg ve ardından 0.5 mg tekrar dozları verilebilir.</li>
+          <li>Maksimum toplam doz genellikle 3 mg'dır.</li>
+          <li><img src="../symptomPhotos/anexate1.jpg" alt="Anexate image 1"></li>
+          <li><img src="../symptomPhotos/anexate2.jpg" alt="Anexate image 2"></li>
+          <li><img src="../symptomPhotos/anexate3.jpg" alt="Anexate image 3"></li>
+        </ul>
+      </p>
+    </div>
+
+    <br>
+
+    <label style="font-size:1.5vw;cursor:pointer;" onclick="hide8()" for="etyoloji">Kontrendikasyonlar : </label>
+    <div label="etyoloji" id="etyoloji">
+      <p>
+        <ul>
+          <li>Karma zehirlenmelerde (özellikle trisiklik antidepresanlarla) dikkatli olunmalıdır.</li>
+          <li>Uzun süreli benzodiazepin kullanımı olan hastalarda nöbet riski nedeniyle dikkatle kullanılmalıdır.</li>
+        </ul>
+      </p>
+    </div>
+
+    <br>
+
+    <label style="font-size:1.5vw;cursor:pointer;" onclick="hide10()" for="tanı">Yan etkiler : </label>
+    <div label="tanı" id="tanı">
+      <p>
+        <ul>
+          <li>Nöbet</li>
+          <li>Ajitasyon</li>
+          <li>Bulantı</li>
+          <li>Aritmi</li>
+        </ul>
+      </p>
+    </div>
+
+    <br>
+
+    <label style="font-size:1.5vw;cursor:pointer;" onclick="hide()" for="bulgu">İlaç - ilaç etkileşimleri : </label>
+    <div label="bulgu" id="bulgu">
+      <p>
+        <ul>
+          <li>Diğer santral sinir sistemi depresanlarıyla birlikte kullanıldığında etkileşim gösterebilir.</li>
+          <li>Trisiklik antidepresanlarla birlikte kullanımı hayatı tehdit edici aritmilere yol açabilir.</li>
+        </ul>
+      </p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script>
+      function hide(){
+        let gizle = document.getElementById("bulgu");
+        if (gizle.style.display === "none") {
+          gizle.style.display = "block";
+        }
+        else {
+          gizle.style.display = "none";
+        }
+      }
+      function hide4(){
+        let gizle4 = document.getElementById("genel");
+        if (gizle4.style.display === "none") {
+          gizle4.style.display = "block";
+        }
+        else {
+          gizle4.style.display = "none";
+        }
+      }
+      function hide8(){
+        let gizle8 = document.getElementById("etyoloji");
+        if (gizle8.style.display === "none") {
+          gizle8.style.display = "block";
+        }
+        else {
+          gizle8.style.display = "none";
+        }
+      }
+      function hide10(){
+        let gizle10 = document.getElementById("tanı");
+        if (gizle10.style.display === "none") {
+          gizle10.style.display = "block";
+        }
+        else {
+          gizle10.style.display = "none";
+        }
+      }
+    </script>
+    </script>
+  </head>
+  <body>
+      <h1 style="text-align:center;">İlaç Adı</h1>
+
+    <label style="font-size:1.5vw;cursor:pointer;" onclick="hide4()" for="genel">Genel Bilgiler : </label>
+    <div label="genel" id="genel">
+      <p>
+       <ul>
+         <li>Parasetamol(Asetaminofen) - N-Asetilsistein(glutatyonu yeniler)</li>
+         <li>Organofosfatlar, Asetilkolin esteraz inhibitorleri - Atropine>Pralidoxime</li>
+         <li>Antimuskarnik, antikolinerjik ajanlar - fizostigmine(Santral sinir sistemine geçer)</li>
+         <li>Arsenik - dimerkaprol, süksimer</li>
+         <li>Benzodiazepin - flumazenil(anexat)</li>
+         <li>beta blokerler - atropine, glukagon, saline</li>
+         <li>karbonmonoksit, CO - %100 O2, hiperbarik O2</li>
+         <li>Bakır - Penisilamin, trientin</li>
+         <li>Siyanür - Hidroksikobalamin(B12), nitrit + sodyum thiosülfat</li>
+         <li>dabigatran - idarucizumab</li>
+         <li>digoxin - digoxin spesifik antikor fragmanları</li>
+         <li>direk faktör Xa inhibitörleri(apixaban) - andexanet alfa</li>
+         <li>Heparin - Protamin sülfat</li>
+         <li>Demir - Deferoxamine, deferasirox, deferiprone</li>
+         <li>Kurşun - Penisilamin, kalsiyum disodyum EDTA, dimerkaprol, süksimer</li>
+         <li>Civa - Dimerkaprol, süksimer</li>
+         <li>Methanol, etilen glikol(Antifriz) - Fomepizole> etanol, diyaliz</li>
+         <li>methemoglobin - metilen mavisi, vitamin C(indirgeyici ajan)</li>
+         <li>Metotreksat - Leucovorin</li>
+         <li>Opiatlar - Naloxane</li>
+         <li>Salisilatlar - NaHCO3(İdrarı alkali yap), diyaliz</li>
+         <li>Trisiklik antidepresanlar(TCA) - NaHCO3(Kardiyak hücre membranını alkalize et)</li>
+         <li>Warfarin - Vİtamin K(geç etki), Protrombin kompleks konsantıratı(PCC)/FPP(direkt etki)</li>
+       </ul>
+      </p>
+    </div>
+
+    <br>
+
+    <label style="font-size:1.5vw;cursor:pointer;" onclick="hide8()" for="etyoloji">Kontrendikasyonlar : </label>
+    <div label="etyoloji" id="etyoloji">
+      <p>
+       <ul>
+
+       </ul>
+      </p>
+    </div>
+
+    <br>
+
+    <label style="font-size:1.5vw;cursor:pointer;" onclick="hide10()" for="tanı">Yan etkiler : </label>
+    <div label="tanı" id="tanı">
+      <p>
+       <ul>
+
+       </ul>
+      </p>
+    </div>
+
+    <br>
+
+    <label style="font-size:1.5vw;cursor:pointer;" onclick="hide()" for="bulgu">İlaç - ilaç etkileşimleri : </label>
+    <div label="bulgu" id="bulgu">
+      <p>
+       <ul>
+
+       </ul>
+      </p>
+    </div>
+
+  </body>
+</html>

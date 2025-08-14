@@ -1,0 +1,3535 @@
+</div>      <!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="stylehastalıklar.css">
+    <script src="script2.js"></script>
+    <script src="scripthastalıklar.js"></script>
+    <script src="https://kit.fontawesome.com/4106c8455f.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div style="justify-content:center;align-items:center;height:3vh;background-color:olivedrab;color:black;position:sticky;top:0;z-index:50;">
+      <ul style="list-style-type:none;">
+        <li style="float:left;margin-right:5vw;"> <a style="color:inherit;text-decoration:none;" href="index.html">Semptomlara Göre Hastalıklar</a></li>
+        <li> <a style="float:left;margin-right:5vw;color:inherit;text-decoration:none;" href="hastalıklar.html">Hastalıklar, Muayeneler ve Aciller</a></li>
+        <li> <a style="color:inherit;text-decoration:none;" href="tedavi.html">Tedavi & İlaçlar</a></li>
+      </ul>
+    </div>
+    <div style="margin-left:auto;margin-right:auto;text-align:center;">
+          <i style="position:sticky;" class="fas fa-search"></i>
+          <input onkeyup="search()" style="position:sticky;height:1.5vw;width:30vw;margin-bottom:0.2vw;font-size:1vw;font-family:tahoma;" placeholder="Hastalık arayın .." class="" type="text" id="search" name="" value="">
+    </div>
+    <div class="main">
+
+    </div>
+
+    <br>
+    <div id="mylist">
+
+    </div>
+  <div class="main-disease">
+
+    <div id="disease0" class="disease" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <h2 style="position:relative;float:right;top:1vh;right:3vh;color:DarkRed;font-family:arial;font-size:4vh;">--ACİL--</h2>
+        <ol>
+          <li class="göğüsağrısı">Baskı ya da Sıkışma şeklinde göğüs ağrısı</li>
+          <li class="omuzağrısı sırtağrısı boyunağrısı çeneağrısı epigastrikağrı dişağrısı kolağrısı">Omza, kola, sırta, boyna, çeneye, dişe veya epigastrik bölgeye yayılan ağrı</li>
+          <li class="midebulantısı">Mide Bulantısı</li>
+          <li class="kusma">Kusma</li>
+          <li class="nefesdarlığı">nefes darlığı</li>
+          <li class="halsizlik">halsizlik</li>
+          <li class="göğüsteağrılıyanma">Göğüste ağrılı yanma hissi</li>
+          <li class="hazımsızlık">hazımsızlık</li>
+          <li class="başdönmesi">baş dönmesi</li>
+          <li class="terleme">Soğuk terleme</li>
+          <li style="display:none;" class="kalpkrizisemptom"></li>
+        </ol>
+      </div>
+      <a style="color:black;" href="diseases/MI.htm" target="_blank">
+      <label onclick="diseasecolor()" for="kalpkrizi">
+      <img src="symptomPhotos/kalpkrizi.jpg" alt="kalpkrizi">
+      <div class="diseasesubtext">
+        <div class="diseaseName">
+          <span>Kalp Krizi<i style="display:none;"></i></span>
+        </div>
+      </div>
+      </label>
+      </a>
+    </div>
+
+    <div id="hiperkalsemi" class="disease" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <h2 style="position:relative;float:right;top:1vh;right:3vh;color:DarkRed;font-family:arial;font-size:4vh;">--ACİL--</h2>
+        <ol>
+          <li class="sıkidraraçıkma">sık idrara çıkma/pollaküri</li>
+          <li class="polidipsi">Polidipsi</li>
+          <li class="midebulantısı">mide bulantısı</li>
+          <li class="kusma">kusma</li>
+          <li class="kabızlık">kabızlık</li>
+          <li class="kasağrısı">kasağrısı</li>
+          <li class="kemikağrısı">kemikağrısı</li>
+          <li class="konfüzyon">konfüzyon</li>
+          <li class="sıkuyku">Aşırı halsizlik & letarji</li>
+          <li class="kalpçarpıntısı">kalp çarpıntısı</li>
+          <li class="bilinçkaybı">bilinç kaybı & bayılma & senkop</li>
+        </ol>
+      </div>
+      <a style="color:black;" href="diseases/hiperkalsemi.htm" target="_blank">
+      <label onclick="diseasecolor()" for="hiperkalsemi">
+      <img src="symptomPhotos/hiperkalsemi.jpg" alt="hiperkalsemi">
+      <div class="diseasesubtext">
+        <div class="diseaseName">
+          <span>Hiperkalsemi<i style="display:none;"></i></span>
+        </div>
+      </div>
+      </label>
+      </a>
+    </div>
+
+    <div id="disease1" class="disease" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ol>
+          <li class="polifaji">polifaji</li>
+          <li class="polidipsi">polidipsi</li>
+          <li class="poliüri">poliüri</li>
+          <li class="sıkidraraçıkma">Sık idrara çıkma</li>
+          <li class="akantozisnigrikans">akantozis nigrikans</li>
+          <li class="bulanıkgörme">bulanık görme</li>
+          <li class="yaraiyileşmesindegecikme">yara iyileşmesinde gecikme</li>
+          <li class="elayakhissizlik">el ve ayakta (ekstremitelerde) hissizlik</li>
+          <li class="parestezi">el ve ayakta (ekstremitelerde) karıncalanma</li>
+          <li class="kilokaybı">kilo kaybı</li>
+          <li class="kurucilt">kuru cilt</li>
+          <li class="sıkenfeksiyon">Sık enfeksiyon</li>
+          <li class="halsizlik">halsizlik</li>
+        </ol>
+      </div>
+      <a style="color:black;" href="diseases/diabetes.htm" target="_blank">
+      <label onclick="diseasecolor()" for="diabetesmellitus">
+      <img src="symptomPhotos/diabetesmellitus.jpg" alt="diabetesmellitus">
+      <div class="diseasesubtext">
+        <div class="diseaseName">
+          <span>diabetes mellitus<i style="display:none;"></i></span>
+        </div>
+      </div>
+      </label>
+      </a>
+    </div>
+
+    <div id="disease2" class="disease" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ol>
+          <li class="şişkinlenf">Boyun koltukaltı inguinal bölgede ağrısız şişkin lenf nodları</li>
+          <li class="ateş">Ateş</li>
+          <li class="geceterlemesi">Gece terlemesi</li>
+          <li class="nefesdarlığı">nefes darlığı</li>
+          <li class="kaşıntı">kaşıntı</li>
+          <li class="kilokaybı">kilo kaybı</li>
+          <li class="halsizlik">halsizlik</li>
+        </ol>
+      </div>
+      <a style="color:black;" href="diseases/Lenfoma.htm" target="_blank">
+      <label onclick="diseasecolor()" for="Lenfoma">
+      <img src="symptomPhotos/Lenfoma.jpg" alt="Lenfoma">
+      <div class="diseasesubtext">
+        <div class="diseaseName">
+          <span>Lenfoma<i style="display:none;"></i></span>
+        </div>
+      </div>
+      </label>
+      </a>
+    </div>
+
+    <div id="disease3" class="disease" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ol>
+          <li class="sıkuyku">uyuklama hali - aşırı halsizlik</li>
+          <li class="şişkinlenf">Şişkin lenf</li>
+          <li class="splenomegali">splenomegali</li>
+          <li class="boğazağrısı">boğaz ağrısı</li>
+          <li class="ateş">Yüksek ateş(38.4-40)</li>
+          <li class="iştahkaybı">iştah kaybı</li>
+          <li class="kasağrısı">kas ağrısı</li>
+          <li class="tonsildekızarma">tonsilde kızarma</li>
+          <li class="tonsildeşişme">tonsilde şişme</li>
+          <li class="tonsildebeyazyama">tonsilde beyaz yama</li>
+          <li class="üşüme">üşüme</li>
+          <li class="karınağrısı">karın ağrısı</li>
+        </ol>
+      </div>
+      <a style="color:black" href="diseases/Mono.htm" target="_blank">
+      <label onclick="diseasecolor()" for="mono">
+      <img src="symptomPhotos/mono.jpg" alt="mono">
+      <div class="diseasesubtext">
+        <div class="diseaseName">
+          <span>Mononucleosis<i style="display:none;"></i></span>
+        </div>
+      </div>
+      </label>
+      </a>
+    </div>
+
+    <div id="disease4" class="disease" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ol>
+          <li class="göğüsteağrılıyanma">Göğüste ağrılı yanma özellikle yemek sonrası</li>
+          <li class="regürjitasyon">Katı ya da ekşi sıvı regürjitasyonu</li>
+          <li class="göğüsağrısı">Göğüs ağrısı</li>
+          <li class="epigastrikağrı">Epigastrik ağrı</li>
+          <li class="disfaji">disfaji - yutma güçlüğü</li>
+          <li class="globushissi">Globus hissi</li>
+          <li class="öksürük">Öksürük</li>
+          <li class="değişenastım">Yeni başlayan ya da kötüleşen astım</li>
+        </ol>
+      </div>
+      <a style="color:black" href="diseases/gastroözefagealreflü.htm" target="_blank">
+      <label onclick="diseasecolor()" for="gastroözefagealreflü">
+      <img src="symptomPhotos/gastroözefagealreflü.jpg" alt="gastroözefagealreflü">
+      <div class="diseasesubtext">
+        <div class="diseaseName">
+          <span>Gastroözefageal Reflü<i style="display:none;"></i></span>
+        </div>
+      </div>
+      </label>
+      </a>
+    </div>
+
+    <div id="temporalartirit" class="disease" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ol>
+          <li class="zonklama">zonklama</li>
+          <li class="başağrısı">alnın bir ya da iki yanında sürekli başağrısı </li>
+          <li class="halsizlik">halsizlik</li>
+          <li class="ateş">ateş</li>
+          <li class="çeneağrısı">Çiğnemeyle kötüleşen çene ağrısı</li>
+          <li class="kafadahassasiyet">kafada ya da şakaklarda hassasiyet</li>
+          <li class="çiftgörme bulanıkgörme görmekaybı">Görme bozuklukları: çift görme, bulanık görme, geçici görme kaybı</li>
+          <li class="kasağrısı kolağrısı omuzağrısı kalçaağrısı uylukağrısı sırtağrısı">Kas ağrıları : Üst kol, omuz, üst uyluk, alt sırt, ve kalçada ağrı</li>
+          <li class="iştahkaybı">iştah kaybı</li>
+          <li class="kilokaybı">kilo kaybı</li>
+        </ol>
+      </div>
+      <a style="color:black" href="diseases/temporalartirit.htm" target="_blank">
+      <label onclick="diseasecolor()" for="temporalartirit">
+      <img src="symptomPhotos/temporalartirit.jpg" alt="temporalartirit">
+      <div class="diseasesubtext">
+        <div class="diseaseName">
+          <span>Temporal Artirit<i style="display:none;"></i></span>
+        </div>
+      </div>
+      </label>
+      </a>
+    </div>
+
+    <div id="skleroderma" class="disease" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ol>
+          <li class="ödem">el, ayak, parmak, yüz ve daha nadir olarak kol, göğüs, karın, bacak ve uylukta şişme</li>
+          <li class="kaşıntı">el, ayak, parmak, yüz ve daha nadir olarak kol, göğüs, karın, bacak ve uylukta kaşıntı </li>
+          <li class="deriderenkdeğişimi">etkilnen deri daha açık ya da koyu bir renk alabilir ayrıca gerilmeye bağlı parlak görülebilir.</li>
+          <li class="telenjiektazi">telenjiektazi</li>
+          <li class="kalsinozis">kalsinozis</li>
+          <li class="raynaudfenomeni">Raynaud fenomeni</li>
+          <li class="göğüsteağrılıyanma">Göğüste ağrılı yanma & heartburn</li>
+          <li class="disfaji">disfaji</li>
+          <li class="karındaşişkinlik">karındaşişkinlik & bloating</li>
+          <li class="ishal">ishal</li>
+          <li class="kabızlık">kabızlık</li>
+          <li class="fekalinkontinans">fekal inkontinans</li>
+          <li class="nefesdarlığı">nefes darlığı</li>
+          <li class="başdönmesi">baş dönmesi</li>
+          <li class="egzersiztoleransındaazalma">egzersiz toleransında azalma</li>
+          <li class="pretibialödem">pretibial ödem</li>
+        </ol>
+      </div>
+      <a style="color:black" href="diseases/skleroderma.htm" target="_blank">
+      <label onclick="diseasecolor()" for="skleroderma">
+      <img src="symptomPhotos/skleroderma.jpg" alt="skleroderma">
+      <div class="diseasesubtext">
+        <div class="diseaseName">
+          <span>skleroderma<i style="display:none;"></i></span>
+        </div>
+      </div>
+      </label>
+      </a>
+    </div>
+
+    <div id="tüberkülöz" class="disease" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ol>
+          <li class="halsizlik">halsizlik</li>
+          <li class="kilokaybı">kilo kaybı</li>
+          <li class="ateş">Ateş</li>
+          <li class="geceterlemesi">gece terlemesi</li>
+          <li class="öksürük">öksürük</li>
+          <li class="göğüsağrısı">göğüs ağrısı</li>
+          <li class="hemoptizi">hemoptizi</li>
+        </ol>
+      </div>
+      <a style="color:black" href="diseases/tüberkülöz.htm" target="_blank">
+      <label onclick="diseasecolor()" for="tüberkülöz">
+      <img src="symptomPhotos/tüberkülöz.jpg" alt="tüberkülöz">
+      <div class="diseasesubtext">
+        <div class="diseaseName">
+          <span>tüberkülöz<i style="display:none;"></i></span>
+        </div>
+      </div>
+      </label>
+      </a>
+    </div>
+
+    <div id="bruselloz" class="disease" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ol>
+          <li class="üşüme">üşüme - titreme</li>
+          <li class="iştahkaybı">İştah kaybı</li>
+          <li class="ateş">Ateş(akşama doğru artan sabaha doğru azalan ondülan ateş)</li>
+          <li class="geceterlemesi">gece terlemesi</li>
+          <li class="halsizlik">halsizlik</li>
+          <li class="başağrısı">baş ağrısı</li>
+          <li class="eklemağrısı">eklem ağrısı</li>
+          <li class="kasağrısı">kas ağrısı</li>
+          <li class="sırtağrısı">sırt ağrısı</li>
+        </ol>
+      </div>
+      <a style="color:black" href="diseases/bruselloz.htm" target="_blank">
+      <label onclick="diseasecolor()" for="bruselloz">
+      <img src="symptomPhotos/bruselloz.jpg" alt="bruselloz">
+      <div class="diseasesubtext">
+        <div class="diseaseName">
+          <span>bruselloz<i style="display:none;"></i></span>
+        </div>
+      </div>
+      </label>
+      </a>
+    </div>
+
+    <div id="granulomatosiswithpolyangiitis" class="disease" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ol>
+          <li class="buruntıkanıklığı">burun tıkanıklığı</li>
+          <li class="burunkanaması">burun kanaması</li>
+          <li class="irinliakıntı">Burundan irin gibi kabuklu akıntı</li>
+          <li class="öksürük">Öksürük , bazen kanlı balgamla birlikte</li>
+          <li class="nefesdarlığı">nefes darlığı - wheezing</li>
+          <li class="ateş">ateş</li>
+          <li class="halsizlik">halsizlik</li>
+          <li class="eklemağrısı">eklem ağrısı</li>
+          <li class="elayakhissizlik">uzuvlarda el ve ayak parmaklarında his kaybı</li>
+          <li class="kilokaybı">kilo kaybı</li>
+          <li class="hematüri">Hematüri</li>
+          <li class="ciltteyara">ciltte yara</li>
+          <li class="cilttemorarma">ciltte morarma</li>
+          <li class="cilttekızarıklık">ciltte kızarıklık</li>
+          <li class="gözdekızarma">gözde kızarma</li>
+          <li class="gözdeyanma">gözde yanma</li>
+          <li class="gözağrısı">göz ağrısı</li>
+          <li class="görmeproblemleri">görme problemleri</li>
+          <li class="kulakinflamasyonu">kulak inflamasyonu</li>
+          <li class="işitmeproblemleri">işitme problemleri</li>
+        </ol>
+      </div>
+      <a style="color:black" href="diseases/granulomatosiswithpolyangiitis.htm" target="_blank">
+      <label onclick="diseasecolor()" for="granulomatosiswithpolyangiitis">
+      <img src="symptomPhotos/granulomatosiswithpolyangiitis.jpg" alt="granulomatosiswithpolyangiitis">
+      <div class="diseasesubtext">
+        <div class="diseaseName">
+          <span>Wegener & granulomatosis with polyangiitis<i style="display:none;"></i>wegener vasküliti, vaskülit, damar iltihabı</span>
+
+
+
+        </div>
+      </div>
+      </label>
+      </a>
+    </div>
+
+    <div id="renaltübülerasidoz" class="disease" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ol>
+          <li class="büyümegeriliği">büyüme & gelişme geriliği</li>
+          <li class="iştahkaybı">iştah kaybı - anorexia</li>
+          <li class="kusma">kusma</li>
+          <li class="poliüri">poliüri</li>
+          <li class="polidipsi">polidipsi</li>
+          <li class="ishal">ishal</li>
+          <li class="kabızlık">kabızlık</li>
+          <li class="dehidratasyon">dehidratasyon</li>
+          <li class="kasgüçsüzlüğü">kas güçsüzlüğü</li>
+        </ol>
+      </div>
+      <a style="color:black" href="diseases/renaltübülerasidoz.htm" target="_blank">
+      <label onclick="diseasecolor()" for="renaltübülerasidoz">
+      <img src="symptomPhotos/renaltübülerasidoz.jpg" alt="renaltübülerasidoz">
+      <div class="diseasesubtext">
+        <div class="diseaseName">
+          <span>renaltübülerasidoz<i style="display:none;"></i></span>
+        </div>
+      </div>
+      </label>
+      </a>
+    </div>
+
+    <div id="hepatita" class="disease" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ol>
+          <li class="idrardakoyulaşma">idrar renginde koyulaşma</li>
+          <li class="akolikgaita">açık renki dışkı - akolik gaita</li>
+          <li class="sarılık">skleralarda ve ciltte sarılık</li>
+          <li class="hepatomegali">hepatomegali</li>
+          <li class="splenomegali">splenomegali</li>
+          <li class="kaşıntı">kaşıntı</li>
+          <li class="şişkinlenf">servikal lenfadenopati</li>
+          <li class="ateş">ateş</li>
+          <li class="iştahkaybı">iştah kaybı - anorexia</li>
+          <li class="halsizlik">halsizlik</li>
+          <li class="kusma">Kusma</li>
+          <li class="ishal">ishal</li>
+          <li class="kabızlık">kabızlık</li>
+          <li class="karınağrısı">karın ağrısı</li>
+          <li class="midebulantısı">mide bulantısı</li>
+        </ol>
+      </div>
+      <a style="color:black" href="diseases/hepatita.htm" target="_blank">
+      <label onclick="diseasecolor()" for="hepatita">
+      <img src="symptomPhotos/hepatita.jpg" alt="hepatita">
+      <div class="diseasesubtext">
+        <div class="diseaseName">
+          <span>hepatita<i style="display:none;"></i></span>
+        </div>
+      </div>
+      </label>
+      </a>
+    </div>
+
+    <div id="kawasaki" class="disease" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ol>
+          <li class="ateş">en az 5 gün süren yüksek ateş</li>
+          <li class="cilttekızarıklık">polimorf raş</li>
+          <li class="şişkinlenf">servikal lenf nodu büyümesi</li>
+          <li class="ödem">Ödem / El ve ayakta şişme</li>
+          <li class="gözdekızarma">gözde kızarma</li>
+          <li class="kurucilt">kızarık ve çatlamış dudaklar</li>
+          <li class="çilekdil">çilek dil</li>
+          <li class="iritabilite">iritabilite</li>
+          <li class="taşikardi">taşikardi</li>
+          <li class="ishal">ishal</li>
+          <li class="kusma">kusma</li>
+          <li class="cilttesoyulma">ciltte soyulma</li>
+        </ol>
+      </div>
+      <a style="color:black" href="diseases/kawasaki.htm" target="_blank">
+      <label onclick="diseasecolor()" for="kawasaki">
+      <img src="symptomPhotos/kawasaki.jpg" alt="kawasaki">
+      <div class="diseasesubtext">
+        <div class="diseaseName">
+          <span>kawasaki<i style="display:none;"></i></span>
+        </div>
+      </div>
+      </label>
+      </a>
+    </div>
+
+    <div id="yetişkinmenenjiti" class="disease" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <h2 style="position:relative;float:right;top:1vh;right:3vh;color:DarkRed;font-family:arial;font-size:4vh;">--ACİL--</h2>
+        <ol>
+          <li class="yüksekateş">ani başlayan yüksek ateş</li>
+          <li class="cilttekızarıklık">ciltte kızarıklık meningokok menenjitinde görülebilir.</li>
+          <li class="ensesertliği">ense sertliği</li>
+          <li class="başağrısı">Feci baş ağrısı</li>
+          <li class="midebulantısı">mide bulantısı</li>
+          <li class="kusma">kusma</li>
+          <li class="konfüzyon">konfüzyon/odaklanma güçlüğü</li>
+          <li class="nöbet">nöbet</li>
+          <li class="letarji">Uyku hali/uyanma güçlüğü</li>
+          <li class="fotosensitivite">fotosensitivite</li>
+          <li class="iştahkaybı">iştah kaybı/susama kaybı</li>
+        </ol>
+      </div>
+      <a style="color:black" href="diseases/yetişkinmenenjiti.htm" target="_blank">
+      <label onclick="diseasecolor()" for="yetişkinmenenjiti">
+      <img src="symptomPhotos/yetişkinmenenjiti.jpg" alt="yetişkinmenenjiti">
+      <div class="diseasesubtext">
+        <div class="diseaseName">
+          <span>yetişkin menenjiti<i style="display:none;"></i></span>
+        </div>
+      </div>
+      </label>
+      </a>
+    </div>
+
+    <div id="yenidoğanmenenjiti" class="disease" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <h2 style="position:relative;float:right;top:1vh;right:3vh;color:DarkRed;font-family:arial;font-size:4vh;">--ACİL--</h2>
+        <ol>
+          <li class="yüksekateş">ani başlayan yüksek ateş</li>
+          <li class="sürekliağlama">sürekli ağlama</li>
+          <li class="ensesertliği">ense sertliği</li>
+          <li class="iritabilite">iritabilite</li>
+          <li class="fontanelbombeliği">fontanel bombeliği</li>
+          <li class="kusma">kusma</li>
+          <li class="letarji">Uyku hali/uyanma güçlüğü</li>
+          <li class="iştahkaybı">iştah kaybı/susama kaybı</li>
+        </ol>
+      </div>
+      <a style="color:black" href="diseases/yenidoğanmenenjiti.htm" target="_blank">
+      <label onclick="diseasecolor()" for="yenidoğanmenenjiti">
+      <img src="symptomPhotos/yenidoğanmenenjiti.jpg" alt="yenidoğanmenenjiti">
+      <div class="diseasesubtext">
+        <div class="diseaseName">
+          <span>yenidoğan menenjiti<i style="display:none;"></i></span>
+        </div>
+      </div>
+      </label>
+      </a>
+    </div>
+
+    <div id="ensefalit" class="disease" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <h2 style="position:relative;float:right;top:1vh;right:3vh;color:DarkRed;font-family:arial;font-size:4vh;">--ACİL--</h2>
+        <ol>
+          <li class="yüksekateş">yüksek ateş</li>
+          <li class="konfüzyon">konfüzyon/disoryantasyon</li>
+          <li class="davranışdeğişikliği">kişilik ya da davranış değişikliği</li>
+          <li class="nöbet">nöbet</li>
+          <li class="konuşmagüçlüğü">konuşma güçlüğü/dizartri</li>
+          <li class="kasgüçsüzlüğü">vücudun belli bölgelerinde zayıflama ya da hareket kaybı</li>
+          <li class="bilinçkaybı">bilinç kaybı & bayılma & senkop</li>
+          <li class="başağrısı">baş ağrısı</li>
+          <li class="hafızakaybı">hafıza kaybı / amnezi</li>
+          <li class="kusma">kusma</li>
+        </ol>
+      </div>
+      <a style="color:black" href="diseases/ensefalit.htm" target="_blank">
+      <label onclick="diseasecolor()" for="ensefalit">
+      <img src="symptomPhotos/ensefalit.jpg" alt="ensefalit">
+      <div class="diseasesubtext">
+        <div class="diseaseName">
+          <span>ensefalit<i style="display:none;"></i></span>
+        </div>
+      </div>
+      </label>
+      </a>
+    </div>
+
+    <div id="hsp" class="disease" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ol>
+          <li class="cilttekızarıklık">Kalça ayak ve bacaklarda morarma benzeri kızarıklık. kol yüz ve gövde de olabilir. Bel çevresi ve çorap hattı gibi basınç uygulanan bölgelerde daha kötüleşir </li>
+          <li class="artirit">Artrit genelde diz ve ayak bileği eklemini tutar ve kızarıklıktan bir iki hafta önce görülür.</li>
+          <li class="karınağrısı">karın ağrısı</li>
+          <li class="midebulantısı">mide bulantısı</li>
+          <li class="kusma">kusma</li>
+          <li class="kanlıgaita">Kanlı gaita/dışkıda kan</li>
+          <li class="hematüri">hematüri</li>
+        </ol>
+      </div>
+      <a style="color:black" href="diseases/hsp.htm" target="_blank">
+      <label onclick="diseasecolor()" for="hsp">
+      <img src="symptomPhotos/hsp.jpg" alt="hsp">
+      <div class="diseasesubtext">
+        <div class="diseaseName">
+          <span>Henoch-Schonlein Purpura<i style="display:none;"></i></span>
+        </div>
+      </div>
+      </label>
+      </a>
+    </div>
+
+    <div id="romatoidartirit" class="disease" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ol>
+          <li class="eklemağrısı artirit eklemdeşişlik eklemsertliği">Birden fazla eklemde eklem ağrısı(vücudu simetrik tutar her iki el veya her iki diz gibi) </li>
+          <li class="kilokaybı">kilo kaybı</li>
+          <li class="ateş">ateş</li>
+          <li class="halsizlik">halsizlik</li>
+        </ol>
+      </div>
+      <a style="color:black" href="diseases/romatoidartirit.htm" target="_blank">
+      <label onclick="diseasecolor()" for="romatoidartirit">
+      <img src="symptomPhotos/romatoidartirit.jpg" alt="romatoidartirit">
+      <div class="diseasesubtext">
+        <div class="diseaseName">
+          <span>Romatoid Artirit<i style="display:none;"></i></span>
+        </div>
+      </div>
+      </label>
+      </a>
+    </div>
+
+    <div id="fmf" class="disease" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ol>
+          <li class="eklemağrısı artrit">Genelde diz ayak bileği ve kalça eklemini tutan eklem ağrısı - artirit </li>
+          <li class="göğüsağrısı nefesdarlığı">Nefes almayı zorlaştıran göğüs ağrısı</li>
+          <li class="ateş">ateş</li>
+          <li class="karınağrısı">karın ağrısı</li>
+          <li class="skrotumtutulumu">Şişkin hassas skrotum</li>
+          <li class="kasağrısı">kas ağrısı</li>
+          <li class="cilttekızarıklık">Genelde diz altında erizipel benzeri eritem</li>
+        </ol>
+      </div>
+      <a style="color:black" href="diseases/fmf.htm" target="_blank">
+      <label onclick="diseasecolor()" for="fmf">
+      <img src="symptomPhotos/fmf.jpg" alt="fmf">
+      <div class="diseasesubtext">
+        <div class="diseaseName">
+          <span>Ailesel Akdeniz Ateşi<i style="display:none;">ailevi akdeniz ateşi, fmf, familyal mediterranean fever</i></span>
+        </div>
+      </div>
+      </label>
+      </a>
+    </div>
+
+    <div id="hiperkalemi" class="disease" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ol>
+          <h2 style="position:relative;float:right;top:1vh;right:3vh;color:DarkRed;font-family:arial;font-size:4vh;">--ACİL--</h2>
+          <li class="kalpçarpıntısı">Kalp çarpıntısı</li>
+          <li class="aritmi">kalpte ritim bozukluğu & aritmi</li>
+          <li class="ishal">ishal</li>
+          <li class="göğüsağrısı">göğüs ağrısı</li>
+          <li class="midebulantısı">mide bulantısı</li>
+          <li class="karınağrısı">karın ağrısı</li>
+          <li class="kusma">kusma</li>
+          <li class="parestezi">parestezi</li>
+          <li class="kasgüçsüzlüğü">kas zayıflığı</li>
+          <li class="elayakhissizlik">uzuvlarda hissizlik/uyuşma</li>
+        </ol>
+      </div>
+      <a style="color:black" href="diseases/hiperkalemi.htm" target="_blank">
+      <label onclick="diseasecolor()" for="hiperkalemi">
+      <img src="symptomPhotos/hiperkalemi.jpg" alt="hiperkalemi">
+      <div class="diseasesubtext">
+        <div class="diseaseName">
+          <span>Hiperkalemi<i style="display:none;"></i></span>
+        </div>
+      </div>
+      </label>
+      </a>
+    </div>
+
+    <div id="hipokalsemi" class="disease" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ol>
+          <h2 style="position:relative;float:right;top:1vh;right:3vh;color:DarkRed;font-family:arial;font-size:4vh;">--ACİL--</h2>
+          <li class="kaskrampları">Genelde sırt ve bacaklarda görülen kas krampları</li>
+          <li class="kurucilt">Kuru ve döküntülü cilt</li>
+          <li class="kırılgantırnak">Kırılgan tırnaklar</li>
+          <li class="kabasaç">Kişiye göre normal olandan daha kaba saç</li>
+          <li class="konfüzyon">konfüzyon</li>
+          <li class="hafızakaybı">hafıza kaybı</li>
+          <li class="iritabilite">iritabilite ve huzursuzluk</li>
+          <li class="depresyon">depresyon</li>
+          <li class="halüsinasyon">halüsinasyon</li>
+          <li class="parestezi">El ayak dil veya dudakta karıncalanma</li>
+          <li class="kasağrısı">kas ağrısı</li>
+          <li class="laringospazm">laringospazm</li>
+          <li class="nefesdarlığı">nefes darlığı</li>
+          <li class="tetani">tetani</li>
+          <li class="nöbet">nöbet</li>
+          <li class="kalpçarpıntısı">kalp çarpıntısı</li>
+          <li class="aritmi">kalpte ritim bozukluğu & aritmi</li>
+          <li class="kalpyetmezliği">konjestif kalp yetmezliği</li>
+        </ol>
+      </div>
+      <a style="color:black" href="diseases/hipokalsemi.htm" target="_blank">
+      <label onclick="diseasecolor()" for="hipokalsemi">
+      <img src="symptomPhotos/hipokalsemi.jpg" alt="hipokalsemi">
+      <div class="diseasesubtext">
+        <div class="diseaseName">
+          <span>hipokalsemi<i style="display:none;"></i></span>
+        </div>
+      </div>
+      </label>
+      </a>
+    </div>
+
+    <div id="dea" class="disease" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ol>
+          <li class="cilttesolukluk">Soluk cilt</li>
+          <li class="kasgüçsüzlüğü">Genel zayıflık hissi</li>
+          <li class="halsizlik">Aşırı halsiz hissetme</li>
+          <li class="elayaküşüme">el ve ayakların soğuk olması</li>
+          <li class="başağrısı">baş ağrısı</li>
+          <li class="başdönmesi">baş dönmesi</li>
+          <li class="pika">pika : besleyici olmayan madde yeme isteği buz, kum, nişasta gibi </li>
+          <li class="iştahkaybı">iştah kaybı bilhassa infant(0-1 yaş) ve çocuklarda görülür</li>
+          <li class="kırılgantırnak">Kırılgan tırnaklar</li>
+          <li class="glossit">glossit : dilin iltihabı ya da ağrılı olması</li>
+          <li class="göğüsağrısı">göğüsağrısı</li>
+          <li class="taşikardi">taşikardi</li>
+          <li class="nefesdarlığı">nefes darlığı</li>
+        </ol>
+      </div>
+      <a style="color:black" href="diseases/dea.htm" target="_blank">
+      <label onclick="diseasecolor()" for="dea">
+      <img src="symptomPhotos/dea.jpg" alt="dea">
+      <div class="diseasesubtext">
+        <div class="diseaseName">
+          <span>Demir Eksikliği Anemisi<i style="display:none;"></i></span>
+        </div>
+      </div>
+      </label>
+      </a>
+    </div>
+
+    <div id="talasemi" class="disease" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ol>
+          <li class="cilttesolukluk">Soluk cilt</li>
+          <li class="kasgüçsüzlüğü">Genel zayıflık hissi</li>
+          <li class="halsizlik">Aşırı halsiz hissetme</li>
+          <li class="büyümegeriliği">büyüme geriliği</li>
+          <li class="karındaşişkinlik">karında şişkinlik</li>
+          <li class="idrardakoyulaşma">koyuidrar</li>
+          <li class="kemikdeformiteleri">Yüzde kemik deformiteleri</li>
+        </ol>
+      </div>
+      <a style="color:black" href="diseases/talasemi.htm" target="_blank">
+      <label onclick="diseasecolor()" for="talasemi">
+      <img src="symptomPhotos/talasemi.jpg" alt="talasemi">
+      <div class="diseasesubtext">
+        <div class="diseaseName">
+          <span>Talasemi<i style="display:none;"></i></span>
+        </div>
+      </div>
+      </label>
+      </a>
+    </div>
+
+    <div id="sle" class="disease" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ol>
+          <li class="kelebekraş">Yüzde Kelebek şeklinde kızarıklık/rash : yanaklar ve burun köprüsünü tutan ancak nazolabial olukların korunduğu</li>
+          <li class="cilttekızarıklık">Vücudun herhangi bir yerinde kızarıklık/rash</li>
+          <li class="halsizlik">halsizlik</li>
+          <li class="ateş">ateş</li>
+          <li class="artirit eklemsertliği eklemağrısı">eklem ağrısı sertleşmesi veya şişmesi</li>
+          <li class="fotosensitivite">Güneşe maruziyetle kötüleşen cilt lezyonları</li>
+          <li class="raynaudfenomeni siyanoz">Raynaud fenomeni : El ve ayak parmakları soğuk ya da stress durumunda beyaz veya maviye döner</li>
+          <li class="nefesdarlığı">nefes darlığı</li>
+          <li class="göğüsağrısı">göğüs ağrısı</li>
+          <li class="gözdekuruma">Gözlerde kuruma</li>
+          <li class="başağrısı">baş ağrısı</li>
+          <li class="konfüzyon">konfüzyon</li>
+          <li class="hafızakaybı">hafıza kaybı</li>
+        </ol>
+      </div>
+      <a style="color:black" href="diseases/sle.htm" target="_blank">
+      <label onclick="diseasecolor()" for="sle">
+      <img src="symptomPhotos/sle.jpg" alt="sle">
+      <div class="diseasesubtext">
+        <div class="diseaseName">
+          <span>Sistemik Lupus Eritematozus<i style="display:none;"></i></span>
+        </div>
+      </div>
+      </label>
+      </a>
+    </div>
+
+    <div id="sjögren" class="disease" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ol>
+          <li class="ağızdakuruma disfaji konuşmagüçlüğü">Ağzı pamuk doluymuş gibi hissetme, yutma ve konuşma güçlüğü</li>
+          <li class="gözdekuruma">Gözlerde kuruma : Hastanın gözü yanıyor, kaşınıyor veya içinde kum varmış gibi hissetiriyor olabilir. </li>
+          <li class="artirit eklemsertliği eklemağrısı">eklem ağrısı sertleşmesi veya şişmesi</li>
+          <li class="tükürükbezişişmesi">Tükürük bezi şişmesi : bilhassa parotis ve submandibular bez şişer</li>
+          <li class="kurucilt">Ciltte kuruma</li>
+          <li class="vajinadakuruma">Vajinada kuruma</li>
+          <li class="öksürük">Kuru öksürük</li>
+          <li class="cilttekızarıklık">Vücudun herhangi bir yerinde kızarıklık/rash</li>
+          <li class="halsizlik">Uzamış halsizlik</li>
+        </ol>
+      </div>
+      <a style="color:black" href="diseases/sjögren.htm" target="_blank">
+      <label onclick="diseasecolor()" for="sjögren">
+      <img src="symptomPhotos/sjögren.jpg" alt="sjögren">
+      <div class="diseasesubtext">
+        <div class="diseaseName">
+          <span>Sjögren Sendromu<i style="display:none;"></i></span>
+        </div>
+      </div>
+      </label>
+      </a>
+    </div>
+
+    <div id="turner" class="disease" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ol>
+          <li class="yeleboyun">kısa geniş ve kalın boyun</li>
+          <li class="kistikhigroma">Kistik higroma : Boynun şişmesi</li>
+          <li class="büyümegeriliği">Büyüme geriliği : Küçük bebek olmak. </li>
+          <li class="genişgöğüs">Kalkan göğüs tabir edilen geniş göğüs.</li>
+          <li class="ayrıkmemebaşı">Meme başlarının birbirinden uzak olması</li>
+          <li class="düşükensesaççizgisi">Düşük ense saç çizgisi</li>
+          <li class="koilonişi">Kaşık tırnak veya koilonişi</li>
+          <li class="brakidaktili">4. el veya ayak parmağının kısa olması</li>
+          <li class="artmışben">Aşırı miktarda ben bulunması</li>
+          <li class="amenore">Adet düzensizliği veya amenore</li>
+        </ol>
+      </div>
+      <a style="color:black" href="diseases/turner.htm" target="_blank">
+      <label onclick="diseasecolor()" for="turner">
+      <img src="symptomPhotos/turner.jpg" alt="turner">
+      <div class="diseasesubtext">
+        <div class="diseaseName">
+          <span>Turner Sendromu<i style="display:none;"></i></span>
+        </div>
+      </div>
+      </label>
+      </a>
+    </div>
+
+    <div id="sifiliz" class="disease" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ol>
+          <li class="penisteyara vajinadayara anüsteyara">Penis vajina ya da anüs çevresinde yaralar</li>
+          <li class="ağızdayara dudaktayara ellerdeyara kalçadayara">Ağız dudak el veya kalçada yaralar</li>
+          <li class="penistesiğil vajinadasiğil anüstesiğil">Beyaz ya da gri siğiller genelde penis vajina veya anüste </li>
+          <li class="palmareritem plantareritem">avuç içi ve ayak tabanında kızarıklık tüm vücuda yayılabilir ve genelde kaşıntısızdır</li>
+          <li class="ağızdabeyazyama">ağızda beyaz yamalar</li>
+          <li class="yüksekateş">yüksek ateş</li>
+          <li class="başağrısı">baş ağrısı</li>
+          <li class="halsizlik">halsizlik</li>
+          <li class="alopesi">Saç sakal ya da kaşta kısmi dökülmeler</li>
+          <li class="şişkinlenf">Bezlerde şişme</li>
+        </ol>
+      </div>
+      <a style="color:black" href="diseases/sifiliz.htm" target="_blank">
+      <label onclick="diseasecolor()" for="sifiliz">
+      <img src="symptomPhotos/sifiliz.jpg" alt="sifiliz">
+      <div class="diseasesubtext">
+        <div class="diseaseName">
+          <span>Sifiliz<i style="display:none;"></i></span>
+        </div>
+      </div>
+      </label>
+      </a>
+    </div>
+
+    <div id="ara" class="disease" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ol>
+          <li class="ateş">ateş</li>
+          <li class="eklemağrısı">Genelde diz el-ayak bileği dirsekte eklem ağrısı(Gezici tarzda eklem ağrısı bir eklemden diğerine geçen ağrı)</li>
+          <li class="artirit">Kırmızı sıcak şişmiş eklemler </li>
+          <li class="göğüsağrısı">Göğüs ağrısı</li>
+          <li class="halsizlik">Halsizlik</li>
+          <li class="cilttekızarıklık">Düzensiz sınırlı ağrısız deriden kabarık ya da düz kızarıklık(Eritema Marginatum)</li>
+          <li class="kalpteüfürüm">kalpte üfürüm</li>
+          <li class="sydenhamkoresi">Ani kontrol edilemeyen vücut hareketleri genelde el ayak ve yüzde(Sydenham Koresi)</li>
+          <li class="davranışdeğişikliği">Beklenmedik davranışlar, ağlama ya da uygunsuz durumda gülme sydenham koresine eşlik eder </li>
+          <li class="nodül">ağrısız deri altı nodülleri</li>
+        </ol>
+      </div>
+      <a style="color:black" href="diseases/ara.htm" target="_blank">
+      <label onclick="diseasecolor()" for="ara">
+      <img src="symptomPhotos/ara.jpg" alt="ara">
+      <div class="diseasesubtext">
+        <div class="diseaseName">
+          <span>Akut Romatizmal Ateş<i style="display:none;">ara</i></span>
+        </div>
+      </div>
+      </label>
+      </a>
+    </div>
+
+    <div id="siroz" class="disease" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ol>
+          <li class="midebulantısı">Mide Bulantısı</li>
+          <li class="peteşipurpuraekimoz cilttemorarma">Kolay kanama - morarma</li>
+          <li class="iştahkaybı">İştah Kaybı </li>
+          <li class="ödem">ayak, ayak bileği, bacakta şişme - ödem</li>
+          <li class="halsizlik">Halsizlik</li>
+          <li class="pretibialödem">pretibial ödem</li>
+          <li class="kilokaybı">Kilo kaybı</li>
+          <li class="kaşıntı">Kaşıntı</li>
+          <li class="sarılık">Sarlılık</li>
+          <li class="ascites">Karında sıvı birikmesi - ascites</li>
+          <li class="spidernevi">Spider nevi - ciltte örümcek ağı benzeri damarlar</li>
+          <li class="palmareritem">Palmar eritem - Avuç içinde kızarıklık</li>
+          <li class="lökonişi">Tırnaklarda solukluk - beyazlama</li>
+          <li class="çomakparmak">Çomak parmak - Tırnakların normalden daha yuvarlak hale gelmesi</li>
+          <li class="amenore">Kadınlarda menapozdan bağımsız amenore</li>
+          <li class="jinekomasti">Jinekomasti - Erkekte meme büyümesi</li>
+          <li class="libidokaybı">Erkekte cinsel istek azalması</li>
+          <li class="testisbüzüşmesi">Testis Büzülmesi</li>
+          <li class="konfüzyon">Konfüzyon</li>
+          <li class="başdönmesi">Baş dönmesi</li>
+          <li class="dizartri">Konuşma bozukluğu - Dizartri</li>
+        </ol>
+      </div>
+      <a style="color:black" href="diseases/siroz.htm" target="_blank">
+      <label onclick="diseasecolor()" for="siroz">
+      <img src="symptomPhotos/siroz.jpg" alt="siroz">
+      <div class="diseasesubtext">
+        <div class="diseaseName">
+          <span>Siroz<i style="display:none;"></i></span>
+        </div>
+      </div>
+      </label>
+      </a>
+    </div>
+
+    <div id="ük" class="disease" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ol>
+          <li class="ishal">İshal(Genelde kanlı ve irinli)</li>
+          <li class="kanlıgaita">Dışkıda az miktarda kan</li>
+          <li class="karınağrısı">Karın ağrısı ve kramp</li>
+          <li class="rektalağrı">Rektumda ağrı </li>
+          <li class="tenesmus">Tenesmus - Sık dışkılama ihtiyacı ve dışkılayamama(bağırsaklar boş olduğu için)</li>
+          <li class="halsizlik">Halsizlik</li>
+          <li class="kilokaybı">Kilo kaybı</li>
+          <li class="ateş">ateş</li>
+          <li class="büyümegeriliği">çocuklarda büyüme geriliği</li>
+        </ol>
+      </div>
+      <a style="color:black" href="diseases/ük.htm" target="_blank">
+      <label onclick="diseasecolor()" for="ük">
+      <img src="symptomPhotos/ük.jpg" alt="ük">
+      <div class="diseasesubtext">
+        <div class="diseaseName">
+          <span>Ülseratif Kolit<i style="display:none;"></i></span>
+        </div>
+      </div>
+      </label>
+      </a>
+    </div>
+
+    <div id="crohn" class="disease" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ol>
+          <li class="ishal">İshal</li>
+          <li class="kanlıgaita">Dışkıda az miktarda kan</li>
+          <li class="karınağrısı">Karın ağrısı ve kramp</li>
+          <li class="ağızdayara">Ağızdan anüse kadar yaralar görülür</li>
+          <li class="halsizlik">Halsizlik</li>
+          <li class="kilokaybı">Kilo kaybı</li>
+          <li class="ateş">ateş</li>
+          <li class="iştahkaybı">iştah kaybı</li>
+          <li class="fistül">Anüs çevresinde fistüller</li>
+          <li class="büyümegeriliği">çocukta büyüme ve ergenlikte gecikme</li>
+          <li class="böbrektaşı">Böbrek taşı</li>
+          <li class="deasemptom">demir eksikliği anemisi</li>
+          <li class="kolanjit">Safra kesesi inflamasyonu</li>
+          <li class="karaciğerinflamasyonu">Karaciğer inflamasyonu</li>
+          <li class="eklemağrısı artrit">eklem inflamasyonu</li>
+          <li class="ciltteyara">deri inflamasyonu</li>
+          <li class="gözdeyanma gözdekızarma gözağrısı">göz inflamasyonu</li>
+        </ol>
+      </div>
+      <a style="color:black" href="diseases/crohn.htm" target="_blank">
+      <label onclick="diseasecolor()" for="crohn">
+      <img src="symptomPhotos/crohn.jpg" alt="crohn">
+      <div class="diseasesubtext">
+        <div class="diseaseName">
+          <span>Crohn Hastalığı<i style="display:none;"></i></span>
+        </div>
+      </div>
+      </label>
+      </a>
+    </div>
+
+    <div id="akutapandisit" class="disease" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <h2 style="position:relative;float:right;top:1vh;right:3vh;color:DarkRed;font-family:arial;font-size:4vh;">--ACİL--</h2>
+        <ol>
+          <li class="karınağrısı epigastrikağrı">Ağrı umblikal bölgede başlar 6-8 saatte sağ alt kadrana iner. öksürme, sarsılma, yürümeyle ağrı artar</li>
+          <li class="iştahkaybı">İştah kaybı - ağrılar başlamadan 2-4 saat önce başlar, eğer hastanın iştahı yerindeyse akut apandisit tanısı kuşkuludur.</li>
+          <li class="ateş">Başlangıçta hafif ateş hastalık ilerledikçe artar</li>
+          <li class="sağaltkadranağrısı">McBurney bulgusu - Sağ alt kadranda ağrı</li>
+          <li class="kusma">kusma</li>
+          <li class="midebulantısı">Mide bulantısı</li>
+          <li class="tenesmus">tenesmus</li>
+          <li class="kabızlık">kabızlık</li>
+          <li class="ishal">ishal</li>
+          <li class="karındaşişkinlik">karında şişkinlik</li>
+        </ol>
+      </div>
+      <a style="color:black" href="diseases/akutapandisit.htm" target="_blank">
+      <label onclick="diseasecolor()" for="akutapandisit">
+      <img src="symptomPhotos/akutapandisit.jpg" alt="akutapandisit">
+      <div class="diseasesubtext">
+        <div class="diseaseName">
+          <span>akut apandisit<i style="display:none;"></i></span>
+        </div>
+      </div>
+      </label>
+      </a>
+    </div>
+
+    <div id="primerhiperparatiroidizm" class="disease" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ol>
+          <li class="kilokaybı">Kilo kaybı</li>
+          <li class="iştahkaybı">İştah kaybı</li>
+          <li class="halsizlik">Halsizlik, yorgunluk</li>
+          <li class="kasgüçsüzlüğü">Kas güçsüzlüğü</li>
+          <li class="polidipsi">Polidipsi</li>
+          <li class="poliüri">Poliüri</li>
+          <li class="noktüri">Noktüri</li>
+          <li class="eklemağrısı">Eklem ağrısı</li>
+          <li class="kemikağrısı">Kemik ağrısı</li>
+          <li class="hazımsızlık">Mide ekşimesi & hazımsızlık</li>
+          <li class="kaşıntı">Kaşıntı</li>
+          <li class="kırılgantırnak">Tırnak kırılması</li>
+          <li class="depresyon">Depresyon</li>
+          <li class="hafızakaybı">Hafıza kaybı</li>
+          <li class="kabızlık">Kabızlık</li>
+        </ol>
+      </div>
+      <a style="color:black" href="diseases/primerhiperparatiroidizm.htm" target="_blank">
+      <label onclick="diseasecolor()" for="primerhiperparatiroidizm">
+      <img src="symptomPhotos/primerhiperparatiroidizm.jpg" alt="primerhiperparatiroidizm">
+      <div class="diseasesubtext">
+        <div class="diseaseName">
+          <span>Primer Hiperparatiroidizm<i style="display:none;"></i></span>
+        </div>
+      </div>
+      </label>
+      </a>
+    </div>
+
+    <div id="hiperkalsemikkriz" class="disease" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ol>
+          <li class="midebulantısı">Mide Bulantısı</li>
+          <li class="iştahkaybı">İştah Kaybı </li>
+          <li class="kusma">Kusma</li>
+          <li class="kilokaybı">Kilo kaybı</li>
+          <li class="dehidratasyon">Dehidratasyon</li>
+          <li class="kalpçarpıntısı">Kardiyak ritim bozuklukları</li>
+          <li class="qtkısalması">EKG'de QT aralığı kısalmıştır</li>
+        </ol>
+      </div>
+      <a style="color:black" href="diseases/hiperkalsemikkriz.htm" target="_blank">
+      <label onclick="diseasecolor()" for="hiperkalsemikkriz">
+      <img src="symptomPhotos/hiperkalsemikkriz.jpg" alt="hiperkalsemikkriz">
+      <div class="diseasesubtext">
+        <div class="diseaseName">
+          <span>Hiperkalsemik kriz<i style="display:none;"></i></span>
+        </div>
+      </div>
+      </label>
+      </a>
+    </div>
+
+    <div id="hipoparatiroidizm" class="disease" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ol>
+          <li class="parestezi">Ağız çevresinde parmak uçlarında parestezi</li>
+          <li class="tetani">Kaslarda gerginlik ve spazm</li>
+          <li class="laringospazm">Laringospazm</li>
+          <li class="candidiasis">Kandidiyazis</li>
+          <li class="konfüzyon">Konfüzyondan grand mal epilepsiye benzer ataklara kadar değişken santral belirtiler</li>
+          <li class="depresyon">Psikiyatrik anormallikler</li>
+          <li class="dişgelişimbozukluğu">Diş gelişiminin bozulması</li>
+          <li class="katarakt">Lentiküler katarakt</li>
+          <li class="kırılgantırnak">Tırnak anormallikleri</li>
+          <li class="qtuzaması">EKG'de QT uzaması</li>
+          <li class="stuzaması">EKG'de ST uzaması</li>
+        </ol>
+      </div>
+      <a style="color:black" href="diseases/hipoparatiroidizm.htm" target="_blank">
+      <label onclick="diseasecolor()" for="hipoparatiroidizm">
+      <img src="symptomPhotos/hipoparatiroidizm.jpg" alt="hipoparatiroidizm">
+      <div class="diseasesubtext">
+        <div class="diseaseName">
+          <span>Hipoparatiroidizm<i style="display:none;"></i></span>
+        </div>
+      </div>
+      </label>
+      </a>
+    </div>
+
+    <div id="pankreastümörleri" class="disease" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ol>
+          <li class="epigastrikağrı">Epigastriumda ağrı</li>
+          <li class="sırtağrısı">Sırta yayılan ağrı</li>
+          <li class="sarılık">Sarılık</li>
+          <li class="kilokaybı">Kilo kaybı</li>
+          <li class="iştahsızlık">iştah kaybı</li>
+          <li class="apati">apati</li>
+          <li class="halsizlik">halsizlik</li>
+          <li class="midebulantısı">mide bulantısı</li>
+          <li class="hematemez">hematemez</li>
+          <li class="melena">melena</li>
+          <li class="steatorrhea">steatoz</li>
+          <li class="hiperglisemi">hiperglisemi</li>
+          <li class="tromboflebit">tromboflebit migrans</li>
+        </ol>
+      </div>
+      <a style="color:black" href="diseases/pankreastümörleri.htm" target="_blank">
+      <label onclick="diseasecolor()" for="pankreastümörleri">
+      <img src="symptomPhotos/pankreastümörleri.jpg" alt="pankreastümörleri">
+      <div class="diseasesubtext">
+        <div class="diseaseName">
+          <span>Pankreas tümörleri<i style="display:none;"></i></span>
+        </div>
+      </div>
+      </label>
+      </a>
+    </div>
+
+    <div id="insülinoma" class="disease" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ol>
+          <li class="halsizlik">halsizlik</li>
+          <li class="başdönmesi">baş dönmesi</li>
+          <li class="dizartri">Dil peltekleşir</li>
+          <li class="konfüzyon">konfüzyon</li>
+          <li class="görmeproblemleri">görme problemleri</li>
+          <li class="davranışdeğişikliği">davranış değişikliği</li>
+          <li class="terleme">Terleme</li>
+          <li class="taşikardi">taşikardi</li>
+          <li class="üşüme">titreme</li>
+        </ol>
+      </div>
+      <a style="color:black" href="diseases/insülinoma.htm" target="_blank">
+      <label onclick="diseasecolor()" for="insülinoma">
+      <img src="symptomPhotos/insülinoma.jpg" alt="insülinoma">
+      <div class="diseasesubtext">
+        <div class="diseaseName">
+          <span>insülinoma<i style="display:none;"></i></span>
+        </div>
+      </div>
+      </label>
+      </a>
+    </div>
+
+    <div id="gastrinoma" class="disease" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ol>
+          <li class="karınağrısı">karın ağrısı:gastrik ya da duodenal ülser kaynaklı</li>
+          <li class="ishal">ishal:sekretuar sulu diyare %50 olguda görülür, %20 olguda tek semptomdur.  </li>
+          <li class="göğüsteağrılıyanma">göğüste ağrı-yanma hissi</li>
+          <li class="peteşipurpuraekimoz">Görülmeyen kanama</li>
+          <li class="hematemez">hematemez</li>
+          <li class="kanlıgaita">kanlı gaita</li>
+          <li class="kilokaybı">kilo Kaybı</li>
+          <li class="halsizlik">halsizlik</li>
+        </ol>
+      </div>
+      <a style="color:black" href="diseases/gastrinoma.htm" target="_blank">
+      <label onclick="diseasecolor()" for="gastrinoma">
+      <img src="symptomPhotos/gastrinoma.jpg" alt="gastrinoma">
+      <div class="diseasesubtext">
+        <div class="diseaseName">
+          <span>gastrinoma<i style="display:none;"></i></span>
+        </div>
+      </div>
+      </label>
+      </a>
+    </div>
+
+    <div id="akuttin" class="disease" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ol>
+          <li class="oligüri">oligüri</li>
+          <li class="poliüri">poliüri</li>
+          <li class="sıkidraraçıkma">pollaküri</li>
+          <li class="noktüri">noktüri</li>
+          <li class="ateş">ateş(pyelonefrit gelişirse)</li>
+          <li class="dizüri">dizüri - ağrılı idrar yapma(pyelonefrit gelişirse)</li>
+          <li class="sırtağrısı">sırt ağrısı - sırtın alt kısmı(pyelonefrit gelişirse)</li>
+          <li class="yanağrısı">yan ağrısı(pyelonefrit gelişirse)</li>
+          <li class="rash">rash</li>
+        </ol>
+      </div>
+      <a style="color:black" href="diseases/akuttin.htm" target="_blank">
+      <label onclick="diseasecolor()" for="akuttin">
+      <img src="symptomPhotos/akuttin.jpg" alt="akuttin">
+      <div class="diseasesubtext">
+        <div class="diseaseName">
+          <span>Akut TİN<i style="display:none;"></i></span>
+        </div>
+      </div>
+      </label>
+      </a>
+    </div>
+
+    <div id="kroniktin" class="disease" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ol>
+          <li class="kaşıntı">kaşıntı</li>
+          <li class="halsizlik">halsizlik</li>
+          <li class="iştahkaybı">iştahkaybı</li>
+          <li class="midebulantısı">midebulantısı</li>
+          <li class="kusma">kusma</li>
+          <li class="nefesdarlığı">nefesdarlığı</li>
+          <li class="poliüri">poliüri</li>
+          <li class="hipertansyon">hipertansyon(hastalığın erken dönemlerinde hafif artmış olabilir)</li>
+
+        </ol>
+      </div>
+      <a style="color:black" href="diseases/kroniktin.htm" target="_blank">
+      <label onclick="diseasecolor()" for="kroniktin">
+      <img src="symptomPhotos/kroniktin.jpg" alt="kroniktin">
+      <div class="diseasesubtext">
+        <div class="diseaseName">
+          <span>Kronik TİN<i style="display:none;"></i></span>
+        </div>
+      </div>
+      </label>
+      </a>
+    </div>
+
+    <div id="peptikülser" class="disease" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ol>
+          <li class="epigastrikağrı">epigastrik ağrı</li>
+          <li class="erkendoygunlukhissi">erken doygunluk hissi</li>
+          <li class="midebulantısı">midebulantısı</li>
+          <li class="kusma">kusma</li>
+          <li class="karındaşişkinlik">karında şişkinlik</li>
+          <li class="geğirme">geğirme</li>
+          <li class="melena">melena</li>
+          <li class="hematokezya">hematokezya</li>
+          <li class="hematemez">hematemez</li>
+          <li class="karınağrısı">ani keskin şiddetli geçmeyen karın ağrısı</li>
+          <li class="başdönmesi">baş dönmesi</li>
+          <li class="taşikardi">taşikardi</li>
+        </ol>
+      </div>
+      <a style="color:black" href="diseases/peptikülser.htm" target="_blank">
+      <label onclick="diseasecolor()" for="peptikülser">
+      <img src="symptomPhotos/peptikülser.jpg" alt="peptikülser">
+      <div class="diseasesubtext">
+        <div class="diseaseName">
+          <span>peptikülser<i style="display:none;"></i></span>
+        </div>
+      </div>
+      </label>
+      </a>
+    </div>
+
+    <div id="behcet" class="disease" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ol>
+          <li class="ağızdayara">ağızda yara</li>
+          <li class="penisteyara">peniste yara(genital ülserler)</li>
+          <li class="vajinadayara">vajinada yara(genital ülserler)</li>
+          <li class="gözdekızarma">gözde kızarma</li>
+          <li class="gözağrısı">göz ağrısı</li>
+          <li class="bulanıkgörme">bulanık görme</li>
+          <li class="akne">akne</li>
+          <li class="başağrısı">baş ağrısı</li>
+          <li class="eklemağrısı">eklemağrısı</li>
+          <li class="eklemsertliği">eklem sertliği</li>
+          <li class="eklemdeşişlik">eklemde şişlik</li>
+          <li class="görmekaybı">görme kaybı(ağır vakalarda)</li>
+        </ol>
+      </div>
+      <a style="color:black" href="diseases/behcet.htm" target="_blank">
+      <label onclick="diseasecolor()" for="behcet">
+      <img src="symptomPhotos/behcet.jpg" alt="behcet">
+      <div class="diseasesubtext">
+        <div class="diseaseName">
+          <span>behcet<i style="display:none;"></i></span>
+        </div>
+      </div>
+      </label>
+      </a>
+    </div>
+
+    <div id="prolaktinoma" class="disease" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ol>
+          <li class="amenore">amenore</li>
+          <li class="irregülermenstürasyon">irregüler menstürasyon</li>
+          <li class="vajinadakuruma">vajinada kuruma</li>
+          <li class="ağrılıilişki">ağrılı ilişki(vajinada kurumaya bağlı kadında görülür)</li>
+          <li class="akne">akne(kadında)</li>
+          <li class="virilizasyon">vücutta & yüzde kıllanma artışı(kadında)</li>
+          <li class="erektildisfonksyon">erektil disfonksyon / impotans</li>
+          <li class="alopesi">vücutta & yüzde kıl azalması(erkekte)</li>
+          <li class="galaktore">memeden süt gelmesi(kadın) / galaktore</li>
+          <li class="jinekomasti">jinekomasti(göğüste büyüme)</li>
+          <li class="kasküçülmesi">kas küçülmesi(erkek)</li>
+          <li class="infertilite">infertilite</li>
+          <li class="osteoporoz">osteoporoz(zayıf ve kırılgan kemikler)</li>
+          <li class="libidokaybı">libido kaybı</li>
+          <li class="görmeproblemleri">görme problemleri</li>
+          <li class="başağrısı">baş ağrısı</li>
+        </ol>
+      </div>
+      <a style="color:black" href="diseases/prolaktinoma.htm" target="_blank">
+      <label onclick="diseasecolor()" for="prolaktinoma">
+      <img src="symptomPhotos/prolaktinoma.jpg" alt="prolaktinoma">
+      <div class="diseasesubtext">
+        <div class="diseaseName">
+          <span>prolaktinoma<i style="display:none;"></i></span>
+        </div>
+      </div>
+      </label>
+      </a>
+    </div>
+
+    <div id="hipotiroidi" class="disease" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ol>
+          <li class="halsizlik">halsizlik</li>
+          <li class="kurucilt">kuru cilt</li>
+          <li class="cilttekabalaşma">ciltte kabalaşma</li>
+          <li class="sıkuyku">letarji</li>
+          <li class="periorbitalödem">periorbital ödem</li>
+          <li class="konuşmagüçlüğü">yavaş konuşma</li>
+          <li class="üşüme">soğuk intoleransı</li>
+          <li class="elayaküşüme">soğuk cilt</li>
+          <li class="dildekalınlaşma">dilde kalınlaşma</li>
+          <li class="yüzdeödem">yüzde ödem</li>
+          <li class="saçdökülmesi">saç dökülmesi</li>
+          <li class="kabasaç">saçkalınlaşması</li>
+          <li class="siyanoz">siyanoz</li>
+          <li class="hafızakaybı">hafıza kaybı / unutkanlık</li>
+          <li class="galaktore">galaktore</li>
+          <li class="eklemağrısı">eklem ağrısı / artralji</li>
+          <li class="kasağrısı kaskrampları">kas ağrısı/krampları</li>
+          <li class="erektildisfonksyon">erektil disfonksyon / impotans (nadir)</li>
+          <li class="kabızlık">kabızlık</li>
+          <li class="kiloalma">kilo alma</li>
+          <li class="parestezi">parestezi</li>
+          <li class="nefesdarlığı">nefes darlığı / dispne</li>
+          <li class="bradikardi">bradikardi</li>
+          <li class="ödem">periferik ödem(gode bırakmayan miksödem)</li>
+          <li class="pretibialödem">pretibial ödem(gode bırakmayan miksödem)</li>
+          <li class="iritabilite">sinirlilik</li>
+          <li class="göğüsağrısı">göğüs ağrısı/ anjina</li>
+          <li class="menoraji">menoraji</li>
+          <li class="kalpçarpıntısı">kalp çarpıntısı</li>
+          <li class="sestekabalaşma">seste kabalaşma</li>
+          <li class="iştahkaybı">iştah kaybı / anorexia</li>
+          <li class="depresyon">hafif depresyon</li>
+          <li class="işitmeproblemleri">işitme problemleri / kaybı</li>
+          <li class="karpaltünelsendromu">karpal tünel sendromu</li>
+          <li class="irregülermenstürasyon">irregüler menstürasyon</li>
+          <li class="libidokaybı">libido kaybı</li>
+          <li class="kırılgantırnak">kırılgan tırnak / saç</li>
+          <li class="cilttesoyulma">ciltte soyulma</li>
+        </ol>
+      </div>
+      <a style="color:black" href="diseases/hipotiroidi.htm" target="_blank">
+      <label onclick="diseasecolor()" for="hipotiroidi">
+      <img src="symptomPhotos/hipotiroidi.jpg" alt="hipotiroidi">
+      <div class="diseasesubtext">
+        <div class="diseaseName">
+          <span>hipotiroidi<i style="display:none;"></i></span>
+        </div>
+      </div>
+      </label>
+      </a>
+    </div>
+
+    <div id="afas" class="disease" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ol>
+          <li class="hipertansyon">hipertansyon</li>
+          <li class="dvt">derin ven trombozu</li>
+          <li class="inme">inme ya da transient iskemik atak(mini stroke)</li>
+          <li class="kalpkrizisemptom">kalp krizi</li>
+          <li class="pulmonerembolisemptom">pulmoner emboli</li>
+          <li class="dengeproblemleri">denge problemleri</li>
+          <li class="görmeproblemleri çiftgörme">görme problemleri / çift görme</li>
+          <li class="konuşmagüçlüğü">konuşma güçlüğü</li>
+          <li class="hafızakaybı">hafıza problemleri</li>
+          <li class="parestezi">parestezi / el ve ayakta iğne batması hissi</li>
+          <li class="sıkuyku halsizlik">aşırı yorgunluk</li>
+          <li class="başağrısı">tekrarlayan baş ağrısı ya da migren</li>
+          <li class="düşük">Gebeliğin ilk 10 haftasında tekrarlayan 3 ya da daha fazla düşük. 10.haftadan sonra 1 düşük. Prematür doğum genelde 34.haftadan önce(pre-eklampsiye(gebelik zehirlenmesi) bağlı)</li>
+          <li class="livedoretikülaris">livedo retikülaris</li>
+          <li class="tromboflebit">yüzeyel tromboflebit(etkilenen damarda şişme, kızarma hassasiyet ve 38C ve üzerinde ateş(ateş daha nadir))</li>
+        </ol>
+      </div>
+      <a style="color:black" href="diseases/afas.htm" target="_blank">
+      <label onclick="diseasecolor()" for="afas">
+      <img src="symptomPhotos/afas.jpg" alt="afas">
+      <div class="diseasesubtext">
+        <div class="diseaseName">
+          <span>afas<i style="display:none;"></i></span>
+        </div>
+      </div>
+      </label>
+      </a>
+    </div>
+
+    <div id="aby" class="disease" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ol>
+          <li class="oligüri">oligüri</li>
+          <li class="pretibialödem">pretibial ödem</li>
+          <li class="ödem">Ödem bacak ayak ve ayak bileğinde</li>
+          <li class="nefesdarlığı">nefes darlığı</li>
+          <li class="halsizlik">halsizlik</li>
+          <li class="konfüzyon">konfüzyon</li>
+          <li class="midebulantısı">mide bulantısı</li>
+          <li class="kalpçarpıntısı">kalp çarpıntısı</li>
+          <li class="göğüsağrısı">göğüs ağrısı</li>
+          <li class="nöbet">nöbet(ağır vakalarda)</li>
+          <li class="kaşıntı">kaşıntı</li>
+          <li class="eklemağrısı eklemdeşişlik">eklem ağrısı - şişlik</li>
+          <li class="iştahkaybı">iştah kaybı / anorexia</li>
+          <li class="karınağrısı sırtağrısı">karın ve sırt ağrsı</li>
+          <li class="metaliktat">yemekten metalik tat alınması</li>
+          <li class="kaskrampları">kas krampları</li>
+        </ol>
+      </div>
+      <a style="color:black" href="diseases/aby.htm" target="_blank">
+      <label onclick="diseasecolor()" for="aby">
+      <img src="symptomPhotos/aby.jpg" alt="aby">
+      <div class="diseasesubtext">
+        <div class="diseaseName">
+          <span>Akut Böbrek Yetmezliği<i style="display:none;"></i></span>
+        </div>
+      </div>
+      </label>
+      </a>
+    </div>
+
+    <div id="kby" class="disease" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ol>
+          <li class="iştahkaybı">iştah kaybı</li>
+          <li class="kilokaybı">kilo kaybı</li>
+          <li class="ödem">ödem</li>
+          <li class="pretibialödem">pretibial ödem</li>
+          <li class="nefesdarlığı">nefes darlığı</li>
+          <li class="halsizlik">halsizlik</li>
+          <li class="hematüri">hematüri</li>
+          <li class="poliüri">poliüri</li>
+          <li class="noktüri">noktüri</li>
+          <li class="insomnia">insomnia / uyumakta zorlanma </li>
+          <li class="kaşıntı">kaşıntı</li>
+          <li class="kaskrampları">kas krampları</li>
+          <li class="başağrısı">baş ağrısı</li>
+          <li class="impotans">impotans / erektil disfonksyon</li>
+          <li class="hipertansyon">hipertansyon</li>
+          <li class="midebulantısı">mide bulantısı</li>
+          <li class="kusma">kusma</li>
+        </ol>
+      </div>
+      <a style="color:black" href="diseases/kby.htm" target="_blank">
+      <label onclick="diseasecolor()" for="kby">
+      <img src="symptomPhotos/kby.jpg" alt="kby">
+      <div class="diseasesubtext">
+        <div class="diseaseName">
+          <span>Kronik Böbrek Yetmezliği<i style="display:none;"></i></span>
+        </div>
+      </div>
+      </label>
+      </a>
+    </div>
+
+    <div id="addison" class="disease" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ol>
+          <li class="sıkuyku">aşırı halsizlik</li>
+          <li class="iştahkaybı">iştah kaybı</li>
+          <li class="kilokaybı">kilo kaybı</li>
+          <li class="deriderenkdeğişimi">hiperpigmentasyon / deride koyulaşma</li>
+          <li class="hipotansyon">hipotansyon</li>
+          <li class="bilinçkaybı">bilinç kaybı & bayılma & senkop</li>
+          <li class="tuzisteği">tuz isteği</li>
+          <li class="hipoglisemi">hipoglisemi</li>
+          <li class="midebulantısı">mide bulantısı</li>
+          <li class="kusma">kusma</li>
+          <li class="ishal">ishal</li>
+          <li class="karınağrısı">karın ağrısı</li>
+          <li class="kasağrısı">kas ağrısı</li>
+          <li class="eklemağrısı">eklem ağrısı</li>
+          <li class="iritabilite">iritabilite</li>
+          <li class="depresyon">depresyon</li>
+          <li class="dehidratasyon">dehidratasyon</li>
+          <li class="başdönmesi">baş dönmesi</li>
+          <li class="alopesi">vücutta kıl azalması</li>
+          <li class="libidokaybı">libido kaybı</li>
+        </ol>
+      </div>
+      <a style="color:black" href="diseases/addison.htm" target="_blank">
+      <label onclick="diseasecolor()" for="addison">
+      <img src="symptomPhotos/addison.jpg" alt="addison">
+      <div class="diseasesubtext">
+        <div class="diseaseName">
+          <span>addison hastalığı<i style="display:none;"></i></span>
+        </div>
+      </div>
+      </label>
+      </a>
+    </div>
+
+    <div id="cushing" class="disease" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ol>
+          <li class="sentripedalobezite">sentripedal obezite / gövdenin şiştiği uzuvların zayıf kaldığı şişmanlama biçimi</li>
+          <li class="bufalohörgücü">bufalo hörgücü / ensenin arkasında biriken yağ dokusu</li>
+          <li class="aydedeyüzü">ay dede yüzü / kızarmış ve şişmiş yüz</li>
+          <li class="morstria">mor stria göbek, göğüs, koltuk altı, kalçada olabilir</li>
+          <li class="cilttemorarma">ciltte morarma / cildin kolay morarması</li>
+          <li class="infertilite">infertilite</li>
+          <li class="libidokaybı">libido kaybı</li>
+          <li class="yaraiyileşmesindegecikme">yara iyileşmesinde gecikme</li>
+          <li class="akne">akne</li>
+          <li class="hipertansyon">hipertansyon</li>
+          <li class="depresyon">depresyon</li>
+        </ol>
+      </div>
+      <a style="color:black" href="diseases/cushing.htm" target="_blank">
+      <label onclick="diseasecolor()" for="cushing">
+      <img src="symptomPhotos/cushing.jpg" alt="cushing">
+      <div class="diseasesubtext">
+        <div class="diseaseName">
+          <span>Cushing sendromu<i style="display:none;"></i></span>
+        </div>
+      </div>
+      </label>
+      </a>
+    </div>
+
+    <div id="felç" class="disease" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <h2 style="position:relative;float:right;top:1vh;right:3vh;color:DarkRed;font-family:arial;font-size:4vh;">--ACİL--</h2>
+        <ol>
+          <li class="koldüşmesi">kol düşmesi</li>
+          <li class="yüzfelci">yüz felci</li>
+          <li class="konuşmagüçlüğü">konuşma güçlüğü</li>
+          <li class="hemipleji">hemipleji</li>
+        </ol>
+      </div>
+      <a style="color:black" href="diseases/felç.htm" target="_blank">
+      <label onclick="diseasecolor()" for="felç">
+      <img src="symptomPhotos/felç.jpg" alt="felç">
+      <div class="diseasesubtext">
+        <div class="diseaseName">
+          <span>Serebrovasküler Olay - Felç<i style="display:none;">SVO,svo,cerebrovascular event</i></span>
+        </div>
+      </div>
+      </label>
+      </a>
+    </div>
+
+    <div id="pah" class="disease" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ol>
+          <li class="kladikasyo">intermittant kladikasyo(50-100 metre yürümekle merdiven çıkarken ya da dikiş dikerken başlayan ağrı)</li>
+          <li class="kasağrısı">kas ağrısı</li>
+          <li class="kaskrampları">kas krampları</li>
+          <li class="elayaküşüme">Diğer bacakla kıyaslandığında arter tıkanıklığı olan bacak soğuktur</li>
+          <li class="kasgüçsüzlüğü">bacakta güçsüzlük</li>
+          <li class="elayakhissizlik">bacakta his kaybı</li>
+          <li class="zayıfnabız">ekstremitelerde zayıf ya da hiç olmayan nabız</li>
+          <li class="kalçaağrısı">kalça ağrısı(hareket sonrası)</li>
+          <li class="kalfağrısı">kalf ağrısı(hareket sonrası)</li>
+          <li class="parlakcilt">bacak derisi parlak gözükür</li>
+          <li class="deriderenkdeğişimi">bacakta renk değişimi</li>
+          <li class="yavaşgelişentırnak">yavaş gelişen ayak tırnağı</li>
+          <li class="yaraiyileşmesindegecikme">ayak ve bacaklarda iyileşmeyen yaralar</li>
+          <li class="erektildisfonksyon">erektil disfonksyon</li>
+          <li class="alopesi">bacakta kıl uzaması gecikir ya da tamamen biter</li>
+        </ol>
+      </div>
+      <a style="color:black" href="diseases/pah.htm" target="_blank">
+      <label onclick="diseasecolor()" for="pah">
+      <img src="symptomPhotos/pah.jpg" alt="pah">
+      <div class="diseasesubtext">
+        <div class="diseaseName">
+          <span>Periferik arter hastalığı<i style="display:none;"></i></span>
+        </div>
+      </div>
+      </label>
+      </a>
+    </div>
+
+    <div id="dvthastalık" class="disease" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ol>
+          <li class="ödem">Ekstremitelerde şişme</li>
+          <li class="kolağrısı kasağrısı">kol ağrısı & hassasiyeti</li>
+          <li class="kalfağrısı">kalf & bacak ağrısı, hassasiyeti</li>
+          <li class="deriderenkdeğişimi">ağrılı bölgede renk kaybı</li>
+          <li class="cilttekızarıklık">ağrılı bölgede kızarma & ısı artışı</li>
+          <li class="tromboflebit">cilde yakın venler sert ağrılı ve büyümüştür</li>
+          <li class="karınağrısı yanağrısı">pıhtı karındaki venleri etkilerse karın/yan ağrısı yapar</li>
+          <li class="başağrısı">pıhtı beyin venlerini tıkarsa baş ağrısı yapar</li>
+        </ol>
+      </div>
+      <a style="color:black" href="diseases/dvthastalık.htm" target="_blank">
+      <label onclick="diseasecolor()" for="dvthastalık">
+      <img src="symptomPhotos/dvt.jpg" alt="dvthastalık">
+      <div class="diseasesubtext">
+        <div class="diseaseName">
+          <span>Derin Ven Trombozu<i style="display:none;"></i></span>
+        </div>
+      </div>
+      </label>
+      </a>
+    </div>
+
+    <div id="horner" class="disease" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ol>
+          <li class="miyozis">myozis</li>
+          <li class="ptozis">ptozis</li>
+          <li class="anhidrozis"> yüzün yarısında anhidrozis</li>
+          <li class="enoftalmus">enoftalmus</li>
+        </ol>
+      </div>
+      <a style="color:black" href="diseases/horner.htm" target="_blank">
+      <label onclick="diseasecolor()" for="horner">
+      <img src="symptomPhotos/horner.jpg" alt="horner">
+      <div class="diseasesubtext">
+        <div class="diseaseName">
+          <span>Horner Sendromu<i style="display:none;"></i></span>
+        </div>
+      </div>
+      </label>
+      </a>
+    </div>
+
+    <div id="pnömotorax" class="disease" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <h2 style="position:relative;float:right;top:1vh;right:3vh;color:DarkRed;font-family:arial;font-size:4vh;">--ACİL--</h2>
+        <ol>
+          <li class="göğüsağrısı">keskin bıçak batar gibi nefes almakla kötüleşen göğüs ağrısı</li>
+          <li class="nefesdarlığı">nefes darlığı</li>
+          <li class="siyanoz">siyanoz</li>
+          <li class="halsizlik">halsizlik</li>
+          <li class="taşikardi">taşikardi</li>
+          <li class="taşipne">taşipne</li>
+          <li class="öksürük">kuru öksürük</li>
+        </ol>
+      </div>
+      <a style="color:black" href="diseases/pnömotorax.htm" target="_blank">
+      <label onclick="diseasecolor()" for="pnömotorax">
+      <img src="symptomPhotos/pnömotorax.jpg" alt="pnömotorax">
+      <div class="diseasesubtext">
+        <div class="diseaseName">
+          <span>Pnömotorax<i style="display:none;"></i></span>
+        </div>
+      </div>
+      </label>
+      </a>
+    </div>
+
+    <div id="pulmoneremboli" class="disease" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <h2 style="position:relative;float:right;top:1vh;right:3vh;color:DarkRed;font-family:arial;font-size:4vh;">--ACİL--</h2>
+        <ol>
+          <li class="nefesdarlığı">nefes darlığı</li>
+          <li class="göğüsağrısı">keskin nefes almakla artan göğüs ağrısı(plöretik)</li>
+          <li class="bilinçkaybı">bilinç kaybı & bayılma & senkop</li>
+          <li class="öksürük hemoptizi">hemoptizi ya da kanlı mukuslu olabilen öksürük</li>
+          <li class="kalpçarpıntısı">kalp çarpıntısı</li>
+          <li class="taşikardi">taşikardi</li>
+          <li class="başdönmesi">baş dönmesi</li>
+          <li class="terleme">aşırı terleme</li>
+          <li class="ateş">ateş</li>
+          <li class="kalfağrısı">kalf & bacak ağrısı</li>
+          <li class="ödem">bacakta ödem</li>
+          <li class="siyanoz">siyanoz</li>
+        </ol>
+      </div>
+      <a style="color:black" href="diseases/pulmoneremboli.htm" target="_blank">
+      <label onclick="diseasecolor()" for="pulmoneremboli">
+      <img src="symptomPhotos/pulmoneremboli.jpg" alt="pulmoneremboli">
+      <div class="diseasesubtext">
+        <div class="diseaseName">
+          <span>Pulmoner emboli<i style="display:none;"></i></span>
+        </div>
+      </div>
+      </label>
+      </a>
+    </div>
+
+    <div id="hhod" class="disease" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <h2 style="position:relative;float:right;top:1vh;right:3vh;color:DarkRed;font-family:arial;font-size:4vh;">--ACİL--</h2>
+        <ol>
+          <li class="hiperglisemi">hiperglisemi(600mg/dl üzerinde)</li>
+          <li class="konfüzyon">konfüzyon</li>
+          <li class="halüsinasyon">halüsinasyon</li>
+          <li class="bilinçkaybı">bilinç kaybı & bayılma & senkop</li>
+          <li class="polidipsi">polidipsi</li>
+          <li class="ağızdakuruma">ağızda kuruma</li>
+          <li class="pollaküri">pollaküri % sık idrara çıkma</li>
+          <li class="bulanıkgörme">bulanık görme</li>
+          <li class="görmekaybı">görme kaybı</li>
+          <li class="hemipleji">hemipleji</li>
+        </ol>
+      </div>
+      <a style="color:black" href="diseases/hhod.htm" target="_blank">
+      <label onclick="diseasecolor()" for="hhod">
+      <img src="symptomPhotos/hhod.jpg" alt="hhod">
+      <div class="diseasesubtext">
+        <div class="diseaseName">
+          <span>HHOD - hiperglisemik hiperosmolar durum<i style="display:none;"></i></span>
+        </div>
+      </div>
+      </label>
+      </a>
+    </div>
+
+    <div id="dka" class="disease" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <h2 style="position:relative;float:right;top:1vh;right:3vh;color:DarkRed;font-family:arial;font-size:4vh;">--ACİL--</h2>
+        <ol>
+          <li class="polidipsi">polidipsi & çok susama</li>
+          <li class="poliüri">poliüri & idrar miktarında artma</li>
+          <li class="pollaküri">pollaküri & sık idrar çıkma</li>
+          <li class="taşipne">taşipne(hızlı ve derin soluma)</li>
+          <li class="kurucilt">kuru cilt</li>
+          <li class="ağızdakuruma">ağızda kuruma</li>
+          <li class="cilttekızarıklık">Yüzde kızarma</li>
+          <li class="nefeskokusu">Meyve kokan nefes</li>
+          <li class="başağrısı">baş ağrısı</li>
+          <li class="kasağrısı">kas ağrısı</li>
+          <li class="karınağrısı">karın ağrısı</li>
+          <li class="midebulantısı">mide bulantısı</li>
+          <li class="kusma">kusma</li>
+          <li class="sıkuyku halsizlik">aşırı yorgun olma hali</li>
+        </ol>
+      </div>
+      <a style="color:black" href="diseases/dka.htm" target="_blank">
+      <label onclick="diseasecolor()" for="dka">
+      <img src="symptomPhotos/dka.jpg" alt="dka">
+      <div class="diseasesubtext">
+        <div class="diseaseName">
+          <span>Diyabetik Ketoasidoz<i style="display:none;"></i></span>
+        </div>
+      </div>
+      </label>
+      </a>
+    </div>
+
+    <div id="mitralstenoz" class="disease" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ol>
+          <li class="nefesdarlığı">nefes darlığı(özellikle aktiviteyle ya da uzanınca artan)</li>
+          <li class="halsizlik">halsizlik(aktiviteyle artan)</li>
+          <li class="cilttekızarıklık siyanoz">yanaklarda kızarma dudakta morarma - facies mitrale</li>
+          <li class="ödem">el ve ayaklarda ödem & şişkinlik</li>
+          <li class="taşikardi">taşikardi</li>
+          <li class="kalpçarpıntısı">kalp çarpıntısı</li>
+          <li class="aritmi">kalpte ritim bozukluğu & aritmi</li>
+          <li class="başdönmesi">baş dönmesi</li>
+          <li class="bilinçkaybı">bilinç kaybı & bayılma & senkop</li>
+          <li class="kalpteüfürüm">kalpte üfürüm</li>
+          <li class="plevralefüzyonsemptom">plevralefüzyon</li>
+          <li class="hemoptizi">hemoptizi</li>
+          <li class="göğüsağrısı">göğüs ağrısı</li>
+        </ol>
+      </div>
+      <a style="color:black" href="diseases/mitralstenoz.htm" target="_blank">
+      <label onclick="diseasecolor()" for="mitralstenoz">
+      <img src="symptomPhotos/mitralstenoz.jpg" alt="mitralstenoz">
+      <div class="diseasesubtext">
+        <div class="diseaseName">
+          <span>mitral stenoz<i style="display:none;"></i></span>
+        </div>
+      </div>
+      </label>
+      </a>
+    </div>
+
+    <div id="febrilnötropeni" class="disease" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <h2 style="position:relative;float:right;top:1vh;right:3vh;color:DarkRed;font-family:arial;font-size:4vh;">--ACİL--</h2>
+        <ol>
+          <li class="ateş yüksekateş">ateş - oral ateşin 38.3 derece üzerinde olması ya da 38 derece üzerinde bir saat boyunca kalması</li>
+          <li class="">nötrofil sayısının mikrolitrede 500'ün altında olması ya da 48 saat içerisinde 500'ün altına inmesinin beklenmesi</li>
+        </ol>
+      </div>
+      <a style="color:black" href="diseases/febrilnötropeni.htm" target="_blank">
+      <label onclick="diseasecolor()" for="febrilnötropeni">
+      <img src="symptomPhotos/febrilnötropeni.jpg" alt="febrilnötropeni">
+      <div class="diseasesubtext">
+        <div class="diseaseName">
+          <span>febril nötropeni<i style="display:none;"></i></span>
+        </div>
+      </div>
+      </label>
+      </a>
+    </div>
+
+    <div id="nörojenikşok" class="disease" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <h2 style="position:relative;float:right;top:1vh;right:3vh;color:DarkRed;font-family:arial;font-size:4vh;">--ACİL--</h2>
+        <ol>
+          <li class="hipotansyon">hipotansyon</li>
+          <li class="bradikardi">bradikardi</li>
+          <li class="aritmi">kalpte ritim bozukluğu & aritmi</li>
+          <li class="cilttekızarıklık ciltteısıartışı">cilt önce kızarır ve ılık olur sonra soğuk ve nemli bir hal alır</li>
+          <li class="siyanoz">dudak ve tırnaklar siyanotiktir</li>
+          <li class="bilinçkaybı">bilinç kaybı & bayılma & senkop</li>
+        </ol>
+      </div>
+      <a style="color:black" href="diseases/nörojenikşok.htm" target="_blank">
+      <label onclick="diseasecolor()" for="nörojenikşok">
+      <img src="symptomPhotos/nörojenikşok.jpg" alt="nörojenikşok">
+      <div class="diseasesubtext">
+        <div class="diseaseName">
+          <span>Nörojenik şok(Distribütif & Vazodilatatör)<i style="display:none;"></i></span>
+        </div>
+      </div>
+      </label>
+      </a>
+    </div>
+
+    <div id="septikşok" class="disease" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <h2 style="position:relative;float:right;top:1vh;right:3vh;color:DarkRed;font-family:arial;font-size:4vh;">--ACİL--</h2>
+        <ol>
+          <li class="taşikardi">taşikardi</li>
+          <li class="ateş">ateş</li>
+          <li class="üşüme">hipotermi</li>
+          <li class="ciltteısıartışı">Ciltte ılıklaşma</li>
+          <li class="terleme">terli cilt</li>
+          <li class="konfüzyon">konfüzyon</li>
+          <li class="taşipne">taşipne</li>
+          <li class="nefesdarlığı">nefes darlığı</li>
+          <li class="hipotansyon">hipotansyon</li>
+          <li class="başdönmesi">baş dönmesi</li>
+          <li class="oligüri">oligüri & anüri</li>
+          <li class="kalpçarpıntısı">kalp çarpıntısı</li>
+          <li class="elayaküşüme">soğuk ve soluk ekstremiteler</li>
+          <li class="cilttekızarıklık">ciltte kızarıklık</li>
+        </ol>
+      </div>
+      <a style="color:black" href="diseases/septikşok.htm" target="_blank">
+      <label onclick="diseasecolor()" for="septikşok">
+      <img src="symptomPhotos/septikşok.jpg" alt="septikşok">
+      <div class="diseasesubtext">
+        <div class="diseaseName">
+          <span>septik şok(Distribütif & Vazodilatatör )<i style="display:none;"></i></span>
+        </div>
+      </div>
+      </label>
+      </a>
+    </div>
+
+    <div id="anaflaksi" class="disease" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ol>
+          <li class="kaşıntı">kaşıntı</li>
+          <li class="cilttekızarıklık">ciltte kızarıklık</li>
+          <li class="ödem">göz dudak el ayakta şişlik</li>
+          <li class="başdönmesi">baş dönmesi</li>
+          <li class="bilinçkaybı">bayılma & senkop & bilinç kaybı</li>
+          <li class="dildekalınlaşma">dil ağız boğaz şişmesine bağlı yutma ve nefes almada güçlük</li>
+          <li class="wheezing">wheezing</li>
+          <li class="karınağrısı">karın ağrısı</li>
+          <li class="midebulantısı">mide bulantısı</li>
+          <li class="kusma">kusma</li>
+        </ol>
+      </div>
+      <a style="color:black" href="diseases/anaflaksi.htm" target="_blank">
+      <label onclick="diseasecolor()" for="anaflaksi">
+      <img src="symptomPhotos/anaflaksi.jpg" alt="anaflaksi">
+      <div class="diseasesubtext">
+        <div class="diseaseName">
+          <span>anaflaksi (Distribütif & Vazodilatatör)<i style="display:none;"></i></span>
+        </div>
+      </div>
+      </label>
+      </a>
+    </div>
+
+    <div id="kardiyojenikşok" class="disease" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ol>
+          <li class="taşipne">taşipne</li>
+          <li class="nefesdarlığı">cidd nefes darlığı</li>
+          <li class="taşikardi">taşikardi</li>
+          <li class="bilinçkaybı">bilinç kaybı & bayılma & senkop</li>
+          <li class="zayıfnabız">nabız zayıflığı</li>
+          <li class="hipotansyon">hipotansyon</li>
+          <li class="terleme">terleme</li>
+          <li class="cilttesolukluk">ciltte solukluk</li>
+          <li class="elayaküşüme">el ve ayakta üşüme</li>
+          <li class="oligüri">oligüri & anüri</li>
+          <li class="göğüsağrısı">göğüs ağrısı(MI'ya bağlıysa)</li>
+          <li class="omuzağrısı sırtağrısı kolağrısı çeneağrısı">omuz kol sırt çene ağrısı(MI'ya bağlıysa)</li>
+          <li class="başdönmesi">baş dönmesi(MI'ya bağlıysa)</li>
+          <li class="midebulantısı">mide bulantısı(MI'ya bağlıysa)</li>
+          <li class="kusma">kusma(MI'ya bağlıysa)</li>
+        </ol>
+      </div>
+      <a style="color:black" href="diseases/kardiyojenikşok.htm" target="_blank">
+      <label onclick="diseasecolor()" for="kardiyojenikşok">
+      <img src="symptomPhotos/kardiyojenikşok.jpg" alt="kardiyojenikşok">
+      <div class="diseasesubtext">
+        <div class="diseaseName">
+          <span>kardiyojenik şok<i style="display:none;"></i></span>
+        </div>
+      </div>
+      </label>
+      </a>
+    </div>
+
+    <div id="hipovolemikşok" class="disease" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ol>
+          <li class="taşipne">taşipne</li>
+          <li class="konfüzyon">konfüzyon</li>
+          <li class="anksiyete">anksiyete(endişe ve korku hali)</li>
+          <li class="terleme">terleme</li>
+          <li class="bilinçkaybı">bilinç kaybı & bayılma & senkop</li>
+          <li class="elayaküşüme">soğuk cilt</li>
+          <li class="üşüme">hipotermi</li>
+          <li class="halsizlik">halsizlik</li>
+          <li class="hipotansyon">hipotansyon</li>
+          <li class="taşikardi">taşikardi</li>
+        </ol>
+      </div>
+      <a style="color:black" href="diseases/hipovolemikşok.htm" target="_blank">
+      <label onclick="diseasecolor()" for="hipovolemikşok">
+      <img src="symptomPhotos/hipovolemikşok.jpg" alt="hipovolemikşok">
+      <div class="diseasesubtext">
+        <div class="diseaseName">
+          <span>hipovolemik şok<i style="display:none;"></i></span>
+        </div>
+      </div>
+      </label>
+      </a>
+    </div>
+
+    <div id="obstrüktifşok" class="disease" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ol>
+          <li class="taşipne">taşipne</li>
+          <li class="hipotansyon">hipotansyon</li>
+          <li class="taşikardi">taşikardi</li>
+          <li class="konfüzyon">konfüzyon</li>
+          <li class="oligüri">oligüri</li>
+          <li class="elayaküşüme">soğuk nemli cilt</li>
+          <li class="subkutanözamfizem">subkutanöz amfizem</li>
+          <li class="göğüsağrısı">göğüs ağrısı</li>
+          <li class="karınağrısı">karın ağrısı</li>
+        </ol>
+      </div>
+      <a style="color:black" href="diseases/obstrüktifşok.htm" target="_blank">
+      <label onclick="diseasecolor()" for="obstrüktifşok">
+      <img src="symptomPhotos/obstrüktifşok.jpg" alt="obstrüktifşok">
+      <div class="diseasesubtext">
+        <div class="diseaseName">
+          <span>obstrüktif şok<i style="display:none;"></i></span>
+        </div>
+      </div>
+      </label>
+      </a>
+    </div>
+
+    <div id="nefritiksendrom" class="disease" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ol>
+          <li class="hematüri">hematüri</li>
+          <li class="oligüri">oligüri</li>
+          <li class="ödem yüzdeödem pretibialödem periorbitalödem">yüz periorbital bacak kol el ayak karın ve diğer bölgelerde ödem</li>
+          <li class="hipertansyon">hipertansyon</li>
+          <li class="bulanıkgörme">bulanık görme(gözün retinasındaki bir damarın patlamasına bağlı)</li>
+          <li class="öksürük">balgamlı(mukuslu ya da pembe köpüklü) öksürük</li>
+          <li class="nefesdarlığı plevralefüzyon">plevral efüzyona bağlı nefes darlığı</li>
+          <li class="halsizlik">halsizlik</li>
+          <li class="başdönmesi">baş dönmesi</li>
+          <li class="konfüzyon">konfüzyon</li>
+          <li class="hepatomegali">hepatomegali</li>
+          <li class="venlerdegenişleme"> juguler(boyun) venlerde genişleme</li>
+          <li class="başağrısı">baş ağrısı</li>
+        </ol>
+      </div>
+      <a style="color:black" href="diseases/nefritiksendrom.htm" target="_blank">
+      <label onclick="diseasecolor()" for="nefritiksendrom">
+      <img src="symptomPhotos/nefritiksendrom.jpg" alt="nefritiksendrom">
+      <div class="diseasesubtext">
+        <div class="diseaseName">
+          <span>nefritik sendrom<i style="display:none;"></i></span>
+        </div>
+      </div>
+      </label>
+      </a>
+    </div>
+
+    <div id="nefrotiksendrom" class="disease" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ol>
+          <li class="proteinüri">proteinüri</li>
+          <li class="hipoalbüminemi">hipoalbüminemi</li>
+          <li class="ödem periorbitalödem">ödem bilhassa periorbital, el ve ayaklarda</li>
+          <li class="hiperlipidemi">yüksek kolesterol</li>
+          <li class="hipertansyon">hipertansyon</li>
+          <li class="kiloalma">ödeme bağlı kilo artışı</li>
+          <li class="ateş">enfeksyon belirtileri ateş ya da wbc artışı</li>
+          <li class="köpüksüidrar">köpüksü idrar</li>
+        </ol>
+      </div>
+      <a style="color:black" href="diseases/nefrotiksendrom.htm" target="_blank">
+      <label onclick="diseasecolor()" for="nefrotiksendrom">
+      <img src="symptomPhotos/nefrotiksendrom.jpg" alt="nefrotiksendrom">
+      <div class="diseasesubtext">
+        <div class="diseaseName">
+          <span>nefrotik sendrom<i style="display:none;"></i></span>
+        </div>
+      </div>
+      </label>
+      </a>
+    </div>
+
+    <div id="triküspitstenozu" class="disease" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ol>
+          <li class="halsizlik">giderek artan halsizlik</li>
+          <li class="kilokaybı">kilo kaybı</li>
+          <li class="hipotansyon">hipotansyon</li>
+          <li class="hepatomegali">hepatomegali</li>
+          <li class="venlerdegenişleme">juguler ven dolgunluğu</li>
+          <li class="sarılık">sarılık</li>
+          <li class="iştahkaybı">iştah kaybı</li>
+          <li class="dispne">paroksismal noktürnal dispne</li>
+          <li class="ortopne">ortopne</li>
+        </ol>
+      </div>
+      <a style="color:black" href="diseases/triküspitstenozu.htm" target="_blank">
+      <label onclick="diseasecolor()" for="triküspitstenozu">
+      <img src="symptomPhotos/triküspitstenozu.jpg" alt="triküspitstenozu">
+      <div class="diseasesubtext">
+        <div class="diseaseName">
+          <span>triküspit stenozu<i style="display:none;"></i></span>
+        </div>
+      </div>
+      </label>
+      </a>
+    </div>
+
+    <div id="üsye" class="disease" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ol>
+          <li class="öksürük">öksürük</li>
+          <li class="ateş">ateş</li>
+          <li class="sestekabalaşma">seste kabalaşma</li>
+          <li class="halsizlik">halsizlik</li>
+          <li class="gözdekızarma">gözde kızarma</li>
+          <li class="burunakıntısı">burun akıntısı</li>
+          <li class="boğazağrısı">boğaz ağrısı</li>
+          <li class="şişkinlenf">boyundaki lenflerin şişkin olması</li>
+        </ol>
+      </div>
+      <a style="color:black" href="diseases/üsye.htm" target="_blank">
+      <label onclick="diseasecolor()" for="üsye">
+      <img src="symptomPhotos/üsye.jpg" alt="üsye">
+      <div class="diseasesubtext">
+        <div class="diseaseName">
+          <span>ÜSYE<i style="display:none;"></i></span>
+        </div>
+      </div>
+      </label>
+      </a>
+    </div>
+
+    <div id="kibas" class="disease" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <h2 style="position:relative;float:right;top:1vh;right:3vh;color:DarkRed;font-family:arial;font-size:4vh;">--ACİL--</h2>
+        <ol>
+          <li class="papilödem">papilödem(KİBAS düşünülen hastada göz doktorundan konsültasyon istenir ve papil ödem bakılır)</li>
+          <li class="kusma">kusma</li>
+          <li class="başağrısı">baş ağrısı</li>
+          <li class="bulanıkgörme">bulanık görme</li>
+          <li class="nöbet">nöbet</li>
+          <li class="konuşmagüçlüğü">konuşma güçlüğü / dizartri</li>
+          <li class="konfüzyon">konfüzyon</li>
+          <li class="davranışdeğişikliği">davranış değişikliği</li>
+          <li class="yüzeyelnefes">yüzeyel nefes alma</li>
+          <li class="hipertansyon">hipertansyon</li>
+          <li class="pupilrefleksanomalisi">pupil refleks anomalisi</li>
+          <li class="bradikardi">bradikardi</li>
+          <li class="bradipne">bradipne</li>
+        </ol>
+      </div>
+      <a style="color:black" href="diseases/kibas.htm" target="_blank">
+      <label onclick="diseasecolor()" for="kibas">
+      <img src="symptomPhotos/kibas.jpg" alt="kibas">
+      <div class="diseasesubtext">
+        <div class="diseaseName">
+          <span>kibas<i style="display:none;"></i></span>
+        </div>
+      </div>
+      </label>
+      </a>
+    </div>
+
+    <div id="kalptamponadı" class="disease" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <h2 style="position:relative;float:right;top:1vh;right:3vh;color:DarkRed;font-family:arial;font-size:4vh;">--ACİL--</h2>
+        <ol>
+          <li class="venlerdegenişleme">venöz distansyon</li>
+          <li class="hipotansyon">hipotansyon</li>
+          <li class="kalpseslerindeazalma">boğuk ve azalmış kalp sesleri</li>
+          <li class="ascites">ascites</li>
+          <li class="göğüsağrısı kolağrısı omuzağrısı boyunağrısı">keskin göğüs ağrısı, kol boyun veya omuza yansıyabilir.Derin nefes almayla sırt üstü uzanmakla veya öksürükle artabilir</li>
+          <li class="nefesdarlığı">nefes darlığı</li>
+          <li class="taşipne">taşipne</li>
+          <li class="başdönmesi">Baş dönmesi</li>
+          <li class="bilinçkaybı">Bayılma, bilinç kaybı</li>
+          <li class="deriderenkdeğişimi">deride renk değişimi soluk,gri ya da mavimsi</li>
+          <li class="kalpçarpıntısı">kalp çarpıntısı</li>
+          <li class="taşikardi">taşikardi</li>
+          <li class="konfüzyon">konfüzyon</li>
+          <li class="ödem pretibialödem">ayak bileği ödemi, yavaş ilerleyen olgularda</li>
+        </ol>
+      </div>
+      <a style="color:black" href="diseases/kalptamponadı.htm" target="_blank">
+      <label onclick="diseasecolor()" for="kalptamponadı">
+      <img src="symptomPhotos/kalptamponadı.jpg" alt="kalptamponadı">
+      <div class="diseasesubtext">
+        <div class="diseaseName">
+          <span>kalp tamponadı<i style="display:none;"></i></span>
+        </div>
+      </div>
+      </label>
+      </a>
+    </div>
+
+    <div id="polikistikoversendromu" class="disease" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ol>
+          <li class="amenore">amenore</li>
+          <li class="virilizasyon">virilizasyon & hirşutizm & kadında kıllanma artışı</li>
+          <li class="kiloalma">kilo alma özellikle bel çervesinde</li>
+          <li class="alopesi">alopesi & erkek tipi kellik ya da saç zayıflaması</li>
+          <li class="akne">akne</li>
+          <li class="irregülermenstürasyon">irregüler menstürasyon</li>
+          <li class="etbeni">et beni & skin tag</li>
+          <li class="infertilite">infertilite</li>
+          <li class="akantozisnigrikans">akantozis nigrikans & koyu ve kalın deri yamaları boynun arkası, koltuk altı ve meme altında sıktır</li>
+        </ol>
+      </div>
+      <a style="color:black" href="diseases/polikistikoversendromu.htm" target="_blank">
+      <label onclick="diseasecolor()" for="polikistikoversendromu">
+      <img src="symptomPhotos/polikistikoversendromu.jpg" alt="polikistikoversendromu">
+      <div class="diseasesubtext">
+        <div class="diseaseName">
+          <span>polikistik over sendromu<i style="display:none;"></i></span>
+        </div>
+      </div>
+      </label>
+      </a>
+    </div>
+
+    <div id="febrilkonvülzyon" class="disease" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ol>
+          <li class="yüksekateş">ateş 38C üzerinde </li>
+          <li class="bilinçkaybı">bilinç kaybı</li>
+          <li class="nöbet">nöbet & el ayaklarda titreme kasılmalar</li>
+        </ol>
+      </div>
+      <a style="color:black" href="diseases/febrilkonvülzyon.htm" target="_blank">
+      <label onclick="diseasecolor()" for="febrilkonvülzyon">
+      <img src="symptomPhotos/febrilkonvülzyon.jpg" alt="febrilkonvülzyon">
+      <div class="diseasesubtext">
+        <div class="diseaseName">
+          <span>febril konvülzyon<i style="display:none;"></i></span>
+        </div>
+      </div>
+      </label>
+      </a>
+    </div>
+
+    <div id="gut" class="disease" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ol>
+          <li class="eklemağrısı">bir veya birden fazla eklemde ani başlayan şiddetli eklem ağrısı, tipik olarak ayak başparmağı</li>
+          <li class="eklemsertliği">eklem sertliği</li>
+          <li class="eklemdeşişlik">eklem sıcak ve hassastır, hasta dokunulmasına dayanamaz</li>
+          <li class="kaşıntı">kaşıntı</li>
+          <li class="cilttesoyulma">ciltte soyulma</li>
+          <li class="ödem">eklem etrafında şişlik</li>
+        </ol>
+      </div>
+      <a style="color:black" href="diseases/gut.htm" target="_blank">
+      <label onclick="diseasecolor()" for="gut">
+      <img src="symptomPhotos/gut.jpg" alt="gut">
+      <div class="diseasesubtext">
+        <div class="diseaseName">
+          <span>gut<i style="display:none;"></i></span>
+        </div>
+      </div>
+      </label>
+      </a>
+    </div>
+
+    <div id="çölyak" class="disease" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ol>
+          <li class="ishal">ishal</li>
+          <li class="deasemptom">demir eksikliği anemisi</li>
+          <li class="halsizlik">halsizlik</li>
+          <li class="kaşıntı cilttekızarıklık">kaşıntılı büllü kızarık cilt lezyonu(dermatitis herpetiformis)</li>
+          <li class="kilokaybı">kilo kaybı</li>
+          <li class="karındaşişkinlik">karında şişkinlik</li>
+          <li class="karınağrısı">karın ağrısı</li>
+          <li class="midebulantısı">mide bulantısı</li>
+          <li class="kusma">kusma</li>
+          <li class="kabızlık">kabızlık</li>
+          <li class="ağızdayara">ağızda yara & ülser</li>
+          <li class="kötükokuludışkı">kötü kokulu dışkı</li>
+          <li class="büyümegeriliği">büyüme & gelişme geriliği, boy kısalığı</li>
+          <li class="pubertedegecikme">pubertede gecikme</li>
+        </ol>
+      </div>
+      <a style="color:black" href="diseases/çölyak.htm" target="_blank">
+      <label onclick="diseasecolor()" for="çölyak">
+      <img src="symptomPhotos/çölyak.jpg" alt="çölyak">
+      <div class="diseasesubtext">
+        <div class="diseaseName">
+          <span>çölyak hastalığı<i style="display:none;"></i></span>
+        </div>
+      </div>
+      </label>
+      </a>
+    </div>
+
+    <div id="kaudaequina" class="disease" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ol>
+          <li class="elayakhissizlik">kalf arka baldır kalça arkası uyluk iç kısımlarında(at binince eyere değen bölgeler) hissizlik ya da farklı bir his</li>
+          <li class="sırtağrısı kalfağrısı">Sırttan bacağa doğru siyatik ağrısı</li>
+          <li class="libidokaybı">Cinsel sorunlar</li>
+          <li class="fekalinkontinans ürinerinkontinans">fekal & üriner inkontinans</li>
+          <li class="ürinerretansiyon">üriner retansyon(idrar yapamama)</li>
+          <li class="kasgüçsüzlüğü">alt ekstremitelerde kas güçsüzlüğü ya da paralizi</li>
+          <li class="parestezi">alt ekstremitelerde karıncalanma, yanma benzeri his(parestezi)</li>
+        </ol>
+      </div>
+      <a style="color:black" href="diseases/kaudaequina.htm" target="_blank">
+      <label onclick="diseasecolor()" for="kaudaequina">
+      <img src="symptomPhotos/kaudaequina.jpg" alt="kaudaequina">
+      <div class="diseasesubtext">
+        <div class="diseaseName">
+          <span>kauda equina sendromu<i style="display:none;"></i></span>
+        </div>
+      </div>
+      </label>
+      </a>
+    </div>
+
+    <div id="septikartrit" class="disease" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <h2 style="position:relative;float:right;top:1vh;right:3vh;color:DarkRed;font-family:arial;font-size:4vh;">--ACİL--</h2>
+        <ol>
+          <li class="eklemdeşişlik">eklemde şişlik özellikle alt ekstremitede tek eklemi tutar</li>
+          <li class="eklemağrısı">eklem ağrısı</li>
+          <li class="ateş">ateş</li>
+          <li class="cilttekızarıklık">Etkilenen bölgede kızarma</li>
+          <li class="eklemsertliği">eklemde hareket kısıtlılığı</li>
+          <li class="üşüme">üşüme hissi</li>
+          <li class="halsizlik">halsizlik</li>
+          <li class="iştahkaybı">iştah kaybı</li>
+          <li class="ekstremitedeişlevbozukluğu">etkilenen uzuvda işlev azalmıştır</li>
+        </ol>
+      </div>
+      <a style="color:black" href="diseases/septikartrit.htm" target="_blank">
+      <label onclick="diseasecolor()" for="septikartrit">
+      <img src="symptomPhotos/septikartrit.jpg" alt="septikartrit">
+      <div class="diseasesubtext">
+        <div class="diseaseName">
+          <span>septik artrit<i style="display:none;"></i></span>
+        </div>
+      </div>
+      </label>
+      </a>
+    </div>
+
+    <div id="multiplemyelom" class="disease" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ol>
+          <li class="kemikağrısı">kemik ağrısı</li>
+          <li class="kemikdeformiteleri">spontan(nedeni belirsiz) kemik kırıkları</li>
+          <li class="anemisemptom">anemi</li>
+          <li class="hiperkalsemisemptom">hiperkalsemi</li>
+          <li class="halsizlik">halsizlik</li>
+          <li class="taşikardi">taşikardi</li>
+          <li class="nefesdarlığı">nefesdarlığı</li>
+          <li class="burunkanaması">şiddetli burun kanaması</li>
+          <li class="peteşipurpuraekimoz cilttemorarma">Hastanın cildinin kolayca morarması</li>
+          <li class="başdönmesi">baş dönmesi</li>
+          <li class="konfüzyon">konfüzyon</li>
+        </ol>
+      </div>
+      <a style="color:black" href="diseases/multiplemyelom.htm" target="_blank">
+      <label onclick="diseasecolor()" for="multiplemyelom">
+      <img src="symptomPhotos/multiplemyelom.jpg" alt="multiplemyelom">
+      <div class="diseasesubtext">
+        <div class="diseaseName">
+          <span>multiple myelom<i style="display:none;"></i></span>
+        </div>
+      </div>
+      </label>
+      </a>
+    </div>
+
+    <div id="uyuz" class="disease" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ol>
+          <li class="kaşıntı">Gece kaşıntısı, kaşıntı özellikle gece yatakta şiddetlenir , kaşıntı hastayı uykusundan uyandıracak niteliktedir</li>
+          <li class="ekskoriasyon">ekskoriasyon & hasta kendini kaşırken cildinde kaşıma yaraları oluşturur</li>
+          <li class="deridetünel">deride uyuzun yaptığı tünel benzeri lezyonları</li>
+        </ol>
+      </div>
+      <a style="color:black" href="diseases/uyuz.htm" target="_blank">
+      <label onclick="diseasecolor()" for="uyuz">
+      <img src="symptomPhotos/uyuz.jpg" alt="uyuz">
+      <div class="diseasesubtext">
+        <div class="diseaseName">
+          <span>uyuz<i style="display:none;"></i></span>
+        </div>
+      </div>
+      </label>
+      </a>
+    </div>
+
+    <div id="başbitlenmesi" class="disease" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ol>
+          <li class="kaşıntı">kaşıntı geceleri daha çoktur.En çok ense ve kulak arkası ve temporal bölge tutulur. Bu bölgeler çok kaşınır.</li>
+          <li class="ekskoriasyon">kaşımaya bağlı ekskoriasyonlar</li>
+          <li class="likenifikasyon">Likenifikasyon : kaşıma veya çizilmeye bağlı cilt kalınlaşması</li>
+          <li class="impetigo">impetigo ya da pyoderma : sarı skuamlı lezyon</li>
+          <li class="kötükoku">pis koku olabilir</li>
+        </ol>
+      </div>
+      <a style="color:black" href="diseases/başbitlenmesi.htm" target="_blank">
+      <label onclick="diseasecolor()" for="başbitlenmesi">
+      <img src="symptomPhotos/başbitlenmesi.jpg" alt="başbitlenmesi">
+      <div class="diseasesubtext">
+        <div class="diseaseName">
+          <span>baş bitlenmesi - pedikülozis capitis<i style="display:none;"></i></span>
+        </div>
+      </div>
+      </label>
+      </a>
+    </div>
+
+    <div id="gövdebitlenmesi" class="disease" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ol>
+          <li class="kaşıntı">kaşıntı</li>
+          <li class="ekskoriasyon">ekskoriasyon</li>
+        </ol>
+      </div>
+      <a style="color:black" href="diseases/gövdebitlenmesi.htm" target="_blank">
+      <label onclick="diseasecolor()" for="gövdebitlenmesi">
+      <img src="symptomPhotos/gövdebitlenmesi.jpg" alt="gövdebitlenmesi">
+      <div class="diseasesubtext">
+        <div class="diseaseName">
+          <span>gövde bitlenmesi- Pedikülozis Korporis<i style="display:none;"></i></span>
+        </div>
+      </div>
+      </label>
+      </a>
+    </div>
+
+    <div id="kasıkbitlenmesi" class="disease" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ol>
+          <li class="kaşıntı">hafif bir kaşıntı</li>
+          <li class="ekskoriasyon">ekskoriasyonlar nadir görülür</li>
+          <li class="şişkinlenf">İnguinal lenfadenopati görülebilir.</li>
+        </ol>
+      </div>
+      <a style="color:black" href="diseases/kasıkbitlenmesi.htm" target="_blank">
+      <label onclick="diseasecolor()" for="kasıkbitlenmesi">
+      <img src="symptomPhotos/kasıkbitlenmesi.jpg" alt="kasıkbitlenmesi">
+      <div class="diseasesubtext">
+        <div class="diseaseName">
+          <span>kasık bitlenmesi - Pedikülozis pubis<i style="display:none;"></i></span>
+        </div>
+      </div>
+      </label>
+      </a>
+    </div>
+
+    <div id="böcekısırması" class="disease" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ol>
+          <li class="vezikül">vezikül,hemorajik bül</li>
+          <li class="cilttekızarıklık">eritem</li>
+          <li class="ödem">ödem</li>
+          <li class="papül">ürtika papülü.Genellikle gövde ve ekstremitelerde gruplar halinde papüllere rastlanır </li>
+          <li class="kaşıntı">kaşıntı</li>
+        </ol>
+      </div>
+      <a style="color:black" href="diseases/böcekısırması.htm" target="_blank">
+      <label onclick="diseasecolor()" for="böcekısırması">
+      <img src="symptomPhotos/böcekısırması.jpg" alt="böcekısırması">
+      <div class="diseasesubtext">
+        <div class="diseaseName">
+          <span>böcek ısırması & arı,sinek sokması<i style="display:none;">karınca,tahtakurusu,haşere,pire,sivrisinek,tatarcık</i></span>
+        </div>
+      </div>
+      </label>
+      </a>
+    </div>
+
+    <div id="kutanözlanşmanyazis" class="disease" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ol>
+          <li class="ciltteyara">ülser ağrısız, nekrotik tabanlı ve endüre kenarlı olup altındaki dokuya sıkıca yapışık bir krutla örtülüdür.</li>
+          <li class="cilttekızarıklık">eritematöz papül şeklinde başlar</li>
+          <li class="skuam">krut kaldırıldığında altında ipliksi uzantılar görülür(Çivi belirtisi)</li>
+          <li class="ödem">ödemli lezyonlar</li>
+        </ol>
+      </div>
+      <a style="color:black" href="diseases/kutanözlanşmanyazis.htm" target="_blank">
+      <label onclick="diseasecolor()" for="kutanözlanşmanyazis">
+      <img src="symptomPhotos/kutanözlanşmanyazis.jpg" alt="kutanözlanşmanyazis">
+      <div class="diseasesubtext">
+        <div class="diseaseName">
+          <span>kutanöz lanşmanyazis - leishmaniasis<i style="display:none;"></i></span>
+        </div>
+      </div>
+      </label>
+      </a>
+    </div>
+
+    <div id="kızıl" class="disease" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ol>
+          <li class="çilekdil">çilek dil</li>
+          <li class="cilttekızarıklık">zımpara kağıdı dokusunda avuç içi ve ayaktabanının genelde korunduğu kızarıklık</li>
+          <li class="cilttesolukluk">ağız çevresinde solukluk</li>
+          <li class="midebulantısı">mide bulantısı</li>
+          <li class="kusma">kusma</li>
+        </ol>
+      </div>
+      <a style="color:black" href="diseases/kızıl.htm" target="_blank">
+      <label onclick="diseasecolor()" for="kızıl">
+      <img src="symptomPhotos/kızıl.jpg" alt="kızıl">
+      <div class="diseasesubtext">
+        <div class="diseaseName">
+          <span>kızıl<i style="display:none;">scarlet fever,kizil</i></span>
+        </div>
+      </div>
+      </label>
+      </a>
+    </div>
+
+    <div id="faranjit" class="disease" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ol>
+          <li class="boğazağrısı">anibaşlayan boğaz ağrısı</li>
+          <li class="ateş">ateş</li>
+          <li class="halsizlik">halsizlik</li>
+          <li class="başağrısı">baş ağrısı</li>
+          <li class="tonsildeşişme">tonsiller apse</li>
+          <li class="şişkinlenf">ön servikal lenf nodlarında hassasiyet</li>
+        </ol>
+      </div>
+      <a style="color:black" href="diseases/faranjit.htm" target="_blank">
+      <label onclick="diseasecolor()" for="faranjit">
+      <img src="symptomPhotos/faranjit.jpg" alt="faranjit">
+      <div class="diseasesubtext">
+        <div class="diseaseName">
+          <span>faranjit<i style="display:none;">farenjit,pharyngitis</i></span>
+        </div>
+      </div>
+      </label>
+      </a>
+    </div>
+
+    <div id="nekrotizanfasiit" class="disease" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <h2 style="position:relative;float:right;top:1vh;right:3vh;color:DarkRed;font-family:arial;font-size:4vh;">--ACİL--</h2>
+        <ol>
+          <li class="cilttekızarıklık">hızla yayılma eğiliminde olan kızarıklık</li>
+          <li class="ciltteısıartışı">ciltte ısı artışı</li>
+          <li class="ödem">ciltte hızlı yayılan şişlik</li>
+          <li class="ciltteyara">Kızarık alanın ötesinde ciddi ağrı, daha geç olarak ülserler gelişir yaradan akıntı ve irin gelebilir</li>
+          <li class="ateş">ateş</li>
+          <li class="vezikül">ciltte vezikül & bül</li>
+          <li class="deriderenkdeğişimi">cilt renginde değişme</li>
+          <li class="başdönmesi">baş dönmesi</li>
+          <li class="halsizlik">halsizlik</li>
+          <li class="midebulantısı">mide bulantısı</li>
+          <li class="ishal">ishal</li>
+        </ol>
+      </div>
+      <a style="color:black" href="diseases/nekrotizanfasiit.htm" target="_blank">
+      <label onclick="diseasecolor()" for="nekrotizanfasiit">
+      <img src="symptomPhotos/nekrotizanfasiit.jpg" alt="nekrotizanfasiit">
+      <div class="diseasesubtext">
+        <div class="diseaseName">
+          <span>nekrotizan fasiit<i style="display:none;">necrotizing fasciitis, fasiyit</i></span>
+        </div>
+      </div>
+      </label>
+      </a>
+    </div>
+
+    <div id="kolera" class="disease" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ol>
+          <li class="ishal">Pirinç suyu şeklinde günde 20 litreye kadar varabilen su kaybettirecek kadar ishal</li>
+          <li class="kusma">sürekli kusma</li>
+          <li class="dehidratasyon">dehidratasyon</li>
+          <li class="kaskrampları">kas krampları</li>
+          <li class="taşikardi">taşikardi</li>
+          <li class="hipotansyon">hipotansyon</li>
+        </ol>
+      </div>
+      <a style="color:black" href="diseases/kolera.htm" target="_blank">
+      <label onclick="diseasecolor()" for="kolera">
+      <img src="symptomPhotos/kolera.jpg" alt="kolera">
+      <div class="diseasesubtext">
+        <div class="diseaseName">
+          <span>kolera<i style="display:none;"></i></span>
+        </div>
+      </div>
+      </label>
+      </a>
+    </div>
+
+    <div id="iye" class="disease" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ol>
+          <li class="sıkidraraçıkma">sık idrara çıkma</li>
+          <li class="urgency">urgency / idrarın ani gelmesiyle lavaboya koşma</li>
+          <li class="hematüri">hematüri / kanlı idrar yapma</li>
+          <li class="dizüri">dizüri / ağrılı idrar yapma</li>
+          <li class="köpüksüidrar">idrarda köpüksü/bulutlu görünüm</li>
+          <li class="idrardakoyulaşma">idrar renginde koyulaşma</li>
+          <li class="yanağrısı">yan ağrısı</li>
+          <li class="ağrılıilişki">/koitusta ağrı / ağrılı ilişki</li>
+          <li class="hipogastrikağrı">hipogastrik/pelvik bölgede ağrı</li>
+        </ol>
+      </div>
+      <a style="color:black" href="diseases/iye.htm" target="_blank">
+      <label onclick="diseasecolor()" for="iye">
+      <img src="symptomPhotos/iye.jpg" alt="iye">
+      <div class="diseasesubtext">
+        <div class="diseaseName">
+          <span>İdrar yolu enfeksyonu<i style="display:none;">iye,İYE, enfeksiyon,idraryoluenfeksyonu,idraryoluenfeksiyonu</i></span>
+        </div>
+      </div>
+      </label>
+      </a>
+    </div>
+
+    <div id="shigella" class="disease" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ol>
+          <li class="ateş">ateş</li>
+          <li class="kanlıishal">kanlı ishal</li>
+          <li class="ishal">başlangıçta sulu sonra kanlı ishal</li>
+        </ol>
+      </div>
+      <a style="color:black" href="diseases/shigella.htm" target="_blank">
+      <label onclick="diseasecolor()" for="shigella">
+      <img src="symptomPhotos/shigella.jpg" alt="shigella">
+      <div class="diseasesubtext">
+        <div class="diseaseName">
+          <span>shigella<i style="display:none;"></i></span>
+        </div>
+      </div>
+      </label>
+      </a>
+    </div>
+
+    <div id="böbrektaşıhastalık" class="disease" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ol>
+          <li class="sıkidraraçıkma">sık idrara çıkma</li>
+          <li class="urgency">urgency / idrarın ani gelmesiyle lavaboya koşma</li>
+          <li class="hematüri">hematüri / kanlı idrar yapma</li>
+          <li class="dizüri">dizüri / ağrılı idrar yapma</li>
+          <li class="yanağrısı">yan ağrısı</li>
+          <li class="ateş">ateş</li>
+          <li class="midebulantısı">mide Bulantısı</li>
+          <li class="kusma">kusma</li>
+        </ol>
+      </div>
+      <a style="color:black" href="diseases/böbrektaşıhastalık.htm" target="_blank">
+      <label onclick="diseasecolor()" for="böbrektaşıhastalık">
+      <img src="symptomPhotos/böbrektaşıhastalık.jpg" alt="böbrektaşıhastalık">
+      <div class="diseasesubtext">
+        <div class="diseaseName">
+          <span>Böbrek taşı<i style="display:none;"></i></span>
+        </div>
+      </div>
+      </label>
+      </a>
+    </div>
+
+    <div id="ehec" class="disease" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ol>
+          <li class="kanlıishal">kanlı ishal</li>
+          <li class="">ANTİBİYOTİK VERİLMEZ !!(toksinler üzerinden etki eden shigella EHEC gibi bakterilerin enfeksiyonunda antibiyotikler kontrendikedir.)!!</li>
+        </ol>
+      </div>
+      <a style="color:black" href="diseases/ehec.htm" target="_blank">
+      <label onclick="diseasecolor()" for="ehec">
+      <img src="symptomPhotos/ehec.jpg" alt="ehec">
+      <div class="diseasesubtext">
+        <div class="diseaseName">
+          <span>ehec<i style="display:none;"></i></span>
+        </div>
+      </div>
+      </label>
+      </a>
+    </div>
+
+    <div id="gisşarbonu" class="disease" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ol>
+          <li class="disfaji">disfaji & yutma güçlüğü</li>
+          <li class="boğazağrısı">boğaz ağrısı</li>
+          <li class="lenfadenopati">lenfadenopatii ağrılı lenf bezleri</li>
+          <li class="ateş">yüksek ateş</li>
+          <li class="midebulantısı">mide bulantısı</li>
+          <li class="kusma">kusma</li>
+          <li class="karınağrısı">karın ağrısı</li>
+          <li class="hematemez">hematemez</li>
+          <li class="kanlıishal">kanlı ishal</li>
+        </ol>
+      </div>
+      <a style="color:black" href="diseases/şarbon.htm" target="_blank">
+      <label onclick="diseasecolor()" for="gisşarbonu">
+      <img src="symptomPhotos/gisşarbonu.jpg" alt="gisşarbonu">
+      <div class="diseasesubtext">
+        <div class="diseaseName">
+          <span>gis şarbonu (orofarengeal-barsak)<i style="display:none;"></i></span>
+        </div>
+      </div>
+      </label>
+      </a>
+    </div>
+
+    <div id="akciğerşarbonu" class="disease" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ol>
+          <li class="ateş">yüksek ateş</li>
+          <li class="taşikardi">taşikardi</li>
+          <li class="nefesdarlığı">dispne</li>
+          <li class="göğüsağrısı">göğüs ağrısı</li>
+          <li class="bilinçkaybı">senkop</li>
+        </ol>
+      </div>
+      <a style="color:black" href="diseases/şarbon.htm" target="_blank">
+      <label onclick="diseasecolor()" for="akciğerşarbonu">
+      <img src="symptomPhotos/akciğerşarbonu.jpg" alt="akciğerşarbonu">
+      <div class="diseasesubtext">
+        <div class="diseaseName">
+          <span>akciğer şarbonu<i style="display:none;"></i></span>
+        </div>
+      </div>
+      </label>
+      </a>
+    </div>
+
+    <div id="derişarbonu" class="disease" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ol>
+          <li class="kaşıntı">kaşıntı</li>
+          <li class="papül">papül</li>
+          <li class="vezikül">vezikül</li>
+          <li class="irinliakıntı">püstül</li>
+        </ol>
+      </div>
+      <a style="color:black" href="diseases/şarbon.htm" target="_blank">
+      <label onclick="diseasecolor()" for="derişarbonu">
+      <img src="symptomPhotos/derişarbonu.jpg" alt="derişarbonu">
+      <div class="diseasesubtext">
+        <div class="diseaseName">
+          <span>deri şarbonu<i style="display:none;"></i></span>
+        </div>
+      </div>
+      </label>
+      </a>
+    </div>
+
+    <div id="pnömoni" class="disease" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ol>
+          <li class="öksürük">öksürük(%79-91)</li>
+          <li class="halsizlik">halsizlik(%90)</li>
+          <li class="ateş">ateş(%75)</li>
+          <li class="nefesdarlığı">nefes darlığı / dispne (%45-70)</li>
+          <li class="balgam">balgam(%60-65)</li>
+          <li class="göğüsağrısı">plöretik göğüs ağrısı(%39-49)</li>
+          <li class="üşüme">üşüme</li>
+          <li class="başağrısı">baş ağrısı</li>
+          <li class="yanağrısı">plöretik tipte yan ağrısı</li>
+          <li class="siyanoz">siyanoz</li>
+          <li class="hemoptizi">hemoptizi</li>
+          <li class="iştahsızlık">iştahsızlık</li>
+          <li class="taşikardi">taşikardi</li>
+          <li class="plevralefüzyon">plevral efüzyon</li>
+        </ol>
+      </div>
+      <a style="color:black" href="diseases/pnömoni.htm" target="_blank">
+      <label onclick="diseasecolor()" for="pnömoni">
+      <img src="symptomPhotos/pnömoni.jpg" alt="pnömoni">
+      <div class="diseasesubtext">
+        <div class="diseaseName">
+          <span>pnömoni<i style="display:none;"></i></span>
+        </div>
+      </div>
+      </label>
+      </a>
+    </div>
+
+    <div id="salmonellagastroenteriti" class="disease" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ol>
+          <li class="ateş">ateş</li>
+          <li class="karınağrısı">kolik tarzda karın ağrısı</li>
+          <li class="melena hematokezya kanlıgaita">yumuşak ve sulu bazen kanlı ve mukuslu olabilen dışkı</li>
+          <li class="kanlıishal ishal">yumuşak ve sulu ishal</li>
+        </ol>
+      </div>
+      <a style="color:black" href="diseases/salmonellagastroenteriti.htm" target="_blank">
+      <label onclick="diseasecolor()" for="salmonellagastroenteriti">
+      <img src="symptomPhotos/salmonellagastroenteriti.jpg" alt="salmonellagastroenteriti">
+      <div class="diseasesubtext">
+        <div class="diseaseName">
+          <span>salmonella gastroenteriti<i style="display:none;"></i></span>
+        </div>
+      </div>
+      </label>
+      </a>
+    </div>
+
+    <div id="tifo" class="disease" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ol>
+          <li class="ateş">Remittent yüksek ateş(%89-99)</li>
+          <li class="başağrısı">baş ağrısı(%48-83)</li>
+          <li class="konfüzyon">konfüzyon</li>
+          <li class="midebulantısı">mide bulantısı(%39-71)</li>
+          <li class="kusma">kusma(%36-63)</li>
+          <li class="karınağrısı">karın ağrısı(%32-66)</li>
+          <li class="ishal">ishal(%37-60)</li>
+          <li class="karındaşişkinlik">karın distansyonu</li>
+          <li class="kabızlık">kabızlık(%11-28)</li>
+          <li class="öksürük">kuru öksürük(%14-41)</li>
+          <li class="iştahkaybı">iştah kaybı(%63-81)</li>
+          <li class="üşüme">üşüme-titreme(%33-74)</li>
+          <li class="kasağrısı eklemağrısı">kas ve eklem ağrısı(%27)</li>
+          <li class="boğazağrısı">boğaz ağrısı(%9)</li>
+          <li class="paslıdil">paslı dil</li>
+          <li class="bradikardi nabızdiskordansı">rölatif bradikardi, nabız diskordansı</li>
+          <li class="dikrotiknabız">dikrot nabız(nabzın sistol ve diastolde çift vuru yapması)</li>
+          <li class="cilttekızarıklık rosespots">taş roze/rose spots/göğüste nokta şeklinde kızarıklık</li>
+          <li class="ral">Akciğerde ral</li>
+          <li class="hepatomegali">hepatomegali</li>
+          <li class="splenomegali">splenomegali</li>
+        </ol>
+      </div>
+      <a style="color:black" href="diseases/tifo.htm" target="_blank">
+      <label onclick="diseasecolor()" for="tifo">
+      <img src="symptomPhotos/tifo.jpg" alt="tifo">
+      <div class="diseasesubtext">
+        <div class="diseaseName">
+          <span>tifo(karahumma)<i style="display:none;">s.typhi, salmonella, typhi</i></span>
+        </div>
+      </div>
+      </label>
+      </a>
+    </div>
+
+    <div id="krup" class="disease" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ol>
+          <li class="öksürük">öksürük(Havlar tarzda öksürük)</li>
+          <li class="stridor">bifazikstridor</li>
+          <li class="nefesdarlığı">nefes darlığı - supraklaviküler ve subkostal bölgelerde çekilme</li>
+          <li class="hipoksi">hipoksi</li>
+          <li class="iştahsızlık">iştahsızlık</li>
+          <li class="ateş">ateş(39-40C)</li>
+        </ol>
+      </div>
+      <a style="color:black" href="diseases/krup.htm" target="_blank">
+      <label onclick="diseasecolor()" for="krup">
+      <img src="symptomPhotos/krup.jpg" alt="krup">
+      <div class="diseasesubtext">
+        <div class="diseaseName">
+          <span>krup<i style="display:none;"></i></span>
+        </div>
+      </div>
+      </label>
+      </a>
+    </div>
+
+    <div id="bakteriyeltrakeit" class="disease" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ol>
+          <li class="öksürük">Sürekli Öksürük(Ses Normaldir)</li>
+        </ol>
+      </div>
+      <a style="color:black" href="diseases/bakteriyeltrakeit.htm" target="_blank">
+      <label onclick="diseasecolor()" for="bakteriyeltrakeit">
+      <img src="symptomPhotos/bakteriyeltrakeit.jpg" alt="bakteriyeltrakeit">
+      <div class="diseasesubtext">
+        <div class="diseaseName">
+          <span>bakteriyeltrakeit<i style="display:none;"></i></span>
+        </div>
+      </div>
+      </label>
+      </a>
+    </div>
+
+    <div id="epiglottitis" class="disease" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <h2 style="position:relative;float:right;top:1vh;right:3vh;color:DarkRed;font-family:arial;font-size:4vh;">--ACİL--</h2>
+        <ol>
+          <li class="stridor">stridor</li>
+          <li class="siyalore">ağız sulanması & siyalore</li>
+          <li class="disfaji">disfaji & odinofaji</li>
+          <li class="konuşmagüçlüğü">Sesin boğuk çıkması(Sıcak patates varmış gibi)</li>
+          <li class="ateş">ateş(hastaların %27'sinde başlangıçta mevcuttur)</li>
+        </ol>
+      </div>
+      <a style="color:black" href="diseases/epiglottitis.htm" target="_blank">
+      <label onclick="diseasecolor()" for="epiglottitis">
+      <img src="symptomPhotos/epiglottitis.jpg" alt="epiglottitis">
+      <div class="diseasesubtext">
+        <div class="diseaseName">
+          <span>Akut supraglottit(epiglottitis)<i style="display:none;"></i></span>
+        </div>
+      </div>
+      </label>
+      </a>
+    </div>
+
+    <div id="difteri" class="disease" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ol>
+          <li class="tonsildebeyazyama">tonsilde gri membran&yama(kaldırılınca kanar), tonsillite bağlı olansa kaldırılınca kanamaz</li>
+        </ol>
+      </div>
+      <a style="color:black" href="diseases/difteri.htm" target="_blank">
+      <label onclick="diseasecolor()" for="difteri">
+      <img src="symptomPhotos/difteri.jpg" alt="difteri">
+      <div class="diseasesubtext">
+        <div class="diseaseName">
+          <span>difteri<i style="display:none;"></i></span>
+        </div>
+      </div>
+      </label>
+      </a>
+    </div>
+
+    <div id="boğmaca" class="disease" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ol>
+          <li class="öksürük">öksürük(5 kez arka arkaya öksürür durur)</li>
+          <li class="burunakıntısı">burun akıntısı & rinore</li>
+          <li class="lakrimasyon">gözde sulanma & lakrimasyon</li>
+          <li class="gözdekızarma">konjonktival hiperemi & kızarma</li>
+          <li class="halsizlik">halsizlik</li>
+          <li class="ateş">ateş(sekonder enfeksyon)</li>
+        </ol>
+      </div>
+      <a style="color:black" href="diseases/boğmaca.htm" target="_blank">
+      <label onclick="diseasecolor()" for="boğmaca">
+      <img src="symptomPhotos/boğmaca.jpg" alt="boğmaca">
+      <div class="diseasesubtext">
+        <div class="diseaseName">
+          <span>boğmaca<i style="display:none;"></i></span>
+        </div>
+      </div>
+      </label>
+      </a>
+    </div>
+
+    <div id="virallarenjit" class="disease" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ol>
+          <li class="ateş">hafif ateş</li>
+          <li class="halsizlik">halsizlik</li>
+          <li class="burunakıntısı">rinit & burun akıntısı</li>
+          <li class="öksürük">boğuk öksürük</li>
+          <li class="seskısıklığı">ses kısıklığı</li>
+        </ol>
+      </div>
+      <a style="color:black" href="diseases/virallarenjit.htm" target="_blank">
+      <label onclick="diseasecolor()" for="virallarenjit">
+      <img src="symptomPhotos/virallarenjit.jpg" alt="virallarenjit">
+      <div class="diseasesubtext">
+        <div class="diseaseName">
+          <span>viral larenjit<i style="display:none;"></i></span>
+        </div>
+      </div>
+      </label>
+      </a>
+    </div>
+
+    <div id="laringomalazi" class="disease" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ol>
+          <li class="stridor">inspiratuar stridor</li>
+          <li class="beslenmeproblemleri">beslenmeproblemleri</li>
+          <li class="reflü">gastrik reflü</li>
+          <li class="apne">obstrüktif uyku apnesi(%23), Santral apne(%10)</li>
+        </ol>
+      </div>
+      <a style="color:black" href="diseases/laringomalazi.htm" target="_blank">
+      <label onclick="diseasecolor()" for="laringomalazi">
+      <img src="symptomPhotos/laringomalazi.jpg" alt="laringomalazi">
+      <div class="diseasesubtext">
+        <div class="diseaseName">
+          <span>laringomalazi<i style="display:none;"></i></span>
+        </div>
+      </div>
+      </label>
+      </a>
+    </div>
+
+    <div id="subglottikstenoz" class="disease" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ol>
+          <li class="stridor">bifazik stridor</li>
+          <li class="">tekrarlayan pseudokroup atakları</li>
+        </ol>
+      </div>
+      <a style="color:black" href="diseases/subglottikstenoz.htm" target="_blank">
+      <label onclick="diseasecolor()" for="subglottikstenoz">
+      <img src="symptomPhotos/subglottikstenoz.jpg" alt="subglottikstenoz">
+      <div class="diseasesubtext">
+        <div class="diseaseName">
+          <span>subglottik stenoz<i style="display:none;"></i></span>
+        </div>
+      </div>
+      </label>
+      </a>
+    </div>
+
+    <div id="larengealweb" class="disease" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ol>
+          <li class="seskısıklığı">vokal disfonksyon & afoni,disfoni</li>
+          <li class="nefesdarlığı">nefes darlığı</li>
+          <li class="">tekrarlayan krup, pnömoni, trakeobronşit</li>
+        </ol>
+      </div>
+      <a style="color:black" href="diseases/larengealweb.htm" target="_blank">
+      <label onclick="diseasecolor()" for="larengealweb">
+      <img src="symptomPhotos/larengealweb.jpg" alt="larengealweb">
+      <div class="diseasesubtext">
+        <div class="diseaseName">
+          <span>larengealweb<i style="display:none;"></i></span>
+        </div>
+      </div>
+      </label>
+      </a>
+    </div>
+
+    <div id="laringosel" class="disease" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ol>
+          <li class="konuşmagüçlüğü">disfoni & konuşma güçlüğü</li>
+          <li class="nefesdarlığı">nefes darlığı & dispne</li>
+          <li class="öksürük">öksürük</li>
+          <li class="globushissi">boğazda yabancı cisim varmış hissi & globus hissi</li>
+        </ol>
+      </div>
+      <a style="color:black" href="diseases/laringosel.htm" target="_blank">
+      <label onclick="diseasecolor()" for="laringosel">
+      <img src="symptomPhotos/laringosel.jpg" alt="laringosel">
+      <div class="diseasesubtext">
+        <div class="diseaseName">
+          <span>laringosel<i style="display:none;"></i></span>
+        </div>
+      </div>
+      </label>
+      </a>
+    </div>
+
+    <div id="af" class="disease" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ol>
+          <li class="ekganomalisi">P dalgaları yok, R-R düzensiz</li>
+        </ol>
+      </div>
+      <a style="color:black" href="diseases/af.htm" target="_blank">
+      <label onclick="diseasecolor()" for="af">
+      <img src="symptomPhotos/af.jpg" alt="af">
+      <div class="diseasesubtext">
+        <div class="diseaseName">
+          <span>Atrial fibrilasyon<i style="display:none;"></i></span>
+        </div>
+      </div>
+      </label>
+      </a>
+    </div>
+
+    <div id="vf" class="disease" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ol>
+          <li class="ekganomalisi">P dalgası R dalgası yok, izoelektrik hat yok</li>
+          <li class="bilinçkaybı">hastada nabız, tansyon, bilinç yoktur</li>
+          <li class="hipotansyon">tansyon ölçülemeyecek kadar düşük</li>
+        </ol>
+      </div>
+      <a style="color:black" href="diseases/vf.htm" target="_blank">
+      <label onclick="diseasecolor()" for="vf">
+      <img src="symptomPhotos/vf.jpg" alt="vf">
+      <div class="diseasesubtext">
+        <div class="diseaseName">
+          <span>Ventriküler fibrilasyon<i style="display:none;"></i></span>
+        </div>
+      </div>
+      </label>
+      </a>
+    </div>
+
+    <div id="ky" class="disease" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ol>
+          <li class="venlerdegenişleme">Juguler venöz dolgunluk</li>
+          <li class="ral">pulmoner raller</li>
+          <li class="ödem">periferik ödem</li>
+          <li class="pretibialödem">ayak bileği şişmesi</li>
+          <li class="nefesdarlığı">Nefes darlığı</li>
+          <li class="balgam">köpüklü, pembe veya beyaz balgam görülebilir</li>
+          <li class="gallop">S3 , S4 ritmi duyulabilir.</li>
+          <li class="taşikardi">taşikardi</li>
+          <li class="hepatomegali">hepatomegali</li>
+          <li class="ortopne">ortopne</li>
+          <li class="pnd">paroksismal nokturnal dispne</li>
+        </ol>
+      </div>
+      <a style="color:black" href="diseases/ky.htm" target="_blank">
+      <label onclick="diseasecolor()" for="ky">
+      <img src="symptomPhotos/ky.jpg" alt="ky">
+      <div class="diseasesubtext">
+        <div class="diseaseName">
+          <span>kalp yetmezliği<i style="display:none;"></i></span>
+        </div>
+      </div>
+      </label>
+      </a>
+    </div>
+
+    <div id="myokardit" class="disease" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ol>
+          <li class="göğüsağrısı">göğüste rahatsızlık hissi(sinsi başlangıçlı yeri lokalize edilebilir(perikardial karakterde))</li>
+          <li class="ateş">ateş</li>
+          <li class="halsizlik">halsizlik</li>
+          <li class="kasağrısı">kas ağrısı & myalj,</li>
+          <li class="eklemağrısı">eklem ağrısı & artralji</li>
+          <li class="taşikardi">taşikardi, ateşle orantılı olmayan taşikardi</li>
+          <li class="bradikardi">bradikardi</li>
+          <li class="kalpçarpıntısı">kalp çarpıntısı</li>
+          <li class="hipotansyon">hipotansyon</li>
+          <li class="gallop">S3 / S4 gallop ritmi duyulabilir</li>
+          <li class="venlerdegenişleme">Juguler venöz dolgunluk</li>
+          <li class="ral">Pulmoner raller</li>
+          <li class="wheezing">wheezing</li>
+          <li class="ödem">periferik ödem</li>
+        </ol>
+      </div>
+      <a style="color:black" href="diseases/myokardit.htm" target="_blank">
+      <label onclick="diseasecolor()" for="myokardit">
+      <img src="symptomPhotos/myokardit.jpg" alt="myokardit">
+      <div class="diseasesubtext">
+        <div class="diseaseName">
+          <span>myokardit<i style="display:none;"></i></span>
+        </div>
+      </div>
+      </label>
+      </a>
+    </div>
+
+    <div id="akutpankreatit" class="disease" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <h2 style="position:relative;float:right;top:1vh;right:3vh;color:DarkRed;font-family:arial;font-size:4vh;">--ACİL--</h2>
+        <ol>
+          <li class="karınağrısı">Karnın merkezinde gittikçe kötüleşen ağrı, kuşak tarzında ve sırta yansır, sırtı üstü düz uzanmakla ağrı artar</li>
+          <li class="halsizlik">halsizlik</li>
+          <li class="kusma">kusma</li>
+          <li class="ateş">Yüksek ateş(38C derece üstü)</li>
+          <li class="sarılık">gözlerde(konjonktivada sararma), deride sararma(esmer ve siyahilerde daha az belirgindir)</li>
+          <li class="taşikardi">taşikardi</li>
+          <li class="taşipne">taşipne</li>
+          <li class="karındaşişkinlik">karında şişkinlik</li>
+        </ol>
+      </div>
+      <a style="color:black" href="diseases/akutpankreatit.htm" target="_blank">
+      <label onclick="diseasecolor()" for="akutpankreatit">
+      <img src="symptomPhotos/akutpankreatit.jpg" alt="akutpankreatit">
+      <div class="diseasesubtext">
+        <div class="diseaseName">
+          <span>akut pankreatit<i style="display:none;"></i></span>
+        </div>
+      </div>
+      </label>
+      </a>
+    </div>
+
+    <div id="enterobiusvermicularis" class="disease" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ol>
+          <li class="analbölgedekaşıntı">Anal bölgede kaşıntı çocukta sürekli elin bu bölgede olması ve yoğun kaşınma durumunda şüphe edilir, yetişkinde de olabilir</li>
+        </ol>
+      </div>
+      <a style="color:black" href="diseases/enterobiusvermicularis.htm" target="_blank">
+      <label onclick="diseasecolor()" for="enterobiusvermicularis">
+      <img src="symptomPhotos/enterobiusvermicularis.jpg" alt="enterobiusvermicularis">
+      <div class="diseasesubtext">
+        <div class="diseaseName">
+          <span>enterobius vermicularis<i style="display:none;"></i></span>
+        </div>
+      </div>
+      </label>
+      </a>
+    </div>
+
+    <div id="trichuristrichura" class="disease" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ol>
+          <li class="rektalprolapsus">rektal prolapsus</li>
+          <li class="apandisit">apandisit</li>
+        </ol>
+      </div>
+      <a style="color:black" href="diseases/trichuristrichura.htm" target="_blank">
+      <label onclick="diseasecolor()" for="trichuristrichura">
+      <img src="symptomPhotos/trichuristrichura.jpg" alt="trichuristrichura">
+      <div class="diseasesubtext">
+        <div class="diseaseName">
+          <span>trichuris trichura<i style="display:none;"></i></span>
+        </div>
+      </div>
+      </label>
+      </a>
+    </div>
+
+    <div id="epilepsi" class="disease" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ol>
+          <li class="bilinçkaybı">senkop & bilinç kaybı & bayılma</li>
+          <li class="nöbet">Nöbet & kasılma</li>
+        </ol>
+      </div>
+      <a style="color:black" href="diseases/epilepsi.htm" target="_blank">
+      <label onclick="diseasecolor()" for="epilepsi">
+      <img src="symptomPhotos/epilepsi.jpg" alt="epilepsi">
+      <div class="diseasesubtext">
+        <div class="diseaseName">
+          <span>epilepsi<i style="display:none;"></i></span>
+        </div>
+      </div>
+      </label>
+      </a>
+    </div>
+
+    <div id="vajinoz" class="disease" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ol>
+          <li class="vajinalakıntı">vajinal akıntı</li>
+        </ol>
+      </div>
+      <a style="color:black" href="diseases/vajinoz.htm" target="_blank">
+      <label onclick="diseasecolor()" for="vajinoz">
+      <img src="symptomPhotos/vajinoz.jpg" alt="vajinoz">
+      <div class="diseasesubtext">
+        <div class="diseaseName">
+          <span>vajinoz<i style="display:none;">bakteriyel vajinoz, vajinöz, vajinella, trichomonas vajinitis, trichomonas vaginitis, candida vulvovaginitis, vulvuvaginit, vajinit, vajen, vajinal akıntı, vajinal iltihap, vajinal iltihab,iltihap,iltihab,vajen enfeksyon, vajen enfeksiyonu</i></span>
+        </div>
+      </div>
+      </label>
+      </a>
+    </div>
+
+    <div id="reye" class="disease" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ol>
+          <li class="kusma">kusma</li>
+          <li class="konfüzyon">konfüzyon</li>
+          <li class="bilinçkaybı senkop">bilinç kaybı, bayılma</li>
+          <li class="davranışdeğişikliği">davranış değişikliği</li>
+          <li class="nöbet">nöbet</li>
+          <li class="hipoglisemi">hipoglisemi & kan şekeri düşüklüğü</li>
+          <li class="hiperamonyemi">hiperamonyemi & amonyum artışı</li>
+          <li class="ptzuzaması">ptzuzaması</li>
+          <li class="hepatomegali">hepatomegali</li>
+          <li class="başağrısı">baş ağrısı</li>
+          <li class="letarji">letarji</li>
+          <li class="kabus">kabus</li>
+        </ol>
+      </div>
+      <a style="color:black" href="diseases/reye.htm" target="_blank">
+      <label onclick="diseasecolor()" for="reye">
+      <img src="symptomPhotos/reye.jpg" alt="reye">
+      <div class="diseasesubtext">
+        <div class="diseaseName">
+          <span>reye sendromu<i style="display:none;"></i></span>
+        </div>
+      </div>
+      </label>
+      </a>
+    </div>
+
+    <div id="kızamık" class="disease" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ol>
+          <li class="ateş">Genelde 40C derece üzerinde ateş </li>
+          <li class="öksürük">öksürük</li>
+          <li class="burunakıntısı">burun akıntısı</li>
+          <li class="gözdekızarma">gözde kızarma</li>
+          <li class="ağızdayara">Koplik lekeleri(ağızda beyaz nokta nokta lekeler semptomların başlamasından 2-3 sonra oluşur)</li>
+          <li class="cilttekızarıklık">Kırmızı vücuttan kabarık olamayan döküntüler, genelde yüzde başlar(ilk kulak arkasında) ve semptomların başlamasından sonra 3-5 gün içinde vücuda yayılır</li>
+        </ol>
+      </div>
+      <a style="color:black" href="diseases/kızamık.htm" target="_blank">
+      <label onclick="diseasecolor()" for="kızamık">
+      <img src="symptomPhotos/kızamık.jpg" alt="kızamık">
+      <div class="diseasesubtext">
+        <div class="diseaseName">
+          <span>kızamık<i style="display:none;"></i></span>
+        </div>
+      </div>
+      </label>
+      </a>
+    </div>
+
+    <div id="aam" class="disease" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ol>
+          <li class="sıkidraraçıkma">Sık idrara çıkma 24 saate 8 veya daha fazla</li>
+          <li class="urgency">ani gelen kontrol etmesi zor idrara çıkma ihtiyacı</li>
+          <li class="ürinerinkontinans">İdrar kaçırma</li>
+          <li class="noktüri">Bir Gecede 2den fazla idrara çıkma </li>
+        </ol>
+      </div>
+      <a style="color:black" href="diseases/aam.htm" target="_blank">
+      <label onclick="diseasecolor()" for="aam">
+      <img src="symptomPhotos/aam.jpg" alt="aam">
+      <div class="diseasesubtext">
+        <div class="diseaseName">
+          <span>Aşırı aktif mesane<i style="display:none;"></i></span>
+        </div>
+      </div>
+      </label>
+      </a>
+    </div>
+
+    <div id="çinkoeksikliği" class="disease" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ol>
+          <li class="saçdökülmesi">Saç dökülmesi</li>
+        </ol>
+      </div>
+      <a style="color:black" href="diseases/çinko.htm" target="_blank">
+      <label onclick="diseasecolor()" for="çinkoeksikliği">
+      <img src="symptomPhotos/çinko.jpg" alt="çinkoeksikliği">
+      <div class="diseasesubtext">
+        <div class="diseaseName">
+          <span>çinko eksikliği<i style="display:none;">zn, vitamin eksikliği</i></span>
+        </div>
+      </div>
+      </label>
+      </a>
+    </div>
+
+    <div id="infektifendokardit" class="disease" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ol>
+          <li class="ateş">ateş > 38C (Olguların yüzde 90'ı)</li>
+          <li class="cilttemorarma">Peteşiler (%30 olguda) </li>
+          <li class="oslernodülleri cilttemorarma cilttekızarıklık papül">Osler nodülleri: kırmızımsı, mercimek boyunda, ağrılı, immun komplekslere bağlı gelişen parmak ve avuç içlerinde görülen papuler lezyonlardır.  Tedavi altında 1-5 gün içinde kaybolurlar.</li>
+          <li class="cilttemorarma splinterhemoraji">Splinter kanamalar: 1-2 mm boyunda ayak ve el parmaklarının proximalininde bulunan spesifik lezyonlar</li>
+          <li class="cilttemorarma cilttekızarıklık janewaylezyonları">Janeway lezyonları: el ve ayak tabanlarında 1-4 mm çaplı ağrısız makuler lezyonlar  </li>
+          <li class="çomakparmak">Çomak parmak (Clubbing): Çomaklaşma nadir bir bulgudur ve genellikle sadece uzun süreli hastalığı olan olanlarda bulunur. IE için deri bulguları spesifik değildir ve vaskülit veya bakteriyemi ile karakterize diğer hastalık durumlarında görülebilir. </li>
+        </ol>
+      </div>
+      <a style="color:black" href="diseases/infektifendokardit.htm" target="_blank">
+      <label onclick="diseasecolor()" for="infektifendokardit">
+      <img src="symptomPhotos/infektifendokardit.jpg" alt="infektifendokardit">
+      <div class="diseasesubtext">
+        <div class="diseaseName">
+          <span>infektif endokardit<i style="display:none;">enfektif endokardit</i></span>
+        </div>
+      </div>
+      </label>
+      </a>
+    </div>
+
+    <div id="sıtma" class="disease" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ol>
+          <li class="ateş">ateş</li>
+          <li class="başağrısı">baş ağrısı</li>
+          <li class="üşüme">Üşüme & titreme</li>
+          <li class="bulantı">Bulantı</li>
+          <li class="kusma">kusma</li>
+          <li class="iştahsızlık">iştahsızlık</li>
+          <li class="halsizlik">halsizlik</li>
+          <li class="karınağrısı">karı nağrısı</li>
+          <li class="kasağrısı">kas ağrısı</li>
+          <li class="eklemağrısı artirit eklemdeşişlik">eklem ağrısı</li>
+          <li class="taşipne">taşipne</li>
+          <li class="taşikardi">taşikardi</li>
+          <li class="konfüzyon">konfüzyon</li>
+          <li class="öksürük">öksürük</li>
+        </ol>
+      </div>
+      <a style="color:black" href="diseases/sıtma.htm" target="_blank">
+      <label onclick="diseasecolor()" for="sıtma">
+      <img src="symptomPhotos/sıtma.jpg" alt="sıtma">
+      <div class="diseasesubtext">
+        <div class="diseaseName">
+          <span>Sıtma & Malarya<i style="display:none;">Malaria, plasmodium falciparum, Sıtma, plasmodium vivax, plasmodium ovale</i></span>
+        </div>
+      </div>
+      </label>
+      </a>
+    </div>
+
+    <div id="akutrömatizmalateş" class="disease" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ol>
+          <li class="ateş">Ateş</li>
+          <li class="eklemağrısı">Eklemlerde ağrı (artrit)</li>
+          <li class="kalpçarpıntısı">Kalp çarpıntısı / Kardit</li>
+          <li class="cilttekızarıklık">Ciltte kızarıklık (eritema marginatum)</li>
+          <li class="nöbet">Sydenham koresi</li>
+          <li class="boğazağrısı">Boğaz ağrısı</li>
+        </ol>
+      </div>
+      <a style="color:black" href="diseases/akutrömatizmalateş.htm" target="_blank">
+        <label onclick="diseasecolor()" for="akutrömatizmalateş">
+          <img src="symptomPhotos/akutrömatizmalateş.jpg" alt="akutrömatizmalateş">
+          <div class="diseasesubtext">
+            <div class="diseaseName">
+              <span>Akut Romatizmal Ateş<i style="display:none;">artrit, kardit, koresi, jones kriterleri</i></span>
+            </div>
+          </div>
+        </label>
+      </a>
+    </div>
+
+
+    <div id="oralthrush" class="disease" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ol>
+          <li class="tonsildebeyazyama">Ağız içinde beyaz plak</li>
+          <li class="boğazağrısı">Boğaz ağrısı</li>
+          <li class="disfaji">Yutma güçlüğü</li>
+          <li class="göğüsteağrılıyanma">Yanma hissi</li>
+          <li class="nefeskokusu">Ağız kokusu</li>
+          <li class="iştahkaybı">İştah kaybı</li>
+        </ol>
+      </div>
+      <a style="color:black" href="diseases/oralthrush.htm" target="_blank">
+        <label onclick="diseasecolor()" for="oralthrush">
+          <img src="symptomPhotos/oralthrush.jpg" alt="oralthrush">
+          <div class="diseasesubtext">
+            <div class="diseaseName">
+              <span>Oral Kandidiyazis (Pamukçuk)<i style="display:none;">ağız mantarı, oral thrush, kandida</i></span>
+            </div>
+          </div>
+        </label>
+      </a>
+    </div>
+
+    <div id="migren" class="disease" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ol>
+          <li class="başağrısı">Şiddetli baş ağrısı</li>
+          <li class="midebulantısı">Mide bulantısı</li>
+          <li class="fotofobi">Işık hassasiyeti (fotofobi)</li>
+          <li class="fonofobi">Ses hassasiyeti (fonofobi)</li>
+        </ol>
+      </div>
+      <a style="color:black;" href="diseases/migren.htm" target="_blank">
+        <label onclick="diseasecolor()" for="migren">
+          <img src="symptomPhotos/migren.jpg" alt="migren">
+          <div class="diseasesubtext">
+            <div class="diseaseName">
+              <span>Migren<i style="display:none;"></i></span>
+            </div>
+          </div>
+        </label>
+      </a>
+    </div>
+
+    <!-- Liddle Syndrome -->
+    <div id="liddlesendromu" class="disease" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ol>
+          <li class="hipertansiyon">Early-onset hypertension</li>
+          <li class="hipokalemi">Hypokalemia</li>
+          <li class="metabolikalkaloz">Metabolic alkalosis</li>
+          <li class="aldosterondüşüklüğü">Low renin and aldosterone levels</li>
+        </ol>
+      </div>
+      <a style="color:black" href="diseases/liddle.htm" target="_blank">
+      <label onclick="diseasecolor()" for="liddle">
+      <img src="symptomPhotos/liddle.jpg" alt="liddle">
+      <div class="diseasesubtext">
+        <div class="diseaseName">
+          <span>liddle sendromu<i style="display:none;"></i></span>
+        </div>
+      </div>
+      </label>
+      </a>
+    </div>
+
+    <!-- Gordon Syndrome -->
+    <div id="gordonsendromu" class="disease" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ol>
+          <li class="hipertansiyon">Hypertension</li>
+          <li class="hiperkalemi">Hyperkalemia</li>
+          <li class="metabolikasidoz">Metabolic acidosis</li>
+          <li class="aldosterondüşüklüğü">Normal or low renin and aldosterone</li>
+        </ol>
+      </div>
+      <a style="color:black" href="diseases/gordon.htm" target="_blank">
+      <label onclick="diseasecolor()" for="gordon">
+      <img src="symptomPhotos/gordon.jpg" alt="gordon">
+      <div class="diseasesubtext">
+        <div class="diseaseName">
+          <span>Gordon Syndrome (Pseudohypoaldosteronism type II)<i style="display:none;"></i></span>
+        </div>
+      </div>
+      </label>
+      </a>
+    </div>
+
+
+    <!-- Pheochromocytoma -->
+    <div id="feokromositoma" class="disease" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ol>
+          <li class="hipertansiyon">Paroxysmal hypertension</li>
+          <li class="başağrısı">Headache</li>
+          <li class="çarpıntı">Çarpıntı</li>
+          <li class="terleme">Diaphoresis (sweating)</li>
+          <li class="katekolaminyüksekliği">Elevated catecholamines in urine/plasma</li>
+        </ol>
+      </div>
+      <a style="color:black" href="diseases/feokromositoma.htm" target="_blank">
+      <label onclick="diseasecolor()" for="feokromositoma">
+      <img src="symptomPhotos/feokromositoma.jpg" alt="feokromositoma">
+      <div class="diseasesubtext">
+        <div class="diseaseName">
+          <span>feokromositoma<i style="display:none;"></i></span>
+        </div>
+      </div>
+      </label>
+      </a>
+    </div>
+
+        <div id="bartter" class="disease" style="overflow-y:scroll;">
+    <div class="semptomlar">
+      <ol>
+        <li class="hipokalemi">Hipokalemi</li>
+        <li class="metabolikalkaloz">Metabolik alkaloz</li>
+        <li class="normotansiyon">Normal veya düşük kan basıncı</li>
+        <li class="reninyüksekliği">Renin yüksekliği</li>
+        <li class="aldosteronyüksekliği">Aldosteron yüksekliği</li>
+        <li class="polidipsi">Polidipsi</li>
+        <li class="büyümegeriliği">Büyüme geriliği</li>
+      </ol>
+    </div>
+    <a style="color:black" href="diseases/bartter.htm" target="_blank">
+      <label onclick="diseasecolor()" for="bartter">
+        <img src="symptomPhotos/bartter.jpg" alt="bartter">
+        <div class="diseasesubtext">
+          <div class="diseaseName">
+            <span>Bartter Sendromu<i style="display:none;">bartter syndrome</i></span>
+          </div>
+        </div>
+      </label>
+    </a>
+    </div>
+
+    <div id="gitelman" class="disease" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ol>
+          <li class="hipokalemi">Hipokalemi</li>
+          <li class="metabolikalkaloz">Metabolik alkaloz</li>
+          <li class="hipomagnezemi">Hipomagnezemi</li>
+          <li class="hipokalsiüri">Hipokalsiüri</li>
+          <li class="normotansiyon">Düşük-normal tansiyon</li>
+          <li class="kaskrampları">Kas krampları</li>
+          <li class="halsizlik">Halsizlik</li>
+        </ol>
+      </div>
+      <a style="color:black" href="diseases/gitelman.htm" target="_blank">
+        <label onclick="diseasecolor()" for="gitelman">
+          <img src="symptomPhotos/gitelman.jpg" alt="gitelman">
+          <div class="diseasesubtext">
+            <div class="diseaseName">
+              <span>Gitelman Sendromu<i style="display:none;">gitelman syndrome</i></span>
+            </div>
+          </div>
+        </label>
+      </a>
+    </div>
+
+    <div id="glokom" class="disease" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ol>
+          <li class="başağrısı">baş ağrısı</li>
+          <li class="gözdekızarma">gözde kızarma</li>
+          <li class="pupilrefleksanomalisi">sabit mid dilate pupil</li>
+          <li class="görmeproblemleri">görme problemleri</li>
+        </ol>
+      </div>
+      <a style="color:black" href="diseases/glokom.htm" target="_blank">
+      <label onclick="diseasecolor()" for="glokom">
+      <img src="symptomPhotos/glokom.jpg" alt="glokom">
+      <div class="diseasesubtext">
+        <div class="diseaseName">
+          <span>Akut açı kapanması glokomu<i style="display:none;"></i></span>
+        </div>
+      </div>
+      </label>
+      </a>
+    </div>
+
+    <div id="sample" class="disease" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ol>
+          <li class="sample">sample</li>
+          <li class="sample">sample</li>
+          <li class="sample">sample</li>
+          <li class="sample">sample</li>
+          <li class="sample">sample</li>
+          <li class="sample">sample</li>
+          <li class="sample">sample</li>
+          <li class="sample">sample</li>
+          <li class="sample">sample</li>
+          <li class="sample">sample</li>
+          <li class="sample">sample</li>
+        </ol>
+      </div>
+      <a style="color:black" href="diseases/sample.htm" target="_blank">
+      <label onclick="diseasecolor()" for="sample">
+      <img src="symptomPhotos/sample.jpg" alt="sample">
+      <div class="diseasesubtext">
+        <div class="diseaseName">
+          <span>sample<i style="display:none;"></i></span>
+        </div>
+      </div>
+      </label>
+      </a>
+    </div>
+
+
+  </div>
+    <?php include "footer.php"; ?>
+  </body>
+</html>

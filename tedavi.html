@@ -1,0 +1,2209 @@
+      <!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="styletedavi.css">
+    <script src="script2tedavi.js"></script>
+    <script src="scripttedavi.js"></script>
+    <script src="https://kit.fontawesome.com/4106c8455f.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div style="justify-content:center;align-items:center;height:3vh;background-color:olivedrab;color:black;position:sticky;top:0;z-index:50;">
+      <ul style="list-style-type:none;">
+        <li style="float:left;margin-right:5vw;"> <a style="color:inherit;text-decoration:none;" href="index.html">Semptomlara Göre Hastalıklar</a></li>
+        <li> <a style="float:left;margin-right:5vw;color:inherit;text-decoration:none;" href="hastalıklar.html">Hastalıklar, Muayeneler ve Aciller</a></li>
+        <li> <a style="color:inherit;text-decoration:none;" href="tedavi.html">Tedavi & İlaçlar</a></li>
+      </ul>
+    </div>
+    <div style="margin-left:auto;margin-right:auto;text-align:center;">
+          <i style="position:sticky;" class="fas fa-search"></i>
+          <input onkeyup="search()" style="position:sticky;height:1.5vw;width:30vw;margin-bottom:0.2vw;font-size:1vw;font-family:tahoma;" placeholder="İlaç arayın .." class="" type="text" id="search" name="" value="">
+    </div>
+    <div class="main">
+    </div>
+
+    <br>
+    <div id="mylist">
+
+    </div>
+  <div class="main-disease">
+
+    <div class="symptom" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ul>
+          <li>Şok ve kalp yetmezliğinde kullanılan potent inotropik ajandır.</li>
+          <li><strong>Dozaj:</strong>
+            <ul>
+              <li>&lt;5 mcg/kg/dk: dopaminerjik (önerilmez)</li>
+              <li>5–10 mcg/kg/dk: beta etkisi</li>
+              <li>10–20 mcg/kg/dk: alfa etkisi</li>
+              <li>Kalp yetmezliği: 3–9 mcg/kg/dk</li>
+              <li>Hipotansiyon/şok: 10–25 mcg/kg/dk</li>
+            </ul>
+          </li>
+          <li><strong>Hazırlama:</strong> 500 cc %5 dekstroz içine 3 ampul (600 mg) dopamin eklenir</li>
+          <li><strong>Uygulama:</strong> 10 dmL(?)/dk ile başlanır, 30 dmL(?)/dk’ya kadar çıkılabilir</li>
+          <li>Kalp yetmezliğinde 5 dmL/dk(?) başlanır, 10 dmL(?)/dk’ya kadar çıkılabilir</li>
+          <li>Kardiyak şokta aynı şekilde 10-25mcg/kg/dk'dan verilir.</li>
+          <li><strong>Dikkat:</strong> taşiaritmi riski, damar dışına çıkarsa doku nekrozu; mutlaka santral yolla uygulanmalı</li>
+          <li><strong>Kontrendikasyon:</strong> hidrokarbon zehirlenmelerinde dopamin, dobutamin, digoksin kontrendikedir</li>
+        </ul>
+      </div>
+      <label onclick="symptomcolor();order()" for="dopamin">
+        <a target="_blank" href="diseases/dopamin.html">
+          <img src="symptomPhotos/dopamin1.jpg" alt="Dopamin">
+        </a>
+        <div class="subtext">
+          <div class="symptomName">
+            <input class="symptomCheckbox" type="checkbox" id="dopamin" name="dopamin" value="dopamin">
+            <span>Dopamin
+              <i style="display:none;">dopamin,inotrop,şok,kalp yetmezliği,taşiaritmi,deksametazon,santral yol</i>
+            </span>
+          </div>
+        </div>
+      </label>
+    </div>
+
+    <div class="symptom" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ul>
+          <li>Antispazmodik: Hiyosin-N-butil bromür içerir (20 mg/mL)</li>
+          <li>GİS spazmları, ülser, kolit, safra ve üreter spazmlarında kullanılır</li>
+          <li>Dismenore ve ürolitiazis kaynaklı ağrılarda etkilidir</li>
+          <li>Doz: IM/IV 1–2 ampul/gün</li>
+          <li>IV enjeksiyon süresi en az 3 dakika olmalıdır</li>
+          <li>Kontrendikasyon: glokom, prostat hipertrofisi, megakolon, myastenia gravis</li>
+        </ul>
+      </div>
+      <label onclick="symptomcolor();order()" for="buscopan">
+        <a target="_blank" href="diseases/buscopan.html">
+          <img src="symptomPhotos/buscopan1.jpg" alt="Buscopan">
+        </a>
+        <div class="subtext">
+          <div class="symptomName">
+            <input class="symptomCheckbox" type="checkbox" id="buscopan" name="buscopan" value="buscopan">
+            <span>Buscopan
+              <i style="display:none;">buscopan,hiyosin,spazm,gis ağrısı,antispazmodik,ürolitiazis,dismenore</i>
+            </span>
+          </div>
+        </div>
+      </label>
+    </div>
+
+    <div class="symptom" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ul>
+          <li>Beta Blokör Kontrendikasyonları :Raynaud fenomeni, Hipoglisemi, Orta/İleri derece astım,Bradikardi</li>
+        </ul>
+      </div>
+      <label onclick="symptomcolor();order()" for="propanolol">
+      <img src="symptomPhotos/propanolol.jpg" alt="propanolol">
+      <div class="subtext">
+        <div class="symptomName">
+          <input class="symptomCheckbox" type="checkbox" id="propanolol" name="propanolol" value="propanolol"><span>propanolol<i style="display:none;">beta blokör, betablokör,beta bloker, betabloker</i></span>
+        </div>
+      </div>
+      </label>
+    </div>
+
+    <div class="symptom" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ul>
+          <li>Yetişkin dozu: 10–20 mg IM/IV her 4-6 saatte bir (maks 100 mg/gün)</li>
+          <li>Pediatrik doz: 0.5–1 mg/kg IM/IV 6 saatte bir</li>
+          <li>Yan etkiler: Sedasyon, antikolinerjik etkiler, hipotansiyon</li>
+          <li>Acilde bulantı ve kusma tedavisinde tercih edilir</li>
+        </ul>
+      </div>
+      <label onclick="symptomcolor();order()" for="prometazin">
+        <img src="symptomPhotos/prometazin.jpg" alt="prometazin">
+        <div class="subtext">
+          <div class="symptomName">
+            <input class="symptomCheckbox" type="checkbox" id="prometazin" name="prometazin" value="prometazin">
+            <span>prometazin<i style="display:none;">bulantı, kusma, sedasyon, çocuk, antihistaminik</i></span>
+          </div>
+        </div>
+      </label>
+    </div>
+
+    <div class="symptom" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ul>
+          <li>Yetişkin dozu: 0.01 mg/kg IM veya IV (maks 0.5 mg), gerektiğinde 5-15 dakikada tekrarlanabilir</li>
+          <li>Pediatrik doz: 0.01 mg/kg IM veya IV (maks 0.3 mg)</li>
+          <li>Yan etkiler: Taşikardi, anksiyete, tremor</li>
+          <li>Anafilakside hayat kurtarıcıdır</li>
+        </ul>
+      </div>
+      <label onclick="symptomcolor();order()" for="adrenalinacil">
+        <img src="symptomPhotos/adrenalinacil.jpg" alt="adrenalin">
+        <div class="subtext">
+          <div class="symptomName">
+            <input class="symptomCheckbox" type="checkbox" id="adrenalinacil" name="adrenalinacil" value="adrenalinacil">
+            <span>adrenalin (acil)<i style="display:none;">epinefrin, anafilaksi, CPR, şok, çocuk, acil ilaç</i></span>
+          </div>
+        </div>
+      </label>
+    </div>
+
+    <div class="symptom" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ul>
+          <li>Pediatrik doz: 0.2–0.5 mg/kg rektal (max 10 mg), tek doz</li>
+          <li>Yetişkin doz: 5–10 mg IV veya rektal</li>
+          <li>Yan etkiler: Solunum depresyonu, uyuklama, paradoksal ajitasyon</li>
+          <li>Febril konvülziyon krizinde rektal ilk tercihtir</li>
+        </ul>
+      </div>
+      <label onclick="symptomcolor();order()" for="diazepam">
+        <a style="color:black" href="diseases/diazepam.htm" target="_blank">
+        <img src="symptomPhotos/diazepam.jpg" alt="diazepam">
+      </a>
+        <div class="subtext">
+          <div class="symptomName">
+            <input class="symptomCheckbox" type="checkbox" id="diazepam" name="diazepam" value="diazepam">
+            <span>diazepam<i style="display:none;">rektal diazepam, nöbet durdurucu, febril konvülziyon, sedatif, diazem</i></span>
+          </div>
+        </div>
+      </label>
+    </div>
+
+    <div class="symptom" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ul>
+          <li>Yetişkin doz: 2.5–5 mg nebülizer ile her 20 dakikada bir, ilk saat</li>
+          <li>Pediatrik doz: 0.15 mg/kg nebülizer (maks 2.5 mg) her 20 dakikada 3 doza kadar</li>
+          <li>Yan etkiler: Taşikardi, tremor, baş ağrısı</li>
+          <li>Acil astım ataklarında ilk basamak tedavidir</li>
+          <li>Krup'ta ventolin kontrendikedir</li>
+        </ul>
+      </div>
+      <label onclick="symptomcolor();order()" for="salbutamol">
+        <img src="symptomPhotos/salbutamol.jpg" alt="salbutamol">
+        <div class="subtext">
+          <div class="symptomName">
+            <input class="symptomCheckbox" type="checkbox" id="salbutamol" name="salbutamol" value="salbutamol">
+            <span>salbutamol<i style="display:none;">ventolin, astım, bronkodilatör, beta2 agonist</i></span>
+          </div>
+        </div>
+      </label>
+    </div>
+
+    <div class="symptom" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ul>
+          <li>Yetişkin doz: 0.5 mg nebülizer ile her 20 dakikada bir, ilk saat</li>
+          <li>Pediatrik doz: 250 mcg nebül (0.25 mg), 20 dakikada bir 3 doza kadar</li>
+          <li>Yan etkiler: Ağız kuruluğu, baş ağrısı, tremor</li>
+          <li>Beta2 agonistler ile kombine edilerek astım ve KOAH ataklarında kullanılır</li>
+        </ul>
+      </div>
+      <label onclick="symptomcolor();order()" for="ipratropium">
+        <img src="symptomPhotos/ipratropium.jpg" alt="ipratropium">
+        <div class="subtext">
+          <div class="symptomName">
+            <input class="symptomCheckbox" type="checkbox" id="ipratropium" name="ipratropium" value="ipratropium">
+            <span>ipratropium<i style="display:none;">nebül, antikolinerjik, astım, KOAH, kısa etkili</i></span>
+          </div>
+        </div>
+      </label>
+    </div>
+
+    <div class="symptom" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ul>
+          <li>Yenidoğan doz: 100 mg/kg tek doz IV infüzyon, sonra 50 mg/kg 12 saatte bir</li>
+          <li>Yan etkiler: Metabolik asidoz, hipotansiyon, hipoglisemi</li>
+          <li>Yenidoğan sepsis ve menenjit tedavisinde ampirik başlanabilir</li>
+          <li>Kontrendikasyonlar: Şiddetli karaciğer yetmezliği</li>
+        </ul>
+      </div>
+      <label onclick="symptomcolor();order()" for="ampisilin">
+        <img src="symptomPhotos/ampisilin.jpg" alt="ampisilin">
+        <div class="subtext">
+          <div class="symptomName">
+            <input class="symptomCheckbox" type="checkbox" id="ampisilin" name="ampisilin" value="ampisilin">
+            <span>ampisilin<i style="display:none;">yenidoğan sepsis, menenjit, antibiyotik, beta-laktam</i></span>
+          </div>
+        </div>
+      </label>
+    </div>
+
+    <div class="symptom" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ul>
+          <li>Doz: 1 g IV/IM günde 1 kez (enfeksiyon türüne göre değişebilir)</li>
+          <li>Yan etkiler: Alerji, ishal, enjeksiyon yerinde ağrı</li>
+          <li>Kontrendikasyonlar: Sefalosporinlere aşırı duyarlılık</li>
+          <li>Böbrek yetmezliğinde doz ayarlaması genellikle gerekmez</li>
+        </ul>
+      </div>
+      <label onclick="symptomcolor();order()" for="seftriakson">
+        <img src="symptomPhotos/seftriakson.jpg" alt="seftriakson">
+        <div class="subtext">
+          <div class="symptomName">
+            <input class="symptomCheckbox" type="checkbox" id="seftriakson" name="seftriakson" value="seftriakson">
+            <span>seftriakson<i style="display:none;">renal güvenli, böbrek güvenli, geniş spektrum, antibiyotik, ceftriaxone</i></span>
+          </div>
+        </div>
+      </label>
+    </div>
+
+    <div class="symptom" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ul>
+          <li>Doz: 500 mg PO 1x1 ilk gün, ardından 250 mg/gün 4 gün</li>
+          <li>Yan etkiler: Bulantı, karın ağrısı, QT uzaması</li>
+          <li>Kontrendikasyonlar: QT uzaması, makrolidlere alerji</li>
+          <li>Böbrek yetmezliğinde güvenli; doz ayarlaması çoğunlukla gerekmez</li>
+        </ul>
+      </div>
+      <label onclick="symptomcolor();order()" for="azitromisin">
+        <img src="symptomPhotos/azitromisin.jpg" alt="azitromisin">
+        <div class="subtext">
+          <div class="symptomName">
+            <input class="symptomCheckbox" type="checkbox" id="azitromisin" name="azitromisin" value="azitromisin">
+            <span>azitromisin<i style="display:none;">makrolid, renal güvenli, azithromycin, solunum enfeksiyonu</i></span>
+          </div>
+        </div>
+      </label>
+    </div>
+
+    <div class="symptom" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ul>
+          <li>Doz: 500–1000 mg 6 saatte bir; maksimum 4 g/gün</li>
+          <li>Yan etkiler: Karaciğer toksisitesi yüksek dozda</li>
+          <li>Kontrendikasyonlar: Aktif karaciğer hastalığı</li>
+          <li>Düşük dozlarda böbrek yetmezliğinde güvenle kullanılabilir</li>
+        </ul>
+      </div>
+      <label onclick="symptomcolor();order()" for="parasetamolguvenli">
+        <img src="symptomPhotos/parasetamolguvenli.jpg" alt="parasetamol">
+        <div class="subtext">
+          <div class="symptomName">
+            <input class="symptomCheckbox" type="checkbox" id="parasetamolguvenli" name="parasetamolguvenli" value="parasetamolguvenli">
+            <span>parasetamol (renal güvenli)<i style="display:none;">acetaminofen, böbrek yetmezliği, ağrı kesici, ateş düşürücü</i></span>
+          </div>
+        </div>
+      </label>
+    </div>
+
+    <div class="symptom" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ul>
+          <li>Doz: 20–100 mg/kg/gün IV veya intratrakeal, klinik durum ve preparata göre</li>
+          <li>Yan etkiler: Oksijen desatürasyonu, bradikardi, pulmoner hemoraji</li>
+          <li>Prematüre bebeklerde respiratuar distres sendromu tedavisinde kullanılır</li>
+          <li>Kontrendikasyonlar: Aktif pulmoner kanama veya hipersensitivite</li>
+        </ul>
+      </div>
+      <label onclick="symptomcolor();order()" for="surfaktant">
+        <img src="symptomPhotos/surfaktant.jpg" alt="surfaktant">
+        <div class="subtext">
+          <div class="symptomName">
+            <input class="symptomCheckbox" type="checkbox" id="surfaktant" name="surfaktant" value="surfaktant">
+            <span>surfaktant<i style="display:none;">prematüre, RDS, solunum desteği, intratrakeal</i></span>
+          </div>
+        </div>
+      </label>
+    </div>
+
+    <div class="symptom" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ul>
+          <li>Doz: 5–10 mg/kg/gün PO veya IV, başlanır; maksimum 20 mg/kg/gün</li>
+          <li>Yan etkiler: Taşikardi, tremor, irritabilite, apne atakları</li>
+          <li>Yenidoğanda apne tedavisi ve solunum stimülasyonu için kullanılır</li>
+          <li>Kontrendikasyonlar: Aktif nöbet öyküsü, ciddi karaciğer hastalığı</li>
+        </ul>
+      </div>
+      <label onclick="symptomcolor();order()" for="kafeinsitrat">
+        <img src="symptomPhotos/kafeinsitrat.jpg" alt="kafein sitrat">
+        <div class="subtext">
+          <div class="symptomName">
+            <input class="symptomCheckbox" type="checkbox" id="kafeinsitrat" name="kafeinsitrat" value="kafeinsitrat">
+            <span>kafein sitrat<i style="display:none;">apne, prematür, solunum stimülanı, yenidoğan</i></span>
+          </div>
+        </div>
+      </label>
+    </div>
+
+    <div class="symptom" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ul>
+          <li>Yetişkin doz: 10 mL %10’luk kalsiyum glukonat IV yavaş, 5–10 dk’da</li>
+          <li>Pediatrik doz: 0.5 mL/kg %10’luk çözeltiden IV yavaş (maks 10 mL)</li>
+          <li>Yan etkiler: Bradiaritmi, damar dışına kaçarsa doku nekrozu</li>
+          <li>Hiperkalemi, hipokalsemi ve kalsiyum kanal bloker toksisitesinde kullanılır</li>
+        </ul>
+      </div>
+      <label onclick="symptomcolor();order()" for="kalsiyumglukonat">
+        <img src="symptomPhotos/kalsiyumglukonat.jpg" alt="kalsiyum glukonat">
+        <div class="subtext">
+          <div class="symptomName">
+            <input class="symptomCheckbox" type="checkbox" id="kalsiyumglukonat" name="kalsiyumglukonat" value="kalsiyumglukonat">
+            <span>kalsiyum glukonat<i style="display:none;">hiperkalemi, kalsiyum eksikliği, acil, çocuk, antidot</i></span>
+          </div>
+        </div>
+      </label>
+    </div>
+
+    <div class="symptom" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ul>
+          <li>Pediatrik doz: 0.1–0.2 mg/kg IV (max 2 mg), yavaş enjeksiyon</li>
+          <li>Yetişkin doz: 2–4 mg IV veya IM, tekrar dozu 15 dakika sonra</li>
+          <li>Yan etkiler: Bradikardi, solunum depresyonu, paradoksal uyarılma</li>
+          <li>Status epileptikus tedavisinde ve acil sedasyon için kullanılır</li>
+        </ul>
+      </div>
+      <label onclick="symptomcolor();order()" for="midazolam">
+        <img src="symptomPhotos/midazolam.jpg" alt="midazolam">
+        <div class="subtext">
+          <div class="symptomName">
+            <input class="symptomCheckbox" type="checkbox" id="midazolam" name="midazolam" value="midazolam">
+            <span>midazolam<i style="display:none;">sedatif, benzodiazepin, kriz kontrol, epilepsi, diazem alternatif</i></span>
+          </div>
+        </div>
+      </label>
+    </div>
+
+    <div class="symptom" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ul>
+          <li>Yetişkin doz: 20 mEq potasyum, 100 mL SF içinde 1 saatte IV yavaş</li>
+          <li>Pediatrik doz: 0.5–1 mEq/kg IV, maksimal hız: 0.5 mEq/kg/saat</li>
+          <li>Yan etkiler: Kardiyak aritmi, lokal irritasyon, damar dışına kaçarsa nekroz</li>
+          <li>Hipokalemi acil tedavisinde dikkatle uygulanmalıdır</li>
+        </ul>
+      </div>
+      <label onclick="symptomcolor();order()" for="kcl">
+        <img src="symptomPhotos/kcl.jpg" alt="potassium chloride">
+        <div class="subtext">
+          <div class="symptomName">
+            <input class="symptomCheckbox" type="checkbox" id="kcl" name="kcl" value="kcl">
+            <span>potasyum klorür (KCl)<i style="display:none;">hipokalemi, elektrolit düzeltme, acil, potasyum</i></span>
+          </div>
+        </div>
+      </label>
+    </div>
+
+    <div class="symptom" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ul>
+          <li>Yetişkin dozu: 0.1–0.2 mg IV yavaş enjeksiyon (maks 10 mcg/kg)</li>
+          <li>Pediatrik doz: 10 mcg/kg IV yavaş, gerekirse 3 dakika aralıkla tekrarlanabilir</li>
+          <li>Yan etkiler: Bulantı, ajitasyon, taşikardi, yoksunluk semptomları</li>
+          <li>Opioid doz aşımında antagonistik etki gösterir</li>
+        </ul>
+      </div>
+      <label onclick="symptomcolor();order()" for="nalokson">
+        <img src="symptomPhotos/nalokson.jpg" alt="nalokson">
+        <div class="subtext">
+          <div class="symptomName">
+            <input class="symptomCheckbox" type="checkbox" id="nalokson" name="nalokson" value="nalokson">
+            <span>nalokson<i style="display:none;">opioid antidotu, overdoz, morfin, fentanil, çocuk</i></span>
+          </div>
+        </div>
+      </label>
+    </div>
+
+    <div class="symptom" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ul>
+          <li>Yetişkinlerde doz: 5-10 mg/gün tek dozda veya bölünmüş dozlarda</li>
+          <li>Yan etkiler: Ağız kuruluğu, konstipasyon, sersemlik</li>
+          <li>Yaşlı hastalarda dikkatli kullanılmalı; konfüzyon yapabilir</li>
+        </ul>
+      </div>
+      <label onclick="symptomcolor();order()" for="amitriptilin">
+        <img src="symptomPhotos/amitriptilin.jpg" alt="amitriptilin">
+        <div class="subtext">
+          <div class="symptomName">
+            <input class="symptomCheckbox" type="checkbox" id="amitriptilin" name="amitriptilin" value="amitriptilin">
+            <span>amitriptilin<i style="display:none;">trisiklik antidepresan, TCA, depresyon, nöropatik ağrı, amitriptyline</i></span>
+          </div>
+        </div>
+      </label>
+    </div>
+
+    <div class="symptom" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ul>
+          <li>Doz: 50-100 mg/gün (bölünmüş dozlarda), maksimum 200 mg/gün</li>
+          <li>Yan etkiler: Sedasyon, baş dönmesi, koordinasyon bozukluğu</li>
+          <li>Epilepsi hastalarında nöbet eşiğini düşürebilir</li>
+        </ul>
+      </div>
+      <label onclick="symptomcolor();order()" for="tramadol">
+        <img src="symptomPhotos/tramadol.jpg" alt="tramadol">
+        <div class="subtext">
+          <div class="symptomName">
+            <input class="symptomCheckbox" type="checkbox" id="tramadol" name="tramadol" value="tramadol">
+            <span>tramadol<i style="display:none;">ağrı kesici, opioid, orta şiddette ağrı, tramol</i></span>
+          </div>
+        </div>
+      </label>
+    </div>
+
+    <div class="symptom" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ul>
+          <li>Doz: 1-2 mg sublingual, tekrar dozu 5 dakika sonra verilebilir. Maksimum: 3 doz</li>
+          <li>Yan etkiler: Baş ağrısı, hipotansiyon, baş dönmesi</li>
+          <li>Fosfodiesteraz-5 inhibitörleri ile birlikte kesinlikle kullanılmamalıdır</li>
+        </ul>
+      </div>
+      <label onclick="symptomcolor();order()" for="nitrogliserin">
+        <img src="symptomPhotos/nitrogliserin.jpg" alt="nitrogliserin">
+        <div class="subtext">
+          <div class="symptomName">
+            <input class="symptomCheckbox" type="checkbox" id="nitrogliserin" name="nitrogliserin" value="nitrogliserin">
+            <span>nitrogliserin<i style="display:none;">angina, sublingual tablet, nitrater, kalp krizi ilacı</i></span>
+          </div>
+        </div>
+      </label>
+    </div>
+
+    <div class="symptom" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ul>
+          <li>ACE inhibitörü kontrendikasyonları: Gebelik, Bilateral Arter stenozu, Daha önce ACE inhibitörüne alerji gelişmiş olması</li>
+        </ul>
+      </div>
+      <label onclick="symptomcolor();order()" for="kaptopril">
+      <img src="symptomPhotos/kaptopril.jpg" alt="kaptopril">
+      <div class="subtext">
+        <div class="symptomName">
+          <input class="symptomCheckbox" type="checkbox" id="kaptopril" name="kaptopril" value="kaptopril"><span>kaptopril<i style="display:none;">ace inhibitörü, acei, anjiyotensin konverting enzim inhibitörü, anjiyotensin converting enzyme inhibitors, angiotensin convertin enzyme inhibitor</i></span>
+        </div>
+      </div>
+      </label>
+    </div>
+
+    <div class="symptom" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ul>
+          <li>Depo penisilin, IV yapılması ölümle sonuçlanabilir</li>
+        </ul>
+      </div>
+      <label onclick="symptomcolor();order()" for="benzatinpenisilin">
+        <a style="color:black" href="diseases/benzatinpenisilin.htm" target="_blank">
+      <img src="symptomPhotos/benzatinpenisilin.jpg" alt="benzatinpenisilin">
+    </a>
+      <div class="subtext">
+        <div class="symptomName">
+          <input class="symptomCheckbox" type="checkbox" id="benzatinpenisilin" name="benzatinpenisilin" value="benzatinpenisilin"><span>benzatin penisilin<i style="display:none;">depo penisilin, antibiyotik</i></span>
+        </div>
+      </div>
+      </label>
+    </div>
+
+
+    <div class="symptom" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ul>
+          <li>OKS kullanan hastada amoksisilin vermek istenmeyen gebeliklere yol açabilir</li>
+        </ul>
+      </div>
+      <label onclick="symptomcolor();order()" for="amoksisilin">
+      <img src="symptomPhotos/amoksisilin.jpg" alt="amoksisilin">
+      <div class="subtext">
+        <div class="symptomName">
+          <input class="symptomCheckbox" type="checkbox" id="amoksisilin" name="amoksisilin" value="amoksisilin"><span>Augmentin / amoksisilin&klavulonat<i style="display:none;">penisilin, klamox</i></span>
+        </div>
+      </div>
+      </label>
+    </div>
+
+    <div class="symptom" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ul>
+          <li>Statin grubu ilaçlar fibrat grubu ilaçlarla kombine edilirse myopati riski belirgin artar.</li>
+          <li>Hepatit yapabilir.</li>
+        </ul>
+      </div>
+      <label onclick="symptomcolor();order()" for="atorvastatin">
+      <img src="symptomPhotos/atorvastatin.jpg" alt="atorvastatin">
+      <div class="subtext">
+        <div class="symptomName">
+          <input class="symptomCheckbox" type="checkbox" id="atorvastatin" name="atorvastatin" value="atorvastatin"><span>atorvastatin<i style="display:none;">statinler</i></span>
+        </div>
+      </div>
+      </label>
+    </div>
+
+    <div class="symptom" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ul>
+          <li>Distribütif şoklarda(Örneğin anaflaktik şok) her 3-5dk'da bir 0.5mg Uyluğa IM yapılır</li>
+          <li>Pediatrik doz 0.01mg/kg</li>
+        </ul>
+      </div>
+      <label onclick="symptomcolor();order()" for="adrenalin">
+        <a style="color:black" href="diseases/adrenalin.htm" target="_blank">
+      <img src="symptomPhotos/adrenalin.jpg" alt="adrenalin">
+    </a>
+      <div class="subtext">
+        <div class="symptomName">
+          <input class="symptomCheckbox" type="checkbox" id="adrenalin" name="adrenalin" value="adrenalin"><span>adrenalin<i style="display:none;">epinefrin, epipen</i></span>
+        </div>
+      </div>
+      </label>
+    </div>
+
+    <div class="symptom" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ul>
+          <li>SSRI grubu MAO inhibitörleriyle birlikte kullanıldığında ishal, flushing, ajitasyon, ataxiyle seyreden serotonin sendromuna yol açabilir.</li>
+        </ul>
+      </div>
+      <label onclick="symptomcolor();order()" for="sertralin">
+      <img src="symptomPhotos/sertralin.jpg" alt="sertralin">
+      <div class="subtext">
+        <div class="symptomName">
+          <input class="symptomCheckbox" type="checkbox" id="sertralin" name="sertralin" value="sertralin"><span>sertralin<i style="display:none;">seratonin antagonisti,seratonin geri alım inihibitörü, ssri, SSRI, serotonin antagonisti, serotonin geri alım inhibitörü</i></span>
+        </div>
+      </div>
+      </label>
+    </div>
+
+    <div class="symptom" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ul>
+          <li>Warfarin başlanacak hastaya 1-2 gün önce heparin başlanmalıdır aksi halde protein C&S eksikliği olan hastada nekroz oluşabilir</li>
+        </ul>
+      </div>
+      <label onclick="symptomcolor();order()" for="warfarin">
+      <img src="symptomPhotos/warfarin.jpg" alt="warfarin">
+      <div class="subtext">
+        <div class="symptomName">
+          <input class="symptomCheckbox" type="checkbox" id="warfarin" name="warfarin" value="warfarin"><span>warfarin<i style="display:none;"></i></span>
+        </div>
+      </div>
+      </label>
+    </div>
+
+    <div class="symptom" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ul>
+          <li>Alteplase(tPA), Streptokinase, Reteplase(rPA), Tenecteplase(TNK-tPA)</li>
+          <li>Kontrendikasyon: Streptokinaz ya da anistreplase ile tedavi edilmiş hastanın steptokinazla tekrar tedavi edilmesi kontrendikedir</li>
+        </ul>
+      </div>
+      <label onclick="symptomcolor();order()" for="trombolitik">
+      <a style="color:black" href="diseases/trombolitik.htm" target="_blank">
+      <img src="symptomPhotos/trombolitik.jpg" alt="trombolitik">
+      </a>
+      <div class="subtext">
+        <div class="symptomName">
+          <input class="symptomCheckbox" type="checkbox" id="trombolitik" name="trombolitik" value="trombolitik"><span>trombolitik<i style="display:none;">fibrinolitikler,antitrombotikler,Alteplase(tPA), Streptokinase, Reteplase(rPA), Tenecteplase(TNK-tPA)</i></span>
+        </div>
+      </div>
+      </label>
+    </div>
+
+    <div class="symptom" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ul>
+          <li>Glukoz 6 fosfat dehidrogenaz enzim eksikliğinde <strong>Hemolitik anemi</strong>'ye yol açabilir.</li>
+          <li>Folik asit yolağı her iki basamağı da bloke olur ve sıklıkla <strong>megaloblastik anemi</strong>'ye yol açabilir.</li>
+        </ul>
+      </div>
+      <label onclick="symptomcolor();order()" for="trimetoprimsülfametoksazol">
+      <img src="symptomPhotos/trimetoprimsülfametoksazol.jpg" alt="trimetoprimsülfametoksazol">
+      <div class="subtext">
+        <div class="symptomName">
+          <input class="symptomCheckbox" type="checkbox" id="trimetoprimsülfametoksazol" name="trimetoprimsülfametoksazol" value="trimetoprimsülfametoksazol"><span>trimetoprim-sülfametoksazol<i style="display:none;">ko-trimaksazol, sülfa, sülfon, sülfametoksozol,sülfametaksozol,sülfametoksozol, trimethoprim</i></span>
+        </div>
+      </div>
+      </label>
+    </div>
+
+    <div class="symptom" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ul>
+          <li>Disülfiram benzeri reaksyonla Aldehit dehidrogenazı bloke ederek Alkol toksisitesine bağlı etkileri(bulantı, kusma) artırır.</li>
+          <li>İlaç alındığı süreçte alkol alınmamalıdır.</li>
+        </ul>
+      </div>
+      <label onclick="symptomcolor();order()" for="metronidazol">
+      <img src="symptomPhotos/metronidazol.jpg" alt="metronidazol">
+      <div class="subtext">
+        <div class="symptomName">
+          <input class="symptomCheckbox" type="checkbox" id="metronidazol" name="metronidazol" value="metronidazol"><span>metronidazol(flaggyl)<i style="display:none;">tinidazol, disülfiram, flaggyl, flagil, flagyl, flajil</i></span>
+        </div>
+      </div>
+      </label>
+    </div>
+
+    <div class="symptom" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ul>
+          <li>Kg'a 3(proflaktik)-5 mg</li>
+        </ul>
+      </div>
+      <label onclick="symptomcolor();order()" for="demir">
+          <a style="color:black" href="diseases/demir.htm" target="_blank">
+      <img src="symptomPhotos/demir.jpg" alt="demir">
+      </a>
+      <div class="subtext">
+        <div class="symptomName">
+          <input class="symptomCheckbox" type="checkbox" id="demir" name="demir" value="demir"><span>demir +2<i style="display:none;">fe, fe+2, fe+3, ferrum, ferrik, ferröz, ferrous, iron</i></span>
+        </div>
+      </div>
+      </label>
+    </div>
+
+    <div class="symptom" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ul>
+          <li>kg' a 0,15mg'dan verilir</li>
+          <li>macrol 125mg/5ml ve 250mg/5ml süsp. formları bulunur</li>
+          <li>QT uzaması yapabilir</li>
+          <li>Torsades de pointes yapabilir.</li>
+        </ul>
+      </div>
+      <label onclick="symptomcolor();order()" for="macrol">
+        <a style="color:black" href="diseases/macrol.htm" target="_blank">
+      <img src="symptomPhotos/macrol.jpg" alt="macrol">
+          </a>
+      <div class="subtext">
+        <div class="symptomName">
+          <input class="symptomCheckbox" type="checkbox" id="macrol" name="macrol" value="macrol"><span>Klaritromisin, macrol<i style="display:none;">makrol, aminoglikozis, aminoglycoside, clarithromycin</i></span>
+        </div>
+      </div>
+      </label>
+    </div>
+
+    <div class="symptom" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ul>
+          <li>kg'a 1mg verilir, max doz 40mg(Pediatrik)</li>
+          <li>Tansiyonu düşürür(60 yaş üzeri dikkatli kullanılmalıdır)</li>
+        </ul>
+      </div>
+      <a style="color:black" href="diseases/avil.htm" target="_blank">
+      <label onclick="symptomcolor();order()" for="avil">
+      <img src="symptomPhotos/avil.jpg" alt="avil">
+      <div class="subtext">
+        <div class="symptomName">
+          <input class="symptomCheckbox" type="checkbox" id="avil" name="avil" value="avil"><span>avil<i style="display:none;">antihistaminik, 1.kuşak </i></span>
+        </div>
+      </div>
+      </label>
+    </a>
+    </div>
+
+    <div class="symptom" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ul>
+          <li>Kg' a 0.1mg olarak yapılır(Min 2mg, Max 4 mg)</li>
+          <li>Öksürük yapar</li>
+          <li>Kabızlık</li>
+          <li>Torsades de pointes</li>
+        </ul>
+      </div>
+      <label onclick="symptomcolor();order()" for="zofer">
+        <a style="color:black" href="diseases/zofer.htm" target="_blank">
+      <img src="symptomPhotos/zofer.jpg" alt="zofer">
+      </a>
+      <div class="subtext">
+        <div class="symptomName">
+          <input class="symptomCheckbox" type="checkbox" id="zofer" name="zofer" value="zofer"><span>zofer<i style="display:none;">antiemetik, bulantı ilacı, kusma ilacı</i></span>
+        </div>
+      </div>
+      </label>
+    </div>
+
+    <div class="symptom" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ul>
+          <li>Kg' a 0.15 mg(IV doz) Max 8mg</li>
+          <li>Kg'a 0.4mg Oral doz</li>
+        </ul>
+      </div>
+      <a style="color:black" href="diseases/dekort.htm" target="_blank">
+      <label onclick="symptomcolor();order()" for="dekort">
+      <img src="symptomPhotos/dekort.jpg" alt="dekort">
+      <div class="subtext">
+        <div class="symptomName">
+          <input class="symptomCheckbox" type="checkbox" id="dekort" name="dekort" value="dekort"><span>dekort<i style="display:none;">steroid, kortikosteroid, deksametazon, dexametazon</i></span>
+        </div>
+      </div>
+      </label>
+    </a>
+    </div>
+
+    <div class="symptom" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ul>
+          <li>Krup'da kontrendikedir</li>
+          <li></li>
+        </ul>
+      </div>
+      <label onclick="symptomcolor();order()" for="Ventolin">
+        <a style="color:black" href="diseases/Ventolin.htm" target="_blank">
+      <img src="symptomPhotos/Ventolin.jpg" alt="Ventolin">
+      </a>
+      <div class="subtext">
+        <div class="symptomName">
+          <input class="symptomCheckbox" type="checkbox" id="Ventolin" name="Ventolin" value="Ventolin"><span>Ventolin & Albuterol<i style="display:none;">Bronkodilatator, B2 agonist, astım ilacı</i></span>
+        </div>
+      </div>
+      </label>
+    </div>
+
+    <div class="symptom" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ul>
+          <li>10-15mg/kg/doz , 24 saatte 4-6 kez tekrarlanabilir PO/IV(Max 1 g/doz(tek yüklemede), 3750/4000mg/gün)</li>
+          <li>KC enzim yüksekliği ya da yetmezliği olanda dikkatli kullanılmalı</li>
+          <li>Parol(pembe),Calpol(mor),Tylol(Pembe),Minafen(kırmızı) 120mg/5ml(1 ölçek), 10kg'a 1 ölçek verilir </li>
+          <li>1 ölçek = 1 tatlı kaşığı, 1/2 ölçek = 1 çay kaşığı</li>
+          <li>Paranox-S 120mg/1fitil rektal KULLANILMAMALI</li>
+
+        </ul>
+      </div>
+      <label onclick="symptomcolor();order()" for="parasetamol">
+      <a style="color:black" href="diseases/parasetamol.htm" target="_blank">
+      <img src="symptomPhotos/parasetamol.jpg" alt="parasetamol">
+      </a>
+      <div class="subtext">
+        <div class="symptomName">
+          <input class="symptomCheckbox" type="checkbox" id="parasetamol" name="parasetamol" value="parasetamol"><span>parasetamol & acetaminophen<i style="display:none;">ateş düşürücü,ağrı kesici, parol, asetaminofen, paracetamol, parol flakon</i></span>
+        </div>
+      </div>
+      </label>
+    </div>
+
+    <div class="symptom" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ul>
+          <li>NSAİİ grubu ilaçlar verilmeden kalp krizi hikayesi sorgulanmalıdır eğer son bir ayda geçirilmiş <i style="color:maroon">kalp krizi öyküsü</i> varsa nsaii verilmez.</li>
+          <li>NSAİİ grubu ilaçların uzun vadede gastrointestinal yan etkilerinden dolayı <i style="color:maroon">PPi</i>(proton pompa inhibitörü) grubu ilaçla birlikte kullanımı faydalıdır.</li>
+          <li><i style="color:maroon">Warfarin, Diüretik</i> kullanan hastaya NSAİİ verilmemelidir.</li>
+        </ul>
+      </div>
+      <label onclick="symptomcolor();order()" for="ibuprofen">
+      <a style="color:black" href="diseases/ibuprofen.htm" target="_blank">
+      <img src="symptomPhotos/ibuprofen.jpg" alt="ibuprofen">
+      </a>
+      <div class="subtext">
+        <div class="symptomName">
+          <input class="symptomCheckbox" type="checkbox" id="ibuprofen" name="ibuprofen" value="ibuprofen"><span>ibuprofen<i style="display:none;">ateş düşürücü, ağrı kesici, dolven, pedifen, apireks</i></span>
+        </div>
+      </div>
+      </label>
+    </div>
+
+    <div class="symptom" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ul>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+      <label onclick="symptomcolor();order()" for="ppi">
+      <a style="color:black" href="diseases/ppi.htm" target="_blank">
+      <img src="symptomPhotos/ppi.jpg" alt="ppi">
+      </a>
+      <div class="subtext">
+        <div class="symptomName">
+          <input class="symptomCheckbox" type="checkbox" id="ppi" name="ppi" value="ppi"><span>Proton pompa inhibitörleri<i style="display:none;">mide ilacı, Famodin, Famogast, Famoser, Duovel, Nevofam,Panthec, Gastrozol,Pantoprazol,Pantpas,Esomeprazol,Omeprazol,ppi, Omeprol, Demeprazol, Eselan,mide koruyucu, antiasit, Lansor, Degastrol, Helicol, Aprazol, Lanzedin, Lukazrol, panto, Trimebutin,Debridat, Tribudat, Puridat, Gismotal</i></span>
+        </div>
+      </div>
+      </label>
+    </div>
+
+    <div class="symptom" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ul>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+      <label onclick="symptomcolor();order()" for="dvitamini">
+      <a style="color:black" href="diseases/dvitamini.htm" target="_blank">
+      <img src="symptomPhotos/dvitamini.jpg" alt="dvitamini">
+      </a>
+      <div class="subtext">
+        <div class="symptomName">
+          <input class="symptomCheckbox" type="checkbox" id="dvitamini" name="dvitamini" value="dvitamini"><span>D vitamini<i style="display:none;">1,25 dihidroksikoolekalsiferol, 1-25 dihidroksikolekalsifero, vitamin d, dvit</i></span>
+        </div>
+      </div>
+      </label>
+    </div>
+
+    <div class="symptom" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ul>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+      <label onclick="symptomcolor();order()" for="b12vitamini">
+      <a style="color:black" href="diseases/b12vitamini.htm" target="_blank">
+      <img src="symptomPhotos/b12vitamini.jpg" alt="b12vitamini">
+      </a>
+      <div class="subtext">
+        <div class="symptomName">
+          <input class="symptomCheckbox" type="checkbox" id="b12vitamini" name="b12vitamini" value="b12vitamini"><span>b12 vitamini<i style="display:none;">vitamin, kobalamin, hidroksikobalamin, vitamin b12, vitaminb12</i></span>
+        </div>
+      </div>
+      </label>
+    </div>
+
+    <div class="symptom" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ul>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+      <label onclick="symptomcolor();order()" for="antiasit">
+      <a style="color:black" href="diseases/antiasit.htm" target="_blank">
+      <img src="symptomPhotos/antiasit.jpg" alt="antiasit">
+      </a>
+      <div class="subtext">
+        <div class="symptomName">
+          <input class="symptomCheckbox" type="checkbox" id="antiasit" name="antiasit" value="antiasit"><span>anti asit ilaçları<i style="display:none;">gaviskon, gaviscon, ppi, proton pompa inihibitörleri, antiasit, tribudat, debridat,trimebutin</i></span>
+        </div>
+      </div>
+      </label>
+    </div>
+
+    <div class="symptom" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ul>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+      <label onclick="symptomcolor();order()" for="öksürükilacı">
+      <a style="color:black" href="diseases/öksürükilacı.htm" target="_blank">
+      <img src="symptomPhotos/öksürükilacı.jpg" alt="öksürükilacı">
+      </a>
+      <div class="subtext">
+        <div class="symptomName">
+          <input class="symptomCheckbox" type="checkbox" id="öksürükilacı" name="öksürükilacı" value="öksürükilacı"><span>öksürük ilaçları<i style="display:none;"></i></span>
+        </div>
+      </div>
+      </label>
+    </div>
+
+    <div class="symptom" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ul>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+      <label onclick="symptomcolor();order()" for="sfyükleme">
+      <a style="color:black" href="diseases/sfyükleme.htm" target="_blank">
+      <img src="symptomPhotos/sfyükleme.jpg" alt="sfyükleme">
+      </a>
+      <div class="subtext">
+        <div class="symptomName">
+          <input class="symptomCheckbox" type="checkbox" id="sfyükleme" name="sfyükleme" value="sfyükleme"><span>sıvı yükleme<i style="display:none;">sf,mayii, serum fizyolojik, yükleme ve idame dozları</i></span>
+        </div>
+      </div>
+      </label>
+    </div>
+
+    <div class="symptom" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ul>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+      <label onclick="symptomcolor();order()" for="gözkulakdamlaları">
+      <a style="color:black" href="diseases/gözkulakdamlaları.htm" target="_blank">
+      <img src="symptomPhotos/gözkulakdamlaları.jpg" alt="gözkulakdamlaları">
+      </a>
+      <div class="subtext">
+        <div class="symptomName">
+          <input class="symptomCheckbox" type="checkbox" id="gözkulakdamlaları" name="gözkulakdamlaları" value="gözkulakdamlaları"><span>göz ve kulak damlaları<i style="display:none;">kulak damlaları, göz damlaları, Gentagut,Siprogut, Netira,Clixan,Relestat,Zaditen, Patanol, Tears naturale, refresh,Tobrased,Tobrex,Tobsin,Otipax ,Onadron,Qulax </i></span>
+        </div>
+      </div>
+      </label>
+    </div>
+
+    <div class="symptom" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ul>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+      <label onclick="symptomcolor();order()" for="boğazburunspreyleri">
+      <a style="color:black" href="diseases/boğazburunspreyleri.htm" target="_blank">
+      <img src="symptomPhotos/boğazburunspreyleri.jpg" alt="boğazburunspreyleri">
+      </a>
+      <div class="subtext">
+        <div class="symptomName">
+          <input class="symptomCheckbox" type="checkbox" id="boğazburunspreyleri" name="boğazburunspreyleri" value="boğazburunspreyleri"><span>boğaz ve burun spreyleri<i style="display:none;">oral sprey,ağız spreyi,Calgel, Dentigel, Andorex, Kloroben, Tanflex, Tantum verde </i></span>
+        </div>
+      </div>
+      </label>
+    </div>
+
+    <div class="symptom" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ul>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+      <label onclick="symptomcolor();order()" for="balgamsökücü">
+      <a style="color:black" href="diseases/balgamsökücü.htm" target="_blank">
+      <img src="symptomPhotos/balgamsökücü.jpg" alt="balgamsökücü">
+      </a>
+      <div class="subtext">
+        <div class="symptomName">
+          <input class="symptomCheckbox" type="checkbox" id="balgamsökücü" name="balgamsökücü" value="balgamsökücü"><span>balgam sökücü<i style="display:none;">n-asetil sistein, NAC, mucomax,Erdostein</i></span>
+        </div>
+      </div>
+      </label>
+    </div>
+
+    <div class="symptom" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ul>
+          <li>Nitrat kullanan hastada PDE5 inhibitörü vermek her iki ilaç da C-GMP üzerinden etki ettiği için aşırı vazodilatasyonla ölüme yol açabilir.</li>
+        </ul>
+      </div>
+      <label onclick="symptomcolor();order()" for="sildenafil">
+      <img src="symptomPhotos/sildenafil.jpg" alt="sildenafil">
+      <div class="subtext">
+        <div class="symptomName">
+          <input class="symptomCheckbox" type="checkbox" id="sildenafil" name="sildenafil" value="sildenafil"><span>sildenafil<i style="display:none;">pde5 inhibitörü, fosfodiesteraz 5 inhibitörleri</i></span>
+        </div>
+      </div>
+      </label>
+    </div>
+
+    <div class="symptom" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ul>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+      <label onclick="symptomcolor();order()" for="antiviral">
+      <a style="color:black" href="diseases/antiviral.htm" target="_blank">
+      <img src="symptomPhotos/antiviral.jpg" alt="antiviral">
+      </a>
+      <div class="subtext">
+        <div class="symptomName">
+          <input class="symptomCheckbox" type="checkbox" id="antiviral" name="antiviral" value="antiviral"><span>antiviral ilaçlar<i style="display:none;">oseltamivir,enfluvir,tamiflu,oseflu</i></span>
+        </div>
+      </div>
+      </label>
+    </div>
+
+    <div class="symptom" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ul>
+          <li>Parasetamol(Asetaminofen) - N-Asetilsistein(glutatyonu yeniler)</li>
+          <li>Organofosfatlar, Asetilkolin esteraz inhibitorleri - Atropine>Pralidoxime</li>
+          <li>Antimuskarnik, antikolinerjik ajanlar - fizostigmine(Santral sinir sistemine geçer)</li>
+          <li>Arsenik - dimerkaprol, süksimer</li>
+          <li>Benzodiazepin - flumazenil(anexat)</li>
+          <li>beta blokerler - atropine, glukagon, saline</li>
+          <li>karbonmonoksit, CO - %100 O2, hiperbarik O2</li>
+          <li>Bakır - Penisilamin, trientin</li>
+          <li>Siyanür - Hidroksikobalamin(B12), nitrit + sodyum thiosülfat</li>
+          <li>dabigatran - idarucizumab</li>
+          <li>digoxin - digoxin spesifik antikor fragmanları</li>
+          <li>direk faktör Xa inhibitörleri(apixaban) - andexanet alfa</li>
+          <li>Heparin - Protamin sülfat</li>
+          <li>Demir - Deferoxamine, deferasirox, deferiprone</li>
+          <li>Kurşun - Penisilamin, kalsiyum disodyum EDTA, dimerkaprol, süksimer</li>
+          <li>Civa - Dimerkaprol, süksimer</li>
+          <li>Methanol, etilen glikol(Antifriz) - Fomepizole> etanol, diyaliz</li>
+          <li>methemoglobin - metilen mavisi, vitamin C(indirgeyici ajan)</li>
+          <li>Metotreksat - Leucovorin</li>
+          <li>Opiatlar - Naloxane</li>
+          <li>Salisilatlar - NaHCO3(İdrarı alkali yap), diyaliz</li>
+          <li>Trisiklik antidepresanlar(TCA) - NaHCO3(Kardiyak hücre membranını alkalize et)</li>
+          <li>Warfarin - Vİtamin K(geç etki), Protrombin kompleks konsantıratı(PCC)/FPP(direkt etki)</li>
+        </ul>
+      </div>
+      <label onclick="symptomcolor();order()" for="antidot">
+      <a style="color:black" href="diseases/antidot.htm" target="_blank">
+      <img src="symptomPhotos/antidot.jpg" alt="antidot">
+      </a>
+      <div class="subtext">
+        <div class="symptomName">
+          <input class="symptomCheckbox" type="checkbox" id="antidot" name="antidot" value="antidot"><span>antidotlar<i style="display:none;">zehirlenme,panzehir, ilaç antidotları, antidotu,benzo,benzodiazepin, siyanür,civa,</i></span>
+        </div>
+      </div>
+      </label>
+    </div>
+
+    <div class="symptom" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ul>
+          <li>Koroner vazospazm yapar</li>
+          <li></li>
+        </ul>
+      </div>
+      <label onclick="symptomcolor();order()" for="kokain">
+      <a style="color:black" href="diseases/kokain.htm" target="_blank">
+      <img src="symptomPhotos/kokain.jpg" alt="kokain">
+      </a>
+      <div class="subtext">
+        <div class="symptomName">
+          <input class="symptomCheckbox" type="checkbox" id="kokain" name="kokain" value="kokain"><span>kokain<i style="display:none;">cocaine, koko</i></span>
+        </div>
+      </div>
+      </label>
+    </div>
+
+    <div class="symptom" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ul>
+          <li>Koroner vazospazm yapar</li>
+          <li></li>
+        </ul>
+      </div>
+      <label onclick="symptomcolor();order()" for="amfetamin">
+      <a style="color:black" href="diseases/amfetamin.htm" target="_blank">
+      <img src="symptomPhotos/amfetamin.jpg" alt="amfetamin">
+      </a>
+      <div class="subtext">
+        <div class="symptomName">
+          <input class="symptomCheckbox" type="checkbox" id="amfetamin" name="amfetamin" value="amfetamin"><span>amfetamin<i style="display:none;">amphetamine, metamfetamine, methamphetamine</i></span>
+        </div>
+      </div>
+      </label>
+    </div>
+
+    <div class="symptom" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ul>
+          <li>Koroner vazospazm yapar</li>
+          <li></li>
+        </ul>
+      </div>
+      <label onclick="symptomcolor();order()" for="sumatriptan">
+      <a style="color:black" href="diseases/sumatriptan.htm" target="_blank">
+      <img src="symptomPhotos/sumatriptan.jpg" alt="sumatriptan">
+      </a>
+      <div class="subtext">
+        <div class="symptomName">
+          <input class="symptomCheckbox" type="checkbox" id="sumatriptan" name="sumatriptan" value="sumatriptan"><span>sumatriptan<i style="display:none;"></i></span>
+        </div>
+      </div>
+      </label>
+    </div>
+
+    <div class="symptom" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ul>
+          <li>koroner vazospazm yapar</li>
+          <li></li>
+        </ul>
+      </div>
+      <label onclick="symptomcolor();order()" for="ergotalkaloidleri">
+      <a style="color:black" href="diseases/ergotalkaloidleri.htm" target="_blank">
+      <img src="symptomPhotos/ergotalkaloidleri.jpg" alt="ergotalkaloidleri">
+      </a>
+      <div class="subtext">
+        <div class="symptomName">
+          <input class="symptomCheckbox" type="checkbox" id="ergotalkaloidleri" name="ergotalkaloidleri" value="ergotalkaloidleri"><span>ergot alkaloidleri<i style="display:none;">ergotlar</i></span>
+        </div>
+      </div>
+      </label>
+    </div>
+
+    <div class="symptom" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ul>
+          <li>Kutanöz flushing yapar(Eski adıyla kırmızı adam sendromu)</li>
+          <li>Kırmızı adam : histamin salınımına bağlı yaygın kaşıntılı kızarıklıklar olur. Difenhidramine ile düzeltilir, yavaş infüzyona geçişir. </li>
+        </ul>
+      </div>
+      <label onclick="symptomcolor();order()" for="vankomisin">
+      <a style="color:black" href="diseases/vankomisin.htm" target="_blank">
+      <img src="symptomPhotos/vankomisin.jpg" alt="vankomisin">
+      </a>
+      <div class="subtext">
+        <div class="symptomName">
+          <input class="symptomCheckbox" type="checkbox" id="vankomisin" name="vankomisin" value="vankomisin"><span>vankomisin<i style="display:none;">vancomycin, red man </i></span>
+        </div>
+      </div>
+      </label>
+    </div>
+
+    <div class="symptom" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ul>
+          <li>SVT'de vagal manevralar, Kalsiyum kanal blokörü/beta blokör'de sonra kullanılan ilaçtır</li>
+          <li>Kalbe en yakın yerden ilk 6 mg verilir arkasından 2cc sf yollanır, düzelmezse 2dk arayla 12mg ve 18 mg olarak devam edilir.</li>
+          <li>Kutanöz flushing yapar</li>
+        </ul>
+      </div>
+      <label onclick="symptomcolor();order()" for="adenozin">
+      <a style="color:black" href="diseases/adenozin.htm" target="_blank">
+      <img src="symptomPhotos/adenozin.jpg" alt="adenozin">
+      </a>
+      <div class="subtext">
+        <div class="symptomName">
+          <input class="symptomCheckbox" type="checkbox" id="adenozin" name="adenozin" value="adenozin"><span>adenozin<i style="display:none;">svt,supraventriküler taşikardi, supraventricular tachycardia,supraventrikülertaşikardi,supraventriculartachycardia, adenosine</i></span>
+        </div>
+      </div>
+      </label>
+    </div>
+
+    <div class="symptom" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ul>
+          <li>Kutanöz flushing yapar</li>
+          <li>Hiperglisemi yapar</li>
+        </ul>
+      </div>
+      <label onclick="symptomcolor();order()" for="niacin">
+      <a style="color:black" href="diseases/niacin.htm" target="_blank">
+      <img src="symptomPhotos/niacin.jpg" alt="niacin">
+      </a>
+      <div class="subtext">
+        <div class="symptomName">
+          <input class="symptomCheckbox" type="checkbox" id="niacin" name="niacin" value="niacin"><span>Vitamin B3 / niacin<i style="display:none;">niyasin, B3 vitamini, vit b3, niasin, b3vitamini,vitaminb3</i></span>
+        </div>
+      </div>
+      </label>
+    </div>
+
+    <div class="symptom" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ul>
+          <li>Kutanöz flushing yapar</li>
+          <li></li>
+        </ul>
+      </div>
+      <label onclick="symptomcolor();order()" for="kkb">
+      <a style="color:black" href="diseases/kkb.htm" target="_blank">
+      <img src="symptomPhotos/kkb.jpg" alt="kkb">
+      </a>
+      <div class="subtext">
+        <div class="symptomName">
+          <input class="symptomCheckbox" type="checkbox" id="kkb" name="kkb" value="kkb"><span>Kalsiyum kanal blokörleri<i style="display:none;">kkb, ca+2, ca +2 , kalsiyum blokörü, bloker, calcium channel blocker, ccb</i></span>
+        </div>
+      </div>
+      </label>
+    </div>
+
+    <div class="symptom" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ul>
+          <li>kutanöz flushing yapar</li>
+          <li></li>
+        </ul>
+      </div>
+      <label onclick="symptomcolor();order()" for="echinocandin">
+      <a style="color:black" href="diseases/echinocandin.htm" target="_blank">
+      <img src="symptomPhotos/echinocandin.jpg" alt="echinocandin">
+      </a>
+      <div class="subtext">
+        <div class="symptomName">
+          <input class="symptomCheckbox" type="checkbox" id="echinocandin" name="echinocandin" value="echinocandin"><span>echinocandin<i style="display:none;">ekinokandin</i></span>
+        </div>
+      </div>
+      </label>
+    </div>
+
+    <div class="symptom" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ul>
+          <li>kutanöz flushing yapar</li>
+          <li></li>
+        </ul>
+      </div>
+      <label onclick="symptomcolor();order()" for="nitrat">
+      <a style="color:black" href="diseases/nitrat.htm" target="_blank">
+      <img src="symptomPhotos/nitrat.jpg" alt="nitrat">
+      </a>
+      <div class="subtext">
+        <div class="symptomName">
+          <input class="symptomCheckbox" type="checkbox" id="nitrat" name="nitrat" value="nitrat"><span>nitrat<i style="display:none;">nitrate, nitratlar, nitroprussid</i></span>
+        </div>
+      </div>
+      </label>
+    </div>
+
+    <div class="symptom" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ul>
+          <li>Dilate kardiyomiyopati yapar.</li>
+          <li></li>
+        </ul>
+      </div>
+      <label onclick="symptomcolor();order()" for="antrasiklinler">
+      <a style="color:black" href="diseases/antrasiklinler.htm" target="_blank">
+      <img src="symptomPhotos/antrasiklinler.jpg" alt="antrasiklinler">
+      </a>
+      <div class="subtext">
+        <div class="symptomName">
+          <input class="symptomCheckbox" type="checkbox" id="antrasiklinler" name="antrasiklinler" value="antrasiklinler"><span>antrasiklinler<i style="display:none;">doxorubicin, doksorubisin,doxorubisin, doksorubicin, daunorubisin,daunorubicin</i></span>
+        </div>
+      </div>
+      </label>
+    </div>
+
+    <div class="symptom" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ul>
+          <li>dilate kardiyomiyopati</li>
+          <li></li>
+        </ul>
+      </div>
+      <label onclick="symptomcolor();order()" for="trastuzumab">
+      <a style="color:black" href="diseases/trastuzumab.htm" target="_blank">
+      <img src="symptomPhotos/trastuzumab.jpg" alt="trastuzumab">
+      </a>
+      <div class="subtext">
+        <div class="symptomName">
+          <input class="symptomCheckbox" type="checkbox" id="trastuzumab" name="trastuzumab" value="trastuzumab"><span>trastuzumab<i style="display:none;"></i></span>
+        </div>
+      </div>
+      </label>
+    </div>
+
+    <div class="symptom" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ul>
+          <li>Torsades de pointes : QT uzaması yapan ajanlar(Class Ia ve III)</li>
+          <li></li>
+        </ul>
+      </div>
+      <label onclick="symptomcolor();order()" for="antiaritmikler">
+      <a style="color:black" href="diseases/antiaritmikler.htm" target="_blank">
+      <img src="symptomPhotos/antiaritmikler.jpg" alt="antiaritmikler">
+      </a>
+      <div class="subtext">
+        <div class="symptomName">
+          <input class="symptomCheckbox" type="checkbox" id="antiaritmikler" name="antiaritmikler" value="antiaritmikler"><span>antiaritmikler<i style="display:none;">antiaritmik ilaçlar, amiadaron, lidokain, lidocaine</i></span>
+        </div>
+      </div>
+      </label>
+    </div>
+
+    <div class="symptom" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ul>
+          <li>Torsades de pointes</li>
+          <li></li>
+        </ul>
+      </div>
+      <label onclick="symptomcolor();order()" for="florokinolonlar">
+      <a style="color:black" href="diseases/florokinolonlar.htm" target="_blank">
+      <img src="symptomPhotos/florokinolonlar.jpg" alt="florokinolonlar">
+      </a>
+      <div class="subtext">
+        <div class="symptomName">
+          <input class="symptomCheckbox" type="checkbox" id="florokinolonlar" name="florokinolonlar" value="florokinolonlar"><span>florokinolonlar<i style="display:none;">kinolonlari, fluoroquinolones, quinolones, qinolonlar</i></span>
+        </div>
+      </div>
+      </label>
+    </div>
+
+    <div class="symptom" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ul>
+          <li>Torsades de pointes yapabilir</li>
+          <li>QT uzaması yapabilir</li>
+        </ul>
+      </div>
+      <label onclick="symptomcolor();order()" for="makrolidler">
+      <a style="color:black" href="diseases/makrolidler.htm" target="_blank">
+      <img src="symptomPhotos/makrolidler.jpg" alt="makrolidler">
+      </a>
+      <div class="subtext">
+        <div class="symptomName">
+          <input class="symptomCheckbox" type="checkbox" id="makrolidler" name="makrolidler" value="makrolidler"><span>makrolidler<i style="display:none;">macrolides, macrol, clarithromycin, klaritromisin, azithromycin, azitromisin,erythromycin, eritromisin, klamer</i></span>
+        </div>
+      </div>
+      </label>
+    </div>
+
+    <div class="symptom" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ul>
+          <li>Torsades de pointes</li>
+          <li></li>
+        </ul>
+      </div>
+      <label onclick="symptomcolor();order()" for="tca">
+      <a style="color:black" href="diseases/tca.htm" target="_blank">
+      <img src="symptomPhotos/tca.jpg" alt="tca">
+      </a>
+      <div class="subtext">
+        <div class="symptomName">
+          <input class="symptomCheckbox" type="checkbox" id="tca" name="tca" value="tca"><span>Trisiklik antidepresanlar<i style="display:none;">tcas, tricyclic antidepressants, imipramin, klomipramin, Laroxyl, Anafranil, Tofranil, amitriptilin,Amitriptyline </i></span>
+        </div>
+      </div>
+      </label>
+    </div>
+
+    <div class="symptom" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ul>
+          <li>Torsades de pointes</li>
+          <li></li>
+        </ul>
+      </div>
+      <label onclick="symptomcolor();order()" for="antiemetikler">
+      <a style="color:black" href="diseases/antiemetikler.htm" target="_blank">
+      <img src="symptomPhotos/antiemetikler.jpg" alt="antiemetikler">
+      </a>
+      <div class="subtext">
+        <div class="symptomName">
+          <input class="symptomCheckbox" type="checkbox" id="antiemetikler" name="antiemetikler" value="antiemetikler"><span>antiemetikler<i style="display:none;">ondansetron, metoklopromid, domperidon</i></span>
+        </div>
+      </div>
+      </label>
+    </div>
+
+    <div class="symptom" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ul>
+          <li>Diabetes insipidus</li>
+          <li></li>
+        </ul>
+      </div>
+      <label onclick="symptomcolor();order()" for="lityum">
+      <a style="color:black" href="diseases/lityum.htm" target="_blank">
+      <img src="symptomPhotos/lityum.jpg" alt="lityum">
+      </a>
+      <div class="subtext">
+        <div class="symptomName">
+          <input class="symptomCheckbox" type="checkbox" id="lityum" name="lityum" value="lityum"><span>lityum<i style="display:none;">lithium</i></span>
+        </div>
+      </div>
+      </label>
+    </div>
+
+    <div class="symptom" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ul>
+          <li>Jinekomasti yapabilir</li>
+          <li></li>
+        </ul>
+      </div>
+      <label onclick="symptomcolor();order()" for="ketokanazol">
+      <a style="color:black" href="diseases/ketokanazol.htm" target="_blank">
+      <img src="symptomPhotos/ketokanazol.jpg" alt="ketokanazol">
+      </a>
+      <div class="subtext">
+        <div class="symptomName">
+          <input class="symptomCheckbox" type="checkbox" id="ketokanazol" name="ketokanazol" value="ketokanazol"><span>ketokonazol<i style="display:none;">antifungal, ketokanazol, ketoconazol,azol</i></span>
+        </div>
+      </div>
+      </label>
+    </div>
+
+    <div class="symptom" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ul>
+          <li>Torsades de pointes</li>
+          <li></li>
+        </ul>
+      </div>
+      <label onclick="symptomcolor();order()" for="flukonazol">
+      <a style="color:black" href="diseases/flukonazol.htm" target="_blank">
+      <img src="symptomPhotos/flukonazol.jpg" alt="flukonazol">
+      </a>
+      <div class="subtext">
+        <div class="symptomName">
+          <input class="symptomCheckbox" type="checkbox" id="flukonazol" name="flukonazol" value="flukonazol"><span>flukonazol<i style="display:none;">antifungal, fluconazole</i></span>
+        </div>
+      </div>
+      </label>
+    </div>
+
+    <div class="symptom" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ul>
+          <li>Benzodiazepin doz aşımı tedavisinde kullanılır.</li>
+          <li>Flumazenil, GABA-A reseptörlerine bağlanan benzodiazepin antagonisti olarak çalışır.</li>
+          <li>İlk doz: 0.2 mg IV, 15 saniyede uygulanır. Gerekirse 0.3 mg ve ardından 0.5 mg tekrar dozları verilebilir.</li>
+          <li>Toplam doz genellikle 3 mg’ı geçmez.</li>
+          <li>Konvülsiyon riski nedeniyle kronik benzodiazepin kullananlarda dikkatle kullanılmalıdır.</li>
+        </ul>
+      </div>
+      <label onclick="symptomcolor();order()" for="anexate">
+        <a target="_blank" href="diseases/anexate.html">
+          <img src="symptomPhotos/anexate.jpg" alt="Anexate">
+        </a>
+        <div class="subtext">
+          <div class="symptomName">
+            <input class="symptomCheckbox" type="checkbox" id="anexate" name="anexate" value="anexate">
+            <span>Anexate (Flumazenil)
+              <i style="display:none;">benzodiazepin antagonisti,flumazenil,benzodiazepin antidotu,gaba antagonist</i>
+            </span>
+          </div>
+        </div>
+      </label>
+    </div>
+
+    <div class="symptom" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ul>
+          <li>Antienflamatuvar, antiromatizmal ve antialerjik etkili kortikosteroid.</li>
+          <li>Kortikosteroid tedavisine yanıt veren olgularda kullanılır.</li>
+          <li>Beyin ödeminde: 10 mg IV, ardından 4x4 mg.</li>
+          <li>Allerjik durumlarda: 1. gün 4–8 mg IM.</li>
+          <li>Akut akciğer ödemi: 4x4 mg PO/IV/IM.</li>
+          <li>Yüksek irtifa beyin ödemi: 8 mg yükleme sonrası 4x4 mg PO/IV/IM.</li>
+          <li>Kemik metastazı / vertebra kırığı: 10–100 mg IV.</li>
+        </ul>
+      </div>
+      <label onclick="symptomcolor();order()" for="dekort">
+        <a target="_blank" href="diseases/dekort.html">
+          <img src="symptomPhotos/dekort1.jpg" alt="Dekort">
+        </a>
+        <div class="subtext">
+          <div class="symptomName">
+            <input class="symptomCheckbox" type="checkbox" id="dekort" name="dekort" value="dekort">
+            <span>Dekort
+              <i style="display:none;">kortikosteroid,deksametazon,beyin ödemi,allerjik reaksiyon,antiinflamatuvar,dekort</i>
+            </span>
+          </div>
+        </div>
+      </label>
+    </div>
+
+    <div class="symptom" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ul>
+          <li>Vertigo, bulantı ve kusma tedavisinde kullanılır.</li>
+          <li>Antihistaminik, antiemetik, antikolinerjik etkiler taşır.</li>
+          <li>Histamin H₁ reseptör antagonisti olarak etki gösterir.</li>
+          <li>Doz: 50–100 mg</li>
+          <li>1–2 ampul 100 cc SF/Dex içinde 30 dakikada uygulanır.</li>
+          <li>Gebelik kategorisi: B</li>
+        </ul>
+      </div>
+      <label onclick="symptomcolor();order()" for="dramamine">
+        <a target="_blank" href="diseases/dramamine.html">
+          <img src="symptomPhotos/dramamine1.jpg" alt="Dramamine">
+        </a>
+        <div class="subtext">
+          <div class="symptomName">
+            <input class="symptomCheckbox" type="checkbox" id="dramamine" name="dramamine" value="dramamine">
+            <span>Dramamine (Dimenhidrinat)
+              <i style="display:none;">dimenhidrinat,antihistaminik,bulantı ilacı,vertigo,dramamine,antiemetik</i>
+            </span>
+          </div>
+        </div>
+      </label>
+    </div>
+
+    <div class="symptom" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ul>
+          <li></li>
+        </ul>
+      </div>
+      <label onclick="symptomcolor();order()" for="lasix">
+        <a target="_blank" href="diseases/lasix.html">
+          <img src="symptomPhotos/lasix1.jpg" alt="Lasix">
+        </a>
+        <div class="subtext">
+          <div class="symptomName">
+            <input class="symptomCheckbox" type="checkbox" id="lasix" name="lasix" value="lasix">
+            <span>Lasix (Furosemid)
+              <i style="display:none;">furosemid,loop diuretik,lasix,diüretik</i>
+            </span>
+          </div>
+        </div>
+      </label>
+    </div>
+
+    <div class="symptom" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ul>
+          <li>Dopamin D₂ reseptör antagonisti; antipsikotik etkili.</li>
+          <li>Ajitasyon, deliryum, psikotik ataklarda kullanılır.</li>
+          <li>IM doz: 2–5 mg, 4–8 saatte bir; max 20 mg/gün.</li>
+          <li>Damla formu: 15–50 damla, 2–3 kez/gün.</li>
+          <li>Yan etkiler: EPS, QT uzaması, torsades riski.</li>
+          <li>IV uygulama gerekiyorsa EKG monitorizasyonu zorunludur.</li>
+        </ul>
+      </div>
+      <label onclick="symptomcolor();order()" for="norodol">
+        <a target="_blank" href="diseases/norodol.html">
+          <img src="symptomPhotos/norodol1.jpg" alt="Norodol">
+        </a>
+        <div class="subtext">
+          <div class="symptomName">
+            <input class="symptomCheckbox" type="checkbox" id="norodol" name="norodol" value="norodol">
+            <span>Norodol (Haloperidol)
+              <i style="display:none;">haloperidol,norodol,antipsikotik,ajitasyon,ekstrapiramidal,psikotik atak</i>
+            </span>
+          </div>
+        </div>
+      </label>
+    </div>
+
+    <div class="symptom" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ul>
+          <li>Düşük moleküler ağırlıklı heparin (DMAH) — enoksaparin sodyum içerir.</li>
+          <li>aPTT izlemi gerekmez, kanama riski klasik heparine göre daha düşüktür.</li>
+          <li>DVT, P. emboli, USAP/NSTEMI, STEMI gibi durumlarda kullanılır.</li>
+          <li>DVT/PE tedavisi: 1 mg/kg SC 12 saatte bir</li>
+          <li>STEMI: ≥75 yaş 0.75 mg/kg SC, <75 yaş 1 mg/kg SC 12 saatte bir</li>
+          <li>Profilaksi: 20–40 mg SC günlük</li>
+          <li>Renal yetmezlik (CrCl <30 mL/dk): yarı doz veya tek doz</li>
+        </ul>
+      </div>
+      <label onclick="symptomcolor();order()" for="clexane">
+        <a target="_blank" href="diseases/clexane.html">
+          <img src="symptomPhotos/clexane1.jpg" alt="Clexane">
+        </a>
+        <div class="subtext">
+          <div class="symptomName">
+            <input class="symptomCheckbox" type="checkbox" id="clexane" name="clexane" value="clexane">
+            <span>Clexane (Enoksaparin)
+              <i style="display:none;">clexane,enoksaparin,dmh,dvt,usap,stemi,pulmoner emboli,profilaksi,sc</i>
+            </span>
+          </div>
+        </div>
+      </label>
+    </div>
+
+    <div class="symptom" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ul>
+          <li>Kısa etkili insülin. Etki süresi: 5–8 saat, pik: 2–4 saat.</li>
+          <li><strong>DKA tedavisi:</strong> 0.1 ünite/kg IV bolus + 0.1 ünite/kg/saat IV infüzyon</li>
+          <li>Kan şekeri 250 mg/dL altına düştüğünde: 0.05–0.1 ünite/kg/saat</li>
+          <li><strong>Hiperkalemi tedavisi:</strong> 10 Ü IV insülin + 100 cc %30 dekstroz, 15–30 dakikada IV</li>
+          <li>Hipoglisemi ve hipopotasemiye dikkat</li>
+        </ul>
+      </div>
+      <label onclick="symptomcolor();order()" for="insulin">
+        <a target="_blank" href="diseases/insulin.html">
+          <img src="symptomPhotos/insulin1.jpg" alt="Regüler İnsülin">
+        </a>
+        <div class="subtext">
+          <div class="symptomName">
+            <input class="symptomCheckbox" type="checkbox" id="insulin" name="insulin" value="insulin">
+            <span>Regüler İnsülin
+              <i style="display:none;">regüler insülin,dka,hiperkalemi,iv insülin,dektroz,hipoglisemi</i>
+            </span>
+          </div>
+        </div>
+      </label>
+    </div>
+
+    <div class="symptom" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ul>
+          <li>Jinekomasti yapabilir.</li>
+          <li></li>
+        </ul>
+      </div>
+      <label onclick="symptomcolor();order()" for="spironolakton">
+      <a style="color:black" href="diseases/spironolakton.htm" target="_blank">
+      <img src="symptomPhotos/spironolakton.jpg" alt="spironolakton">
+      </a>
+      <div class="subtext">
+        <div class="symptomName">
+          <input class="symptomCheckbox" type="checkbox" id="spironolakton" name="spironolakton" value="spironolakton"><span>spironolakton<i style="display:none;">spironolactone, diüretik, potasyum tutucu diüretikler, K+ tutucu diüretik, K+ sparing diuretics, diuretics, amlodipine,triamterene</i></span>
+        </div>
+      </div>
+      </label>
+    </div>
+
+    <div class="symptom" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ul>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+      <label onclick="symptomcolor();order()" for="tamoksifen">
+      <a style="color:black" href="diseases/tamoksifen.htm" target="_blank">
+      <img src="symptomPhotos/tamoksifen.jpg" alt="tamoksifen">
+      </a>
+      <div class="subtext">
+        <div class="symptomName">
+          <input class="symptomCheckbox" type="checkbox" id="tamoksifen" name="tamoksifen" value="tamoksifen"><span>tamoksifen<i style="display:none;">tamoxifen,selektif östrojen reseptör modülatörü, serms, selective estrogen receptor modulators,raloxifene, clomiphene</i></span>
+        </div>
+      </div>
+      </label>
+    </div>
+
+    <div class="symptom" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ul>
+          <li>Hiperglisemi yapar.</li>
+          <li></li>
+        </ul>
+      </div>
+      <label onclick="symptomcolor();order()" for="tacrolimus">
+      <a style="color:black" href="diseases/tacrolimus.htm" target="_blank">
+      <img src="symptomPhotos/tacrolimus.jpg" alt="tacrolimus">
+      </a>
+      <div class="subtext">
+        <div class="symptomName">
+          <input class="symptomCheckbox" type="checkbox" id="tacrolimus" name="tacrolimus" value="tacrolimus"><span>tacrolimus<i style="display:none;">takrolimus</i></span>
+        </div>
+      </div>
+      </label>
+    </div>
+
+    <div class="symptom" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ul>
+          <li>hiperkalsemi</li>
+          <li>hipokalemi</li>
+          <li>hiponatremi</li>
+          <li>hipomagnezemi</li>
+          <li>hiperglisemi</li>
+          <li>hiperlipidemi</li>
+        </ul>
+      </div>
+      <label onclick="symptomcolor();order()" for="hidroklorotiazid">
+      <a style="color:black" href="diseases/hidroklorotiazid.htm" target="_blank">
+      <img src="symptomPhotos/hidroklorotiazid.jpg" alt="hidroklorotiazid">
+      </a>
+      <div class="subtext">
+        <div class="symptomName">
+          <input class="symptomCheckbox" type="checkbox" id="hidroklorotiazid" name="hidroklorotiazid" value="hidroklorotiazid"><span>hidroklorotiazid<i style="display:none;">hidroklorotiyazid,diüretik, diuretics, hydrochlorotiazide, hctz</i></span>
+        </div>
+      </div>
+      </label>
+    </div>
+
+    <div class="symptom" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ul>
+          <li>1 haftadan uzun süren direnli ishallerin semptomatik tedavisinde endikedir.</li>
+          <li></li>
+        </ul>
+      </div>
+      <label onclick="symptomcolor();order()" for="loperamid">
+      <a style="color:black" href="diseases/loperamid.htm" target="_blank">
+      <img src="symptomPhotos/loperamid.jpg" alt="loperamid">
+      </a>
+      <div class="subtext">
+        <div class="symptomName">
+          <input class="symptomCheckbox" type="checkbox" id="loperamid" name="loperamid" value="loperamid"><span>loperamid<i style="display:none;">diyare, ishal, antidiarrhea</i></span>
+        </div>
+      </div>
+      </label>
+    </div>
+
+    <div class="symptom" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ul>
+          <li>Kabızlık</li>
+          <li></li>
+        </ul>
+      </div>
+      <label onclick="symptomcolor();order()" for="alüminyum">
+      <a style="color:black" href="diseases/alüminyum.htm" target="_blank">
+      <img src="symptomPhotos/alüminyum.jpg" alt="alüminyum">
+      </a>
+      <div class="subtext">
+        <div class="symptomName">
+          <input class="symptomCheckbox" type="checkbox" id="alüminyum" name="alüminyum" value="alüminyum"><span>alüminyum<i style="display:none;">aluminum, aluminyum hidroksit, aluminum hydroxide</i></span>
+        </div>
+      </div>
+      </label>
+    </div>
+
+    <div class="symptom" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ul>
+          <li>Kabızlık</li>
+          <li></li>
+        </ul>
+      </div>
+      <label onclick="symptomcolor();order()" for="diltizem">
+      <a style="color:black" href="diseases/diltizem.htm" target="_blank">
+      <img src="symptomPhotos/diltizem.jpg" alt="diltizem">
+      </a>
+      <div class="subtext">
+        <div class="symptomName">
+          <input class="symptomCheckbox" type="checkbox" id="diltizem" name="diltizem" value="diltizem"><span>diltizem<i style="display:none;">kkb, kalsiyum kanal blokörleri, Ca+2 blokörleri</i></span>
+        </div>
+      </div>
+      </label>
+    </div>
+
+    <div class="symptom" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ul>
+          <li>Kabızlık</li>
+          <li></li>
+        </ul>
+      </div>
+      <label onclick="symptomcolor();order()" for="verapamil">
+      <a style="color:black" href="diseases/verapamil.htm" target="_blank">
+      <img src="symptomPhotos/verapamil.jpg" alt="verapamil">
+      </a>
+      <div class="subtext">
+        <div class="symptomName">
+          <input class="symptomCheckbox" type="checkbox" id="verapamil" name="verapamil" value="verapamil"><span>verapamil<i style="display:none;">kkb, kalsiyum kanal blokörleri, Ca+2 blokörleri</i></span>
+        </div>
+      </div>
+      </label>
+    </div>
+
+    <div class="symptom" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ul>
+          <li>Torsades de pointes</li>
+          <li>Kabızlık</li>
+          <li>Öksürük</li>
+        </ul>
+      </div>
+      <label onclick="symptomcolor();order()" for="ondansetron">
+      <a style="color:black" href="diseases/ondansetron.htm" target="_blank">
+      <img src="symptomPhotos/ondansetron.jpg" alt="ondansetron">
+      </a>
+      <div class="subtext">
+        <div class="symptomName">
+          <input class="symptomCheckbox" type="checkbox" id="ondansetron" name="ondansetron" value="ondansetron"><span>ondansetron<i style="display:none;">antiemetikler, antiemetics, 5HT3 reseptör antagonistleri, serotonin reseptörleri, 5-hidroksitriptamin</i></span>
+        </div>
+      </div>
+      </label>
+    </div>
+
+    <div class="symptom" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ul>
+          <li>Karaciğer nekrozu(fokal ya da masif olabilir)</li>
+          <li></li>
+        </ul>
+      </div>
+      <label onclick="symptomcolor();order()" for="valproat">
+      <a style="color:black" href="diseases/valproat.htm" target="_blank">
+      <img src="symptomPhotos/valproat.jpg" alt="valproat">
+      </a>
+      <div class="subtext">
+        <div class="symptomName">
+          <input class="symptomCheckbox" type="checkbox" id="valproat" name="valproat" value="valproat"><span>valproat<i style="display:none;"></i></span>
+        </div>
+      </div>
+      </label>
+    </div>
+
+    <div class="symptom" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ul>
+          <li>Karaciğer nekrozu</li>
+          <li></li>
+        </ul>
+      </div>
+      <label onclick="symptomcolor();order()" for="amanitaphalloides">
+      <a style="color:black" href="diseases/amanitaphalloides.htm" target="_blank">
+      <img src="symptomPhotos/amanitaphalloides.jpg" alt="amanitaphalloides">
+      </a>
+      <div class="subtext">
+        <div class="symptomName">
+          <input class="symptomCheckbox" type="checkbox" id="amanitaphalloides" name="amanitaphalloides" value="amanitaphalloides"><span>amanita phalloides<i style="display:none;">mantar,köygöçüren, death cap</i></span>
+        </div>
+      </div>
+      </label>
+    </div>
+
+    <div class="symptom" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ul>
+          <li>Hepatit yapabilir.</li>
+          <li></li>
+        </ul>
+      </div>
+      <label onclick="symptomcolor();order()" for="statinler">
+      <a style="color:black" href="diseases/statinler.htm" target="_blank">
+      <img src="symptomPhotos/statinler.jpg" alt="statinler">
+      </a>
+      <div class="subtext">
+        <div class="symptomName">
+          <input class="symptomCheckbox" type="checkbox" id="statinler" name="statinler" value="statinler"><span>statinler<i style="display:none;">atorvastatin</i></span>
+        </div>
+      </div>
+      </label>
+    </div>
+
+    <div class="symptom" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ul>
+          <li>hepatit yapabilir.</li>
+          <li></li>
+        </ul>
+      </div>
+      <label onclick="symptomcolor();order()" for="fibratlar">
+      <a style="color:black" href="diseases/fibratlar.htm" target="_blank">
+      <img src="symptomPhotos/fibratlar.jpg" alt="fibratlar">
+      </a>
+      <div class="subtext">
+        <div class="symptomName">
+          <input class="symptomCheckbox" type="checkbox" id="fibratlar" name="fibratlar" value="fibratlar"><span>fibratlar<i style="display:none;"></i></span>
+        </div>
+      </div>
+      </label>
+    </div>
+
+    <div class="symptom" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ul>
+          <li>hepatit yapabilir.</li>
+          <li></li>
+        </ul>
+      </div>
+      <label onclick="symptomcolor();order()" for="rifampin">
+      <a style="color:black" href="diseases/rifampin.htm" target="_blank">
+      <img src="symptomPhotos/rifampin.jpg" alt="rifampin">
+      </a>
+      <div class="subtext">
+        <div class="symptomName">
+          <input class="symptomCheckbox" type="checkbox" id="rifampin" name="rifampin" value="rifampin"><span>rifampin<i style="display:none;">tbc ilaçları,tüberküloz ilaçları, tüberkuloz ilaçkarı, antitbc ilaçlar</i></span>
+        </div>
+      </div>
+      </label>
+    </div>
+
+    <div class="symptom" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ul>
+          <li>Hepatit yapabilir.</li>
+          <li></li>
+        </ul>
+      </div>
+      <label onclick="symptomcolor();order()" for="izoniazid">
+      <a style="color:black" href="diseases/izoniazid.htm" target="_blank">
+      <img src="symptomPhotos/izoniazid.jpg" alt="izoniazid">
+      </a>
+      <div class="subtext">
+        <div class="symptomName">
+          <input class="symptomCheckbox" type="checkbox" id="izoniazid" name="izoniazid" value="izoniazid"><span>izoniazid<i style="display:none;">antitbc ilaçlar,anti-tbc ilaçlar, isoniazid,tbc ilaçları,tüberküloz ilaçları</i></span>
+        </div>
+      </div>
+      </label>
+    </div>
+
+    <div class="symptom" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ul>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+      <label onclick="symptomcolor();order()" for="pirazinamid">
+      <a style="color:black" href="diseases/pirazinamid.htm" target="_blank">
+      <img src="symptomPhotos/pirazinamid.jpg" alt="pirazinamid">
+      </a>
+      <div class="subtext">
+        <div class="symptomName">
+          <input class="symptomCheckbox" type="checkbox" id="pirazinamid" name="pirazinamid" value="pirazinamid"><span>pirazinamid<i style="display:none;">tüberküloz ilaçları, pyrazinamide, tbc ilaçları, antitbc ilaçlar,anti-tbc ilaçlar</i></span>
+        </div>
+      </div>
+      </label>
+    </div>
+
+    <div class="symptom" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ul>
+          <li>Pankreatit yapabilir.</li>
+          <li>Sülfoamid sensitivitesi için alert olmak gerekir.</li>
+          <li>Hiperürisemi - Gut riski</li>
+          <li>Hiperglisemi</li>
+          <li>Hiponatremi</li>
+          <li>Hipokalemi</li>
+          <li>Hipomagnezemi</li>
+          <li>Postural(Ortostatik) hipotansyon-Senkop</li>
+        </ul>
+      </div>
+      <label onclick="symptomcolor();order()" for="furosemid">
+      <a style="color:black" href="diseases/loop.htm" target="_blank">
+      <img src="symptomPhotos/furosemid.jpg" alt="furosemid">
+      </a>
+      <div class="subtext">
+        <div class="symptomName">
+          <input class="symptomCheckbox" type="checkbox" id="furosemid" name="furosemid" value="furosemid"><span>furosemid<i style="display:none;">lasix, lasiks, diüretik, loop diüretikler</i></span>
+        </div>
+      </div>
+      </label>
+    </div>
+
+    <div class="symptom" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ul>
+          <li>Saç dökülmesinin tedavisinde</li>
+          <li>Bağırsak düzensizliği olan çocuklarda verilir</li>
+          <li>AST ALT yüksekliğini düşürür</li>
+        </ul>
+      </div>
+      <label onclick="symptomcolor();order()" for="çinko">
+      <a style="color:black" href="diseases/çinko.htm" target="_blank">
+      <img src="symptomPhotos/çinko.jpg" alt="çinko">
+      </a>
+      <div class="subtext">
+        <div class="symptomName">
+          <input class="symptomCheckbox" type="checkbox" id="çinko" name="çinko" value="çinko"><span>çinko<i style="display:none;">Zn, zinco, zinco fort, zincofort</i></span>
+        </div>
+      </div>
+      </label>
+    </div>
+
+    <div class="symptom" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ul>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+      <label onclick="symptomcolor();order()" for="antihistaminikler">
+      <a style="color:black" href="diseases/antihistaminikler.htm" target="_blank">
+      <img src="symptomPhotos/antihistaminikler.jpg" alt="antihistaminikler">
+      </a>
+      <div class="subtext">
+        <div class="symptomName">
+          <input class="symptomCheckbox" type="checkbox" id="antihistaminikler" name="antihistaminikler" value="antihistaminikler"><span>anti histaminikler<i style="display:none;">avil,Difenhidramine,setirizin,deloday, allerset</i></span>
+        </div>
+      </div>
+      </label>
+    </div>
+
+    <div class="symptom" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ul>
+          <li>gliserin kulak damlası S:3x5(5gün)</li>
+          <li></li>
+        </ul>
+      </div>
+      <label onclick="symptomcolor();order()" for="buşon">
+      <a style="color:black" href="diseases/buşon.htm" target="_blank">
+      <img src="symptomPhotos/buşon.jpg" alt="buşon">
+      </a>
+      <div class="subtext">
+        <div class="symptomName">
+          <input class="symptomCheckbox" type="checkbox" id="buşon" name="buşon" value="buşon"><span>buşon<i style="display:none;">kulak kiri</i></span>
+        </div>
+      </div>
+      </label>
+    </div>
+
+    <div class="symptom" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ul>
+          <li>Refresh göz damlası S:1x1</li>
+          <li>Tobrased göz damlası S:3x1(7-10 gün)</li>
+          <li>Terramycin merhem S:2x1/3x1/4x1</li>
+          <li>siprogut göz damlası S:3x1</li>
+        </ul>
+      </div>
+      <label onclick="symptomcolor();order()" for="konjunkitivit">
+      <a style="color:black" href="diseases/konjunkitivit.htm" target="_blank">
+      <img src="symptomPhotos/konjunkitivit.jpg" alt="konjunkitivit">
+      </a>
+      <div class="subtext">
+        <div class="symptomName">
+          <input class="symptomCheckbox" type="checkbox" id="konjunkitivit" name="konjunkitivit" value="konjunkitivit"><span>konjunkitivit<i style="display:none;">konjonktivit,gözde kızarıklık, gözde yanma, conjunctivitis</i></span>
+        </div>
+      </div>
+      </label>
+    </div>
+
+    <div class="symptom" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ul>
+          <li>Reflor saşe S:1x1(İshal)</li>
+          <li>Zinco 15/25/30 mg S:1x1</li>
+          <li>Tribudat süsp. S:3x1(Barsak düzenleyici, 2 yaş üzeri)</li>
+          <li>Debridat 200mg tb S:3x1(yetişkin) </li>
+          <li>Simflat S:3x1 (Bağırsak düzen)</li>
+          <li>Diafuryl fort tb S:3x1(Yetişkin)</li>
+        </ul>
+      </div>
+      <label onclick="symptomcolor();order()" for="age">
+      <a style="color:black" href="diseases/age.htm" target="_blank">
+      <img src="symptomPhotos/age.jpg" alt="age">
+      </a>
+      <div class="subtext">
+        <div class="symptomName">
+          <input class="symptomCheckbox" type="checkbox" id="age" name="age" value="age"><span>Akut gastroenterit<i style="display:none;">karın ağrısı,ishal, age, gastroenterit, bağırsak iltihabı,barsak iltihabı</i></span>
+        </div>
+      </div>
+      </label>
+    </div>
+
+    <div class="symptom" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ul>
+          <li>İYE'de(lökosit +3, LE 5+, nitrit+): Bactrim 200/40 mg süsp S:2x1/2(2-5 ay) ,S:2x1(6ay-5 yaş), S:2x2(6-12 yaş)</li>
+          <li></li>
+        </ul>
+      </div>
+      <label onclick="symptomcolor();order()" for="bactrim">
+      <a style="color:black" href="diseases/bactrim.htm" target="_blank">
+      <img src="symptomPhotos/bactrim.jpg" alt="bactrim">
+      </a>
+      <div class="subtext">
+        <div class="symptomName">
+          <input class="symptomCheckbox" type="checkbox" id="bactrim" name="bactrim" value="bactrim"><span>bactrim(trimetoprim)<i style="display:none;">trimetoprim sülfametaksazol, idrar yolu enfeksiyonu,iye</i></span>
+        </div>
+      </div>
+      </label>
+    </div>
+
+    <div class="symptom" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ul>
+          <li>6 aydan küçük çocuğa verilebilecekler:</li>
+          <li>Augmentin, Klamoks</li>
+          <li>parasetamol,Calpol</li>
+          <li>Maflor Damla : İshal/Reflü(GÖRH) S:1x5</li>
+          <li>Metsil Damla : Gaz Sancısı S:4x8</li>
+          <li>38C üzeri ateş yatış endikasyonu</li>
+        </ul>
+      </div>
+      <label onclick="symptomcolor();order()" for="6aybebek">
+      <a style="color:black" href="diseases/6aybebek.htm" target="_blank">
+      <img src="symptomPhotos/6aybebek.jpg" alt="6aybebek">
+      </a>
+      <div class="subtext">
+        <div class="symptomName">
+          <input class="symptomCheckbox" type="checkbox" id="6aybebek" name="6aybebek" value="6aybebek"><span>6 ay'dan küçük bebekte verilebilecek ilaçlar<i style="display:none;">6 aydan küçük bebek, yenidoğan, bebek </i></span>
+        </div>
+      </div>
+      </label>
+    </div>
+
+    <div class="symptom" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ul>
+          <li>Epilepsi Hastasına Verilmemesi Gerekenler:</li>
+          <li>Macrol</li>
+          <li>Ventolin</li>
+          <li>Metpamid</li>
+          <li>İbuprofen, Dolven</li>
+          <li>Dekonjestan</li>
+          <li>Allerji ilaçları</li>
+        </ul>
+      </div>
+      <label onclick="symptomcolor();order()" for="epilepsi">
+      <a style="color:black" href="diseases/epilepsi.htm" target="_blank">
+      <img src="symptomPhotos/epilepsi.jpg" alt="epilepsi">
+      </a>
+      <div class="subtext">
+        <div class="symptomName">
+          <input class="symptomCheckbox" type="checkbox" id="epilepsi" name="epilepsi" value="epilepsi"><span>epilepsi<i style="display:none;">epilepsili hasta, sara hastalığı, nöbet, kasılma</i></span>
+        </div>
+      </div>
+      </label>
+    </div>
+
+    <div class="symptom" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ul>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+      <label onclick="symptomcolor();order()" for="asye">
+      <a style="color:black" href="diseases/asye.htm" target="_blank">
+      <img src="symptomPhotos/asye.jpg" alt="asye">
+      </a>
+      <div class="subtext">
+        <div class="symptomName">
+          <input class="symptomCheckbox" type="checkbox" id="asye" name="asye" value="asye"><span>ASYE<i style="display:none;">alt solunum yolu enfeksiyonu, enfeksyonu, enfeksiyonu</i></span>
+        </div>
+      </div>
+      </label>
+    </div>
+
+    <div class="symptom" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ul>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+      <label onclick="symptomcolor();order()" for="iye">
+      <a style="color:black" href="diseases/iye.htm" target="_blank">
+      <img src="symptomPhotos/iye.jpg" alt="iye">
+      </a>
+      <div class="subtext">
+        <div class="symptomName">
+          <input class="symptomCheckbox" type="checkbox" id="iye" name="iye" value="iye"><span>İdrar yolu enfeksiyonu<i style="display:none;">iye, IYE, üriner sistem enfeksiyonu,enfeksyon,enfeksiyon</i></span>
+        </div>
+      </div>
+      </label>
+    </div>
+
+    <div class="symptom" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ul>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+      <label onclick="symptomcolor();order()" for="sample">
+      <a style="color:black" href="diseases/sample.htm" target="_blank">
+      <img src="symptomPhotos/sample.jpg" alt="sample">
+      </a>
+      <div class="subtext">
+        <div class="symptomName">
+          <input class="symptomCheckbox" type="checkbox" id="sample" name="sample" value="sample"><span>sample<i style="display:none;"></i></span>
+        </div>
+      </div>
+      </label>
+    </div>
+
+    <div class="symptom" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ul>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+      <label onclick="symptomcolor();order()" for="sample">
+      <a style="color:black" href="diseases/sample.htm" target="_blank">
+      <img src="symptomPhotos/sample.jpg" alt="sample">
+      </a>
+      <div class="subtext">
+        <div class="symptomName">
+          <input class="symptomCheckbox" type="checkbox" id="sample" name="sample" value="sample"><span>sample<i style="display:none;"></i></span>
+        </div>
+      </div>
+      </label>
+    </div>
+
+    <div class="symptom" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ul>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+      <label onclick="symptomcolor();order()" for="sample">
+      <a style="color:black" href="diseases/sample.htm" target="_blank">
+      <img src="symptomPhotos/sample.jpg" alt="sample">
+      </a>
+      <div class="subtext">
+        <div class="symptomName">
+          <input class="symptomCheckbox" type="checkbox" id="sample" name="sample" value="sample"><span>sample<i style="display:none;"></i></span>
+        </div>
+      </div>
+      </label>
+    </div>
+
+
+
+  </div>
+    <?php include "footer.php"; ?>
+  </body>
+</html>

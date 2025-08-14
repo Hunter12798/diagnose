@@ -1,0 +1,148 @@
+.main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-column-gap: 16px;
+  grid-row-gap:16px;
+}
+.main-disease {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 16px;
+  grid-row-gap:16px;
+}
+.hiddengem {
+  display:none;
+  z-index:1;
+  background-color:black;
+  color:white;
+  position:absolute;
+  max-width: 10vw ;
+  margin-top: 0;
+  margin-left:0;
+}
+#labelraynaud:hover #hiddengemraynaud{
+  display:block;
+}
+#labelkarınağrısı:hover #hiddengemkarınağrısı{
+  display:block;
+}
+#labelmelena:hover #hiddengemmelena{
+  display:block;
+}
+#mylist {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 16px;
+  grid-row-gap:16px;
+}
+.symptom {
+  border: 2px solid black;
+  height: 350px;
+  background-color: MediumSeaGreen;
+}
+.subtext {
+  position: relative;
+  top: -13px;
+  border-top:1px solid black;
+}
+.symptomName {
+  width: 100%;
+  height: 49px;
+  background-color: MediumSeaGreen;
+  text-align: center;
+  cursor: pointer;
+}
+.symptomName span  {
+  position: relative;
+  top: 10px;
+  font-size: 20px;
+  color: 	black;
+  font-family: 'Tahoma', serif;
+}
+.symptom img {
+  width: 100%;
+  height: 309px;
+  cursor: pointer;
+}
+.symptomName input {
+  position: relative;
+  top: 10px;
+}
+.disease {
+  border: 1px solid black;
+  height: 350px;
+  background-color: MediumSeaGreen;
+  display: none;
+}
+.diseasesubtext {
+  position: relative;
+  top: -13px;
+  border-top:1px solid black;
+  width: 50%;
+}
+.diseaseName {
+  width: 100%;
+  height: 49px;
+  background-color: tomato;
+  text-align: center;
+  cursor: pointer;
+}
+.diseaseName span {
+  position: relative;
+  top: 10px;
+  font-size: 20px;
+  font-family: 'Tahoma', serif;
+}
+.disease img {
+  width: 50%;
+  height: 309px;
+  cursor: pointer;
+}
+.diseaseemergency {
+  border: 1px solid black;
+  height: 350px;
+  background-color: MediumSeaGreen;
+  display: none;
+}
+.diseaseemergency img {
+  width: 50%;
+  height: 309px;
+  cursor: pointer;
+}
+.semptomlar {
+  width: 50%;
+  float: right;
+}
+.semptomlar li{
+  font-size: 3vh;
+  margin-left: 5px;
+  font-family: 'Tahoma', serif;
+}
+body {
+  background-color:olivedrab;
+}
+.symptom span{
+  font-size:20px;
+}
+@media (max-width: 1750px) {
+.other-features button {
+    font-size:16px;
+  }
+.symptom span{
+  font-size:16px;
+}
+.other-features {
+    font-size:16px;
+  }
+}
+@media (max-width: 1000px) {
+.other-features button {
+    font-size:8px;
+  }
+.symptom span{
+  font-size:8px;
+}
+.other-features {
+    font-size:8px;
+  }
+}
