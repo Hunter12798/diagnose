@@ -39,6 +39,63 @@ function hipogastrikağrı(){
     }
   }
 }
+function retinopati(){
+  let retinopati = document.getElementsByClassName("retinopati");
+  let retinopatiCheckbox = document.getElementById("retinopati");
+  if(retinopatiCheckbox.checked){
+    for (var i = 0; i < retinopati.length; i++) {
+      retinopati[i].style.color = "maroon";
+    }
+  }
+  else {
+    for (var i = 0; i < retinopati.length; i++) {
+      retinopati[i].style.color = "black";
+    }
+  }
+}
+function tinnitus(){
+  let tinnitus = document.getElementsByClassName("tinnitus");
+  let tinnitusCheckbox = document.getElementById("tinnitus");
+  if(tinnitusCheckbox.checked){
+    for (var i = 0; i < tinnitus.length; i++) {
+      tinnitus[i].style.color = "maroon";
+    }
+  }
+  else {
+    for (var i = 0; i < tinnitus.length; i++) {
+      tinnitus[i].style.color = "black";
+    }
+  }
+}
+function anksiyete(){
+  let anksiyete = document.getElementsByClassName("anksiyete");
+  let anksiyeteCheckbox = document.getElementById("anksiyete");
+  if(anksiyeteCheckbox.checked){
+    for (var i = 0; i < anksiyete.length; i++) {
+      anksiyete[i].style.color = "Maroon";
+    }
+  }
+  else {
+    for (var i = 0; i < anksiyete.length; i++) {
+      anksiyete[i].style.color = "black";
+    }
+  }
+}
+
+function hemolitikanemi(){
+  let hemolitikanemi = document.getElementsByClassName("hemolitikanemi");
+  let hemolitikanemiCheckbox = document.getElementById("hemolitikanemi");
+  if(hemolitikanemiCheckbox.checked){
+    for (var i = 0; i < hemolitikanemi.length; i++) {
+      hemolitikanemi[i].style.color = "maroon";
+    }
+  }
+  else {
+    for (var i = 0; i < hemolitikanemi.length; i++) {
+      hemolitikanemi[i].style.color = "black";
+    }
+  }
+}
 function aldosterondüşüklüğü() {
   let aldosterondüşüklüğü = document.getElementsByClassName("aldosterondüşüklüğü");
   let aldosterondüşüklüğüCheckbox = document.getElementById("aldosterondüşüklüğü");

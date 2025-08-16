@@ -57,6 +57,39 @@
       </div>
 
       <div class="symptom">
+        <label onclick="symptomcolor(); retinopati();order()" for="retinopati">
+        <img src="symptomPhotos/retinopati.jpg" alt="retinopati">
+        <div class="subtext">
+          <div class="symptomName">
+            <input class="symptomCheckbox" type="checkbox" id="retinopati" name="retinopati" value="retinopati"><span>retinopati<i style="display:none;"></i></span>
+          </div>
+        </div>
+        </label>
+      </div>
+
+      <div class="symptom">
+        <label onclick="symptomcolor(); hemolitikanemi();order()" for="hemolitikanemi">
+        <img src="symptomPhotos/hemolitikanemi.jpg" alt="hemolitikanemi">
+        <div class="subtext">
+          <div class="symptomName">
+            <input class="symptomCheckbox" type="checkbox" id="hemolitikanemi" name="hemolitikanemi" value="hemolitikanemi"><span>hemolitik anemi<i style="display:none;"></i></span>
+          </div>
+        </div>
+        </label>
+      </div>
+
+      <div class="symptom">
+       <label onclick="symptomcolor(); tinnitus();order()" for="tinnitus">
+       <img src="symptomPhotos/tinnitus.jpg" alt="tinnitus">
+       <div class="subtext">
+         <div class="symptomName">
+           <input class="symptomCheckbox" type="checkbox" id="tinnitus" name="tinnitus" value="tinnitus"><span>tinnitus<i style="display:none;">kulak çınlaması</i></span>
+         </div>
+       </div>
+       </label>
+     </div>
+
+      <div class="symptom">
         <label onclick="symptomcolor(); papilödem();order();" for="papilödem">
         <img src="symptomPhotos/papilödem.jpg" alt="papilödem">
         <div class="subtext">
@@ -1685,18 +1718,6 @@
             <input class="symptomCheckbox" type="checkbox" id="stridor" name="stridor" value="stridor"><span>stridor<i style="display:none;"></i></span>
           </div>
         </div>
-        </label>
-      </div>
-
-      <div class="symptom">
-        <label onclick="symptomcolor(); fotofobi(); order();" for="fotofobi">
-          <img src="symptomPhotos/fotofobi.jpg" alt="fotofobi">
-          <div class="subtext">
-            <div class="symptomName">
-              <input class="symptomCheckbox" type="checkbox" id="fotofobi" name="fotofobi" value="fotofobi">
-              <span>Fotofobi (ışık hassasiyeti)<i style="display:none;">ışıkta rahatsızlık, ışık hassasiyeti</i></span>
-            </div>
-          </div>
         </label>
       </div>
 
@@ -6878,7 +6899,7 @@
         <ol>
           <li class="başağrısı">Şiddetli baş ağrısı</li>
           <li class="midebulantısı">Mide bulantısı</li>
-          <li class="fotofobi">Işık hassasiyeti (fotofobi)</li>
+          <li class="fotosensitivite">Işık hassasiyeti (fotofobi)</li>
           <li class="fonofobi">Ses hassasiyeti (fonofobi)</li>
         </ol>
       </div>
@@ -7049,6 +7070,86 @@
       <div class="diseasesubtext">
         <div class="diseaseName">
           <span>Trombotik trombositopenik purpura<i style="display:none;"></i></span>
+        </div>
+      </div>
+      </label>
+      </a>
+    </div>
+
+    <div id="klorokinkullanımı" class="disease" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ol>
+          <li class="kaşıntı">kaşıntı</li>
+          <li class="retinopati">retinopati</li>
+        </ol>
+      </div>
+      <a style="color:black" href="diseases/klorokinkullanımı.htm" target="_blank">
+      <label onclick="diseasecolor()" for="klorokinkullanımı">
+      <img src="symptomPhotos/klorokinkullanımı.jpg" alt="klorokinkullanımı">
+      <div class="diseasesubtext">
+        <div class="diseaseName">
+          <span>klorokin kullanımı<i style="display:none;"></i></span>
+        </div>
+      </div>
+      </label>
+      </a>
+    </div>
+
+    <div id="quininekullanımı" class="disease" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ol>
+          <li class="cilttekızarıklık">flushing</li>
+          <li class="tinnitus">tinnitus</li>
+          <li class="işitmeproblemleri">işitme problemleri</li>
+          <li class="bulanıkgörme">bulanık görme</li>
+          <li class="başağrısı">baş ağrısı</li>
+          <li class="qtuzaması">qt uzaması</li>
+        </ol>
+      </div>
+      <a style="color:black" href="diseases/quininekullanımı.htm" target="_blank">
+      <label onclick="diseasecolor()" for="quininekullanımı">
+      <img src="symptomPhotos/quininekullanımı.jpg" alt="quininekullanımı">
+      <div class="diseasesubtext">
+        <div class="diseaseName">
+          <span>quinin kullanımı<i style="display:none;"></i></span>
+        </div>
+      </div>
+      </label>
+      </a>
+    </div>
+
+    <div id="mefloquinekullanımı" class="disease" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ol>
+          <li class="depresyon">depresyon</li>
+          <li class="anksiyete">anksiyete</li>
+          <li class="nöbet">nöbet</li>
+        </ol>
+      </div>
+      <a style="color:black" href="diseases/mefloquinekullanımı.htm" target="_blank">
+      <label onclick="diseasecolor()" for="mefloquinekullanımı">
+      <img src="symptomPhotos/mefloquinekullanımı.jpg" alt="mefloquinekullanımı">
+      <div class="diseasesubtext">
+        <div class="diseaseName">
+          <span>mefloquin kullanımı<i style="display:none;"></i></span>
+        </div>
+      </div>
+      </label>
+      </a>
+    </div>
+
+    <div id="primaquinekullanımı" class="disease" style="overflow-y:scroll;">
+      <div class="semptomlar">
+        <ol>
+          <li class="hemolitikanemi">hemolitik anemi(g6pd eksikliğinde)</li>
+        </ol>
+      </div>
+      <a style="color:black" href="diseases/primaquinekullanımı.htm" target="_blank">
+      <label onclick="diseasecolor()" for="primaquinekullanımı">
+      <img src="symptomPhotos/primaquinekullanımı.jpg" alt="primaquinekullanımı">
+      <div class="diseasesubtext">
+        <div class="diseaseName">
+          <span>primaquin kullanımı<i style="display:none;"></i></span>
         </div>
       </div>
       </label>

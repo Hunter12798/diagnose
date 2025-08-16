@@ -17,7 +17,48 @@ function order() {
   ky,kyy,kyyNum,myokardittNum,myokarditt,myokardit,akutpankreatit, akutpankreatitt,akutpankreatittNum,enterobiusvermicularis,enterobiusvermiculariss,enterobiusvermicularissNum, epilepsi, epilepsiiNum, epilepsii ;
   var trichuristrichura, trichuristrichuraa, trichuristrichuraaNum,astım,astımm,astımmNum,vajinoz,vajinozz,vajinozzNum,reye,reyee,reyeeNum,kızamık, kızamıkk, kızamıkkNum ,aam,aamm,aammNum,infektifendokardit,infektifendokarditt,infektifendokarditNum,
   çinkoeksikliği,çinkoeksikliğii,çinkoeksikliğiiNum,sıtma,sıtmaa,sıtmaaNum,migren,migrenList, migrenNum,liddlesendromu,liddlesendromuList,liddlesendromuNum,gordonsendromu,gordonsendromuList,gordonsendromuNum,feokromositoma,
-  feokromositomaList,feokromositomaNum,barttersendromu,barttersendromuList,barttersendromuNum,gitelmansendromu,gitelmansendromuList,gitelmansendromuNum,glokom,glokomList,glokomNum,ttp,ttpList,ttpNum;
+  feokromositomaList,feokromositomaNum,barttersendromu,barttersendromuList,barttersendromuNum,gitelmansendromu,gitelmansendromuList,gitelmansendromuNum,glokom,glokomList,glokomNum,ttp,ttpList,ttpNum,klorokinkullanımı,klorokinkullanımıList,klorokinkullanımıNum,
+  quininekullanımı,quininekullanımıList,quininekullanımıNum,mefloquinekullanımı,mefloquinekullanımıList,mefloquinekullanımıNum,primaquinekullanımı,primaquinekullanımıList,primaquinekullanımıNum;
+
+  klorokinkullanımı = document.getElementById("klorokinkullanımı");
+  klorokinkullanımıList = klorokinkullanımı.getElementsByTagName("li");
+  klorokinkullanımıNum = 0;
+
+  for (var i = 0; i < klorokinkullanımıList.length; i++) {
+    if (klorokinkullanımıList[i].style.color == "maroon") {
+      klorokinkullanımıNum++;
+    }
+  }
+
+  quininekullanımı = document.getElementById("quininekullanımı");
+  quininekullanımıList = quininekullanımı.getElementsByTagName("li");
+  quininekullanımıNum = 0;
+
+  for (var i = 0; i < quininekullanımıList.length; i++) {
+    if (quininekullanımıList[i].style.color == "maroon") {
+      quininekullanımıNum++;
+    }
+  }
+
+  mefloquinekullanımı = document.getElementById("mefloquinekullanımı");
+  mefloquinekullanımıList = mefloquinekullanımı.getElementsByTagName("li");
+  mefloquinekullanımıNum = 0;
+
+  for (var i = 0; i < mefloquinekullanımıList.length; i++) {
+    if (mefloquinekullanımıList[i].style.color == "maroon") {
+      mefloquinekullanımıNum++;
+    }
+  }
+
+  primaquinekullanımı = document.getElementById("primaquinekullanımı");
+  primaquinekullanımıList = primaquinekullanımı.getElementsByTagName("li");
+  primaquinekullanımıNum = 0;
+
+  for (var i = 0; i < primaquinekullanımıList.length; i++) {
+    if (primaquinekullanımıList[i].style.color == "maroon") {
+      primaquinekullanımıNum++;
+    }
+  }
 
   ttp = document.getElementById("ttp");
   ttpList = ttp.getElementsByTagName("li");
@@ -1422,12 +1463,41 @@ var sıralama = [nörojenikNum,febrilnötroNum,mitralNum,dkaXNum,hhoNum,pulmoner
   üsyNum,kibaNum,kalptamponNum,pkosNum,febrilkonNum,guttNum,çölyakkNum,kaudaNum,septikartNum,myelomNum,uyuzNum,başbitiNum,gövdebitNum,kasıkbitNum,böcekNum,kutanözNum,kızıllNum,faranjittNum,nekrotizanfasiittNum,koleraaNum,iyeeNum,eheccNum,
   shigellaaNum,böbrektaşıhastalıkkNum,gisşarbNum,acşarbNum,derişarbNum,pnömoniiNum,salNum,tifNum,kruppNum,bakteriyeltrakeittNum,epiglottitissNum,difteriiNum,boğmacaaNum,virallarenjittNum,laringomalaziiNum,subglottikstenozzNum,
   larengealwebbNum,laringosellNum,affNum,vffNum,kyyNum,myokardittNum,akutpankreatittNum,enterobiusvermicularissNum,epilepsiiNum, trichuristrichuraaNum,astımmNum,vajinozzNum,reyeeNum,kızamıkkNum,aammNum,infektifendokardittNum,
-çinkoeksikliğiiNum,sıtmaaNum,akutrömatizmalateşNum,oralthrushNum,migrenNum,liddlesendromuNum,gordonsendromuNum,feokromositomaNum,barttersendromuNum,gitelmansendromuNum,glokomNum,ttpNum];
+çinkoeksikliğiiNum,sıtmaaNum,akutrömatizmalateşNum,oralthrushNum,migrenNum,liddlesendromuNum,gordonsendromuNum,feokromositomaNum,barttersendromuNum,gitelmansendromuNum,glokomNum,ttpNum,klorokinkullanımıNum,quininekullanımıNum,
+mefloquinekullanımıNum,primaquinekullanımıNum];
 
 
   sıralama.sort(function(a,b){return b - a});
 
   for (var i = 0; i < sıralama.length; i++) {
+    if (sıralama[i] == klorokinkullanımıNum && klorokinkullanımıNum > 0) {
+      klorokinkullanımı.style.display = "block";
+      document.getElementById("mylist").appendChild(klorokinkullanımı);
+    }
+    if (klorokinkullanımıNum == 0) {
+      klorokinkullanımı.style.display = "none";
+    }
+    if (sıralama[i] == quininekullanımıNum && quininekullanımıNum > 0) {
+      quininekullanımı.style.display = "block";
+      document.getElementById("mylist").appendChild(quininekullanımı);
+    }
+    if (quininekullanımıNum == 0) {
+      quininekullanımı.style.display = "none";
+    }
+    if (sıralama[i] == mefloquinekullanımıNum && mefloquinekullanımıNum > 0) {
+      mefloquinekullanımı.style.display = "block";
+      document.getElementById("mylist").appendChild(mefloquinekullanımı);
+    }
+    if (mefloquinekullanımıNum == 0) {
+      mefloquinekullanımı.style.display = "none";
+    }
+    if (sıralama[i] == primaquinekullanımıNum && primaquinekullanımıNum > 0) {
+      primaquinekullanımı.style.display = "block";
+      document.getElementById("mylist").appendChild(primaquinekullanımı);
+    }
+    if (primaquinekullanımıNum == 0) {
+      primaquinekullanımı.style.display = "none";
+    }
     if (sıralama[i] == ttpNum && ttpNum > 0) {
       ttp.style.display = "block";
       document.getElementById("mylist").appendChild(ttp);
