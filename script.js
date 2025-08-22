@@ -25,6 +25,254 @@ function search() {
         }
     }
 }
+function rubellaigm(){
+  let rubellaigm = document.getElementsByClassName("rubellaigm");
+  let rubellaigmCheckbox = document.getElementById("rubellaigm");
+  if(rubellaigmCheckbox.checked){
+    for (var i = 0; i < rubellaigm.length; i++) {
+      rubellaigm[i].style.color = "maroon";
+    }
+  }
+  else {
+    for (var i = 0; i < rubellaigm.length; i++) {
+      rubellaigm[i].style.color = "black";
+    }
+  }
+}
+
+function diplopi(){
+  let diplopi = document.getElementsByClassName("diplopi");
+  let diplopiCheckbox = document.getElementById("diplopi");
+  if(diplopiCheckbox.checked){
+    for (var i = 0; i < diplopi.length; i++) {
+      diplopi[i].style.color = "maroon";
+    }
+  }
+  else {
+    for (var i = 0; i < diplopi.length; i++) {
+      diplopi[i].style.color = "black";
+    }
+  }
+}
+
+function optiknörit(){
+  let optiknörit = document.getElementsByClassName("optiknörit");
+  let optiknöritCheckbox = document.getElementById("optiknörit");
+  if(optiknöritCheckbox.checked){
+    for (var i = 0; i < optiknörit.length; i++) {
+      optiknörit[i].style.color = "maroon";
+    }
+  }
+  else {
+    for (var i = 0; i < optiknörit.length; i++) {
+      optiknörit[i].style.color = "black";
+    }
+  }
+}
+
+function internükleeroftalmopleji(){
+  let internükleeroftalmopleji = document.getElementsByClassName("internükleeroftalmopleji");
+  let internükleeroftalmoplejiCheckbox = document.getElementById("internükleeroftalmopleji");
+  if(internükleeroftalmoplejiCheckbox.checked){
+    for (var i = 0; i < internükleeroftalmopleji.length; i++) {
+      internükleeroftalmopleji[i].style.color = "maroon";
+    }
+  }
+  else {
+    for (var i = 0; i < internükleeroftalmopleji.length; i++) {
+      internükleeroftalmopleji[i].style.color = "black";
+    }
+  }
+}
+
+function lhermittebulgusu(){
+  let lhermittebulgusu = document.getElementsByClassName("lhermittebulgusu");
+  let lhermittebulgusuCheckbox = document.getElementById("lhermittebulgusu");
+  if(lhermittebulgusuCheckbox.checked){
+    for (var i = 0; i < lhermittebulgusu.length; i++) {
+      lhermittebulgusu[i].style.color = "maroon";
+    }
+  }
+  else {
+    for (var i = 0; i < lhermittebulgusu.length; i++) {
+      lhermittebulgusu[i].style.color = "black";
+    }
+  }
+}
+      ptozis[i].style.color = "Maroon";
+    }
+  }
+  else {
+    for (var i = 0; i < ptozis.length; i++) {
+      ptozis[i].style.color = "black";
+    }
+  }
+}
+
+function diplopi(){
+  let diplopi = document.getElementsByClassName("diplopi");
+  let diplopiCheckbox = document.getElementById("diplopi");
+  if(diplopiCheckbox.checked){
+    for (var i = 0; i < diplopi.length; i++) {
+      diplopi[i].style.color = "maroon";
+    }
+  }
+  else {
+    for (var i = 0; i < diplopi.length; i++) {
+      diplopi[i].style.color = "black";
+    }
+  }
+}
+
+function optiknörit(){
+  let optiknörit = document.getElementsByClassName("optiknörit");
+  let optiknöritCheckbox = document.getElementById("optiknörit");
+  if(optiknöritCheckbox.checked){
+    for (var i = 0; i < optiknörit.length; i++) {
+      optiknörit[i].style.color = "maroon";
+    }
+  }
+  else {
+    for (var i = 0; i < optiknörit.length; i++) {
+      optiknörit[i].style.color = "black";
+    }
+  }
+}
+
+function internükleeroftalmopleji(){
+  let internükleeroftalmopleji = document.getElementsByClassName("internükleeroftalmopleji");
+  let internükleeroftalmoplejiCheckbox = document.getElementById("internükleeroftalmopleji");
+  if(internükleeroftalmoplejiCheckbox.checked){
+    for (var i = 0; i < internükleeroftalmopleji.length; i++) {
+      internükleeroftalmopleji[i].style.color = "maroon";
+    }
+  }
+  else {
+    for (var i = 0; i < internükleeroftalmopleji.length; i++) {
+      internükleeroftalmopleji[i].style.color = "black";
+    }
+  }
+}
+
+function lhermittebulgusu(){
+  let lhermittebulgusu = document.getElementsByClassName("lhermittebulgusu");
+  let lhermittebulgusuCheckbox = document.getElementById("lhermittebulgusu");
+  if(lhermittebulgusuCheckbox.checked){
+    for (var i = 0; i < lhermittebulgusu.length; i++) {
+      lhermittebulgusu[i].style.color = "maroon";
+    }
+  }
+  else {
+    for (var i = 0; i < lhermittebulgusu.length; i++) {
+      lhermittebulgusu[i].style.color = "black";
+    }
+  }
+}
+
+function alkalenfosfatazyüksekliği(){
+  let alkalenfosfatazyüksekliği = document.getElementsByClassName("alkalenfosfatazyüksekliği");
+  let alkalenfosfatazyüksekliğiCheckbox = document.getElementById("alkalenfosfatazyüksekliği");
+  if(alkalenfosfatazyüksekliğiCheckbox.checked){
+    for (var i = 0; i < alkalenfosfatazyüksekliği.length; i++) {
+      alkalenfosfatazyüksekliği[i].style.color = "maroon";
+    }
+  }
+  else {
+    for (var i = 0; i < alkalenfosfatazyüksekliği.length; i++) {
+      alkalenfosfatazyüksekliği[i].style.color = "black";
+    }
+  }
+}
+
+function fmr1cggartışı(){
+  let fmr1cggartışı = document.getElementsByClassName("fmr1cggartışı");
+  let fmr1cggartışıCheckbox = document.getElementById("fmr1cggartışı");
+  if(fmr1cggartışıCheckbox.checked){
+    for (var i = 0; i < fmr1cggartışı.length; i++) {
+      fmr1cggartışı[i].style.color = "maroon";
+    }
+  }
+  else {
+    for (var i = 0; i < fmr1cggartışı.length; i++) {
+      fmr1cggartışı[i].style.color = "black";
+    }
+  }
+}
+
+function fenilalaninyüksekliği(){
+  let fenilalaninyüksekliği = document.getElementsByClassName("fenilalaninyüksekliği");
+  let fenilalaninyüksekliğiCheckbox = document.getElementById("fenilalaninyüksekliği");
+  if(fenilalaninyüksekliğiCheckbox.checked){
+    for (var i = 0; i < fenilalaninyüksekliği.length; i++) {
+      fenilalaninyüksekliği[i].style.color = "maroon";
+    }
+  }
+  else {
+    for (var i = 0; i < fenilalaninyüksekliği.length; i++) {
+      fenilalaninyüksekliği[i].style.color = "black";
+    }
+  }
+}
+
+function biyotinidazdüşüklüğü(){
+  let biyotinidazdüşüklüğü = document.getElementsByClassName("biyotinidazdüşüklüğü");
+  let biyotinidazdüşüklüğüCheckbox = document.getElementById("biyotinidazdüşüklüğü");
+  if(biyotinidazdüşüklüğüCheckbox.checked){
+    for (var i = 0; i < biyotinidazdüşüklüğü.length; i++) {
+      biyotinidazdüşüklüğü[i].style.color = "maroon";
+    }
+  }
+  else {
+    for (var i = 0; i < biyotinidazdüşüklüğü.length; i++) {
+      biyotinidazdüşüklüğü[i].style.color = "black";
+    }
+  }
+}
+
+function tshyüksekliği(){
+  let tshyüksekliği = document.getElementsByClassName("tshyüksekliği");
+  let tshyüksekliğiCheckbox = document.getElementById("tshyüksekliği");
+  if(tshyüksekliğiCheckbox.checked){
+    for (var i = 0; i < tshyüksekliği.length; i++) {
+      tshyüksekliği[i].style.color = "maroon";
+    }
+  }
+  else {
+    for (var i = 0; i < tshyüksekliği.length; i++) {
+      tshyüksekliği[i].style.color = "black";
+    }
+  }
+}
+
+function büyükkulak(){
+  let büyükkulak = document.getElementsByClassName("büyükkulak");
+  let büyükkulakCheckbox = document.getElementById("büyükkulak");
+  if(büyükkulakCheckbox.checked){
+    for (var i = 0; i < büyükkulak.length; i++) {
+      büyükkulak[i].style.color = "maroon";
+    }
+  }
+  else {
+    for (var i = 0; i < büyükkulak.length; i++) {
+      büyükkulak[i].style.color = "black";
+    }
+  }
+}
+
+function makroorşidizm(){
+  let makroorşidizm = document.getElementsByClassName("makroorşidizm");
+  let makroorşidizmCheckbox = document.getElementById("makroorşidizm");
+  if(makroorşidizmCheckbox.checked){
+    for (var i = 0; i < makroorşidizm.length; i++) {
+      makroorşidizm[i].style.color = "maroon";
+    }
+  }
+  else {
+    for (var i = 0; i < makroorşidizm.length; i++) {
+      makroorşidizm[i].style.color = "black";
+    }
+  }
+}
 function hipogastrikağrı(){
   let hipogastrikağrı = document.getElementsByClassName("hipogastrikağrı");
   let hipogastrikağrıCheckbox = document.getElementById("hipogastrikağrı");
@@ -968,17 +1216,17 @@ function halsizlik(){
     }
   }
 }
-function şişkinlenf(){
-  let şişkinlenf = document.getElementsByClassName("şişkinlenf");
-  let şişkinlenfCheckbox = document.getElementById("şişkinlenf");
-  if(şişkinlenfCheckbox.checked){
-    for (var i = 0; i < şişkinlenf.length; i++) {
-      şişkinlenf[i].style.color = "maroon";
+function lenfadenopati(){
+  let lenfadenopati = document.getElementsByClassName("lenfadenopati");
+  let lenfadenopatiCheckbox = document.getElementById("lenfadenopati");
+  if(lenfadenopatiCheckbox.checked){
+    for (var i = 0; i < lenfadenopati.length; i++) {
+      lenfadenopati[i].style.color = "maroon";
     }
   }
   else {
-    for (var i = 0; i < şişkinlenf.length; i++) {
-      şişkinlenf[i].style.color = "black";
+    for (var i = 0; i < lenfadenopati.length; i++) {
+      lenfadenopati[i].style.color = "black";
     }
   }
 }

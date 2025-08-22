@@ -17,7 +17,262 @@ function order() {
   ky,kyy,kyyNum,myokardittNum,myokarditt,myokardit,akutpankreatit, akutpankreatitt,akutpankreatittNum,enterobiusvermicularis,enterobiusvermiculariss,enterobiusvermicularissNum, epilepsi, epilepsiiNum, epilepsii ;
   var trichuristrichura, trichuristrichuraa, trichuristrichuraaNum,astım,astımm,astımmNum,vajinoz,vajinozz,vajinozzNum,reye,reyee,reyeeNum,kızamık, kızamıkk, kızamıkkNum ,aam,aamm,aammNum,infektifendokardit,infektifendokarditt,infektifendokarditNum,
   çinkoeksikliği,çinkoeksikliğii,çinkoeksikliğiiNum,sıtma,sıtmaa,sıtmaaNum,migren,migrenList, migrenNum,liddlesendromu,liddlesendromuList,liddlesendromuNum,gordonsendromu,gordonsendromuList,gordonsendromuNum,feokromositoma,
-  feokromositomaList,feokromositomaNum,barttersendromu,barttersendromuList,barttersendromuNum,gitelmansendromu,gitelmansendromuList,gitelmansendromuNum,glokom,glokomList,glokomNum,ttp,ttpList,ttpNum;
+  feokromositomaList,feokromositomaNum,barttersendromu,barttersendromuList,barttersendromuNum,gitelmansendromu,gitelmansendromuList,gitelmansendromuNum,glokom,glokomList,glokomNum,ttp,ttpList,ttpNum,nörofibromatozis,nörofibromatozisList,mccunealbright,
+  mccunealbrightList,tüberosklerozis,tüberosklerozisList,kserodermapigmentosum,kserodermapigmentosumList,kasabachmerritt,kasabachmerrittList,rubella,rubellaList,raşitizm,raşitizmList,frajilx,frajilxList,fenilketonüri,fenilketonüriList,biyotinidazeksikliği,biyotinidazeksikliğiList,
+  konjenitalhipotiroidi,konjenitalhipotiroidiList,nörofibromatozisNum,mccunealbrightNum,tüberosklerozisNum,kserodermapigmentosumNum,kasabachmerrittNum,rubellaNum,raşitizmNum,frajilxNum,fenilketonüriNum,biyotinidazeksikliğiNum,konjenitalhipotiroidiNum,
+  multipleskleroz,multiplesklerozList,myasteniagravis,myasteniagravisList,multiplesklerozNum,myasteniagravisNum,goodpasteursendromu,goodpasteursendromuList,hirschprung,hirschprungList,intüssisepsyon,intüssisepsyonList,kistikfibrozis,kistikfibrozisList,meckeldivertikülü,
+  meckeldivertikülüList,medulloblastoma,medulloblastomaList,mekonyumileusu,mekonyumileusuList,nefroblastoma,nefroblastomaList,nekrotizanenterokolit,nekrotizanenterokolitList,nöroblastoma,nöroblastomaList,retinoblastoma,retinoblastomaList,sepsis,sepsisList,goodpasteursendromuNum,
+  hirschprungNum,intüssisepsyonNum,kistikfibrozisNum,meckeldivertikülüNum,medulloblastomaNum,mekonyumileusuNum,nefroblastomaNum,nekrotizanenterokolitNum,nöroblastomaNum,retinoblastomaNum,sepsisNum;
+
+  goodpasteursendromu = document.getElementById("goodpasteursendromu");
+ goodpasteursendromuList = goodpasteursendromu.getElementsByTagName("li");
+ goodpasteursendromuNum = 0;
+
+ for (var i = 0; i < goodpasteursendromuList.length; i++) {
+   if (goodpasteursendromuList[i].style.color == "maroon") {
+     goodpasteursendromuNum++;
+   }
+ }
+
+ hirschprung = document.getElementById("hirschprung");
+ hirschprungList = hirschprung.getElementsByTagName("li");
+ hirschprungNum = 0;
+
+ for (var i = 0; i < hirschprungList.length; i++) {
+   if (hirschprungList[i].style.color == "maroon") {
+     hirschprungNum++;
+   }
+ }
+
+ intüssisepsyon = document.getElementById("intüssisepsyon");
+ intüssisepsyonList = intüssisepsyon.getElementsByTagName("li");
+ intüssisepsyonNum = 0;
+
+ for (var i = 0; i < intüssisepsyonList.length; i++) {
+   if (intüssisepsyonList[i].style.color == "maroon") {
+     intüssisepsyonNum++;
+   }
+ }
+
+ kistikfibrozis = document.getElementById("kistikfibrozis");
+ kistikfibrozisList = kistikfibrozis.getElementsByTagName("li");
+ kistikfibrozisNum = 0;
+
+ for (var i = 0; i < kistikfibrozisList.length; i++) {
+   if (kistikfibrozisList[i].style.color == "maroon") {
+     kistikfibrozisNum++;
+   }
+ }
+
+ meckeldivertikülü = document.getElementById("meckeldivertikülü");
+ meckeldivertikülüList = meckeldivertikülü.getElementsByTagName("li");
+ meckeldivertikülüNum = 0;
+
+ for (var i = 0; i < meckeldivertikülüList.length; i++) {
+   if (meckeldivertikülüList[i].style.color == "maroon") {
+     meckeldivertikülüNum++;
+   }
+ }
+
+ medulloblastoma = document.getElementById("medulloblastoma");
+ medulloblastomaList = medulloblastoma.getElementsByTagName("li");
+ medulloblastomaNum = 0;
+
+ for (var i = 0; i < medulloblastomaList.length; i++) {
+   if (medulloblastomaList[i].style.color == "maroon") {
+     medulloblastomaNum++;
+   }
+ }
+
+ mekonyumileusu = document.getElementById("mekonyumileusu");
+ mekonyumileusuList = mekonyumileusu.getElementsByTagName("li");
+ mekonyumileusuNum = 0;
+
+ for (var i = 0; i < mekonyumileusuList.length; i++) {
+   if (mekonyumileusuList[i].style.color == "maroon") {
+     mekonyumileusuNum++;
+   }
+ }
+
+ nefroblastoma = document.getElementById("nefroblastoma");
+ nefroblastomaList = nefroblastoma.getElementsByTagName("li");
+ nefroblastomaNum = 0;
+
+ for (var i = 0; i < nefroblastomaList.length; i++) {
+   if (nefroblastomaList[i].style.color == "maroon") {
+     nefroblastomaNum++;
+   }
+ }
+
+ nekrotizanenterokolit = document.getElementById("nekrotizanenterokolit");
+ nekrotizanenterokolitList = nekrotizanenterokolit.getElementsByTagName("li");
+ nekrotizanenterokolitNum = 0;
+
+ for (var i = 0; i < nekrotizanenterokolitList.length; i++) {
+   if (nekrotizanenterokolitList[i].style.color == "maroon") {
+     nekrotizanenterokolitNum++;
+   }
+ }
+
+ nöroblastoma = document.getElementById("nöroblastoma");
+ nöroblastomaList = nöroblastoma.getElementsByTagName("li");
+ nöroblastomaNum = 0;
+
+ for (var i = 0; i < nöroblastomaList.length; i++) {
+   if (nöroblastomaList[i].style.color == "maroon") {
+     nöroblastomaNum++;
+   }
+ }
+
+ retinoblastoma = document.getElementById("retinoblastoma");
+ retinoblastomaList = retinoblastoma.getElementsByTagName("li");
+ retinoblastomaNum = 0;
+
+ for (var i = 0; i < retinoblastomaList.length; i++) {
+   if (retinoblastomaList[i].style.color == "maroon") {
+     retinoblastomaNum++;
+   }
+ }
+
+ sepsis = document.getElementById("sepsis");
+ sepsisList = sepsis.getElementsByTagName("li");
+ sepsisNum = 0;
+
+ for (var i = 0; i < sepsisList.length; i++) {
+   if (sepsisList[i].style.color == "maroon") {
+     sepsisNum++;
+   }
+ }
+
+  multipleskleroz = document.getElementById("multipleskleroz");
+  multiplesklerozList = multipleskleroz.getElementsByTagName("li");
+  multiplesklerozNum = 0;
+
+  for (var i = 0; i < multiplesklerozList.length; i++) {
+    if (multiplesklerozList[i].style.color == "maroon") {
+      multiplesklerozNum++;
+    }
+  }
+
+  myasteniagravis = document.getElementById("myasteniagravis");
+  myasteniagravisList = myasteniagravis.getElementsByTagName("li");
+  myasteniagravisNum = 0;
+
+  for (var i = 0; i < myasteniagravisList.length; i++) {
+    if (myasteniagravisList[i].style.color == "maroon") {
+      myasteniagravisNum++;
+    }
+  }
+
+  nörofibromatozis = document.getElementById("nörofibromatozis");
+  nörofibromatozisList = nörofibromatozis.getElementsByTagName("li");
+  nörofibromatozisNum = 0;
+
+  for (var i = 0; i < nörofibromatozisList.length; i++) {
+    if (nörofibromatozisList[i].style.color == "maroon") {
+      nörofibromatozisNum++;
+    }
+  }
+
+  mccunealbright = document.getElementById("mccunealbright");
+  mccunealbrightList = mccunealbright.getElementsByTagName("li");
+  mccunealbrightNum = 0;
+
+  for (var i = 0; i < mccunealbrightList.length; i++) {
+    if (mccunealbrightList[i].style.color == "maroon") {
+      mccunealbrightNum++;
+    }
+  }
+
+  tüberosklerozis = document.getElementById("tüberosklerozis");
+  tüberosklerozisList = tüberosklerozis.getElementsByTagName("li");
+  tüberosklerozisNum = 0;
+
+  for (var i = 0; i < tüberosklerozisList.length; i++) {
+    if (tüberosklerozisList[i].style.color == "maroon") {
+      tüberosklerozisNum++;
+    }
+  }
+
+  kserodermapigmentosum = document.getElementById("kserodermapigmentosum");
+  kserodermapigmentosumList = kserodermapigmentosum.getElementsByTagName("li");
+  kserodermapigmentosumNum = 0;
+
+  for (var i = 0; i < kserodermapigmentosumList.length; i++) {
+    if (kserodermapigmentosumList[i].style.color == "maroon") {
+      kserodermapigmentosumNum++;
+    }
+  }
+
+  kasabachmerritt = document.getElementById("kasabachmerritt");
+  kasabachmerrittList = kasabachmerritt.getElementsByTagName("li");
+  kasabachmerrittNum = 0;
+
+  for (var i = 0; i < kasabachmerrittList.length; i++) {
+    if (kasabachmerrittList[i].style.color == "maroon") {
+      kasabachmerrittNum++;
+    }
+  }
+
+  rubella = document.getElementById("rubella");
+  rubellaList = rubella.getElementsByTagName("li");
+  rubellaNum = 0;
+
+  for (var i = 0; i < rubellaList.length; i++) {
+    if (rubellaList[i].style.color == "maroon") {
+      rubellaNum++;
+    }
+  }
+
+  raşitizm = document.getElementById("raşitizm");
+  raşitizmList = raşitizm.getElementsByTagName("li");
+  raşitizmNum = 0;
+
+  for (var i = 0; i < raşitizmList.length; i++) {
+    if (raşitizmList[i].style.color == "maroon") {
+      raşitizmNum++;
+    }
+  }
+
+  frajilx = document.getElementById("frajilx");
+  frajilxList = frajilx.getElementsByTagName("li");
+  frajilxNum = 0;
+
+  for (var i = 0; i < frajilxList.length; i++) {
+    if (frajilxList[i].style.color == "maroon") {
+      frajilxNum++;
+    }
+  }
+
+  fenilketonüri = document.getElementById("fenilketonüri");
+  fenilketonüriList = fenilketonüri.getElementsByTagName("li");
+  fenilketonüriNum = 0;
+
+  for (var i = 0; i < fenilketonüriList.length; i++) {
+    if (fenilketonüriList[i].style.color == "maroon") {
+      fenilketonüriNum++;
+    }
+  }
+
+  biyotinidazeksikliği = document.getElementById("biyotinidazeksikliği");
+  biyotinidazeksikliğiList = biyotinidazeksikliği.getElementsByTagName("li");
+  biyotinidazeksikliğiNum = 0;
+
+  for (var i = 0; i < biyotinidazeksikliğiList.length; i++) {
+    if (biyotinidazeksikliğiList[i].style.color == "maroon") {
+      biyotinidazeksikliğiNum++;
+    }
+  }
+
+  konjenitalhipotiroidi = document.getElementById("konjenitalhipotiroidi");
+  konjenitalhipotiroidiList = konjenitalhipotiroidi.getElementsByTagName("li");
+  konjenitalhipotiroidiNum = 0;
+
+  for (var i = 0; i < konjenitalhipotiroidiList.length; i++) {
+    if (konjenitalhipotiroidiList[i].style.color == "maroon") {
+      konjenitalhipotiroidiNum++;
+    }
+  }
 
   ttp = document.getElementById("ttp");
   ttpList = ttp.getElementsByTagName("li");
@@ -1422,12 +1677,189 @@ var sıralama = [nörojenikNum,febrilnötroNum,mitralNum,dkaXNum,hhoNum,pulmoner
   üsyNum,kibaNum,kalptamponNum,pkosNum,febrilkonNum,guttNum,çölyakkNum,kaudaNum,septikartNum,myelomNum,uyuzNum,başbitiNum,gövdebitNum,kasıkbitNum,böcekNum,kutanözNum,kızıllNum,faranjittNum,nekrotizanfasiittNum,koleraaNum,iyeeNum,eheccNum,
   shigellaaNum,böbrektaşıhastalıkkNum,gisşarbNum,acşarbNum,derişarbNum,pnömoniiNum,salNum,tifNum,kruppNum,bakteriyeltrakeittNum,epiglottitissNum,difteriiNum,boğmacaaNum,virallarenjittNum,laringomalaziiNum,subglottikstenozzNum,
   larengealwebbNum,laringosellNum,affNum,vffNum,kyyNum,myokardittNum,akutpankreatittNum,enterobiusvermicularissNum,epilepsiiNum, trichuristrichuraaNum,astımmNum,vajinozzNum,reyeeNum,kızamıkkNum,aammNum,infektifendokardittNum,
-çinkoeksikliğiiNum,sıtmaaNum,akutrömatizmalateşNum,oralthrushNum,migrenNum,liddlesendromuNum,gordonsendromuNum,feokromositomaNum,barttersendromuNum,gitelmansendromuNum,glokomNum,ttpNum];
+  çinkoeksikliğiiNum,sıtmaaNum,akutrömatizmalateşNum,oralthrushNum,migrenNum,liddlesendromuNum,gordonsendromuNum,feokromositomaNum,barttersendromuNum,gitelmansendromuNum,glokomNum,ttpNum,nörofibromatozisNum,mccunealbrightNum,
+  tüberosklerozisNum,kserodermapigmentosumNum,kasabachmerrittNum,rubellaNum,raşitizmNum,frajilxNum,fenilketonüriNum,biyotinidazeksikliğiNum,konjenitalhipotiroidiNum,multiplesklerozNum,myasteniagravisNum,goodpasteursendromuNum,hirschprungNum,
+  intüssisepsyonNum,kistikfibrozisNum,meckeldivertikülüNum,medulloblastomaNum,mekonyumileusuNum,nefroblastomaNum,nekrotizanenterokolitNum,nöroblastomaNum,retinoblastomaNum,sepsisNum];
 
 
   sıralama.sort(function(a,b){return b - a});
 
   for (var i = 0; i < sıralama.length; i++) {
+    if (sıralama[i] == goodpasteursendromuNum && goodpasteursendromuNum > 0) {
+        goodpasteursendromu.style.display ="block";
+        document.getElementById("mylist").appendChild(goodpasteursendromu);
+      }
+      if (goodpasteursendromuNum == 0) {
+        goodpasteursendromu.style.display ="none";
+      }
+      if (sıralama[i] == hirschprungNum && hirschprungNum > 0) {
+        hirschprung.style.display ="block";
+        document.getElementById("mylist").appendChild(hirschprung);
+      }
+      if (hirschprungNum == 0) {
+        hirschprung.style.display ="none";
+      }
+      if (sıralama[i] == intüssisepsyonNum && intüssisepsyonNum > 0) {
+        intüssisepsyon.style.display ="block";
+        document.getElementById("mylist").appendChild(intüssisepsyon);
+      }
+      if (intüssisepsyonNum == 0) {
+        intüssisepsyon.style.display ="none";
+      }
+      if (sıralama[i] == kistikfibrozisNum && kistikfibrozisNum > 0) {
+        kistikfibrozis.style.display ="block";
+        document.getElementById("mylist").appendChild(kistikfibrozis);
+      }
+      if (kistikfibrozisNum == 0) {
+        kistikfibrozis.style.display ="none";
+      }
+      if (sıralama[i] == meckeldivertikülüNum && meckeldivertikülüNum > 0) {
+        meckeldivertikülü.style.display ="block";
+        document.getElementById("mylist").appendChild(meckeldivertikülü);
+      }
+      if (meckeldivertikülüNum == 0) {
+        meckeldivertikülü.style.display ="none";
+      }
+      if (sıralama[i] == medulloblastomaNum && medulloblastomaNum > 0) {
+        medulloblastoma.style.display ="block";
+        document.getElementById("mylist").appendChild(medulloblastoma);
+      }
+      if (medulloblastomaNum == 0) {
+        medulloblastoma.style.display ="none";
+      }
+      if (sıralama[i] == mekonyumileusuNum && mekonyumileusuNum > 0) {
+        mekonyumileusu.style.display ="block";
+        document.getElementById("mylist").appendChild(mekonyumileusu);
+      }
+      if (mekonyumileusuNum == 0) {
+        mekonyumileusu.style.display ="none";
+      }
+      if (sıralama[i] == nefroblastomaNum && nefroblastomaNum > 0) {
+        nefroblastoma.style.display ="block";
+        document.getElementById("mylist").appendChild(nefroblastoma);
+      }
+      if (nefroblastomaNum == 0) {
+        nefroblastoma.style.display ="none";
+      }
+      if (sıralama[i] == nekrotizanenterokolitNum && nekrotizanenterokolitNum > 0) {
+        nekrotizanenterokolit.style.display ="block";
+        document.getElementById("mylist").appendChild(nekrotizanenterokolit);
+      }
+      if (nekrotizanenterokolitNum == 0) {
+        nekrotizanenterokolit.style.display ="none";
+      }
+      if (sıralama[i] == nöroblastomaNum && nöroblastomaNum > 0) {
+        nöroblastoma.style.display ="block";
+        document.getElementById("mylist").appendChild(nöroblastoma);
+      }
+      if (nöroblastomaNum == 0) {
+        nöroblastoma.style.display ="none";
+      }
+      if (sıralama[i] == retinoblastomaNum && retinoblastomaNum > 0) {
+        retinoblastoma.style.display ="block";
+        document.getElementById("mylist").appendChild(retinoblastoma);
+      }
+      if (retinoblastomaNum == 0) {
+        retinoblastoma.style.display ="none";
+      }
+      if (sıralama[i] == sepsisNum && sepsisNum > 0) {
+        sepsis.style.display ="block";
+        document.getElementById("mylist").appendChild(sepsis);
+      }
+      if (sepsisNum == 0) {
+        sepsis.style.display ="none";
+      }
+    if (sıralama[i] == multiplesklerozNum && multiplesklerozNum > 0) {
+       multipleskleroz.style.display ="block";
+       document.getElementById("mylist").appendChild(multipleskleroz);
+     }
+     if (multiplesklerozNum == 0) {
+       multipleskleroz.style.display ="none";
+     }
+     if (sıralama[i] == myasteniagravisNum && myasteniagravisNum > 0) {
+       myasteniagravis.style.display ="block";
+       document.getElementById("mylist").appendChild(myasteniagravis);
+     }
+     if (myasteniagravisNum == 0) {
+       myasteniagravis.style.display ="none";
+     }
+    if (sıralama[i] == nörofibromatozisNum && nörofibromatozisNum > 0) {
+      nörofibromatozis.style.display ="block";
+      document.getElementById("mylist").appendChild(nörofibromatozis);
+    }
+    if (nörofibromatozisNum == 0) {
+      nörofibromatozis.style.display ="none";
+    }
+    if (sıralama[i] == mccunealbrightNum && mccunealbrightNum > 0) {
+      mccunealbright.style.display ="block";
+      document.getElementById("mylist").appendChild(mccunealbright);
+    }
+    if (mccunealbrightNum == 0) {
+      mccunealbright.style.display ="none";
+    }
+    if (sıralama[i] == tüberosklerozisNum && tüberosklerozisNum > 0) {
+      tüberosklerozis.style.display ="block";
+      document.getElementById("mylist").appendChild(tüberosklerozis);
+    }
+    if (tüberosklerozisNum == 0) {
+      tüberosklerozis.style.display ="none";
+    }
+      if (sıralama[i] == kserodermapigmentosumNum && kserodermapigmentosumNum > 0) {
+        kserodermapigmentosum.style.display ="block";
+        document.getElementById("mylist").appendChild(kserodermapigmentosum);
+      }
+      if (kserodermapigmentosumNum == 0) {
+        kserodermapigmentosum.style.display ="none";
+      }
+      if (sıralama[i] == kasabachmerrittNum && kasabachmerrittNum > 0) {
+        kasabachmerritt.style.display ="block";
+        document.getElementById("mylist").appendChild(kasabachmerritt);
+      }
+      if (kasabachmerrittNum == 0) {
+        kasabachmerritt.style.display ="none";
+      }
+      if (sıralama[i] == rubellaNum && rubellaNum > 0) {
+        rubella.style.display ="block";
+        document.getElementById("mylist").appendChild(rubella);
+      }
+      if (rubellaNum == 0) {
+        rubella.style.display ="none";
+      }
+      if (sıralama[i] == raşitizmNum && raşitizmNum > 0) {
+        raşitizm.style.display ="block";
+        document.getElementById("mylist").appendChild(raşitizm);
+      }
+      if (raşitizmNum == 0) {
+        raşitizm.style.display ="none";
+      }
+      if (sıralama[i] == frajilxNum && frajilxNum > 0) {
+        frajilx.style.display ="block";
+        document.getElementById("mylist").appendChild(frajilx);
+      }
+      if (frajilxNum == 0) {
+        frajilx.style.display ="none";
+      }
+      if (sıralama[i] == fenilketonüriNum && fenilketonüriNum > 0) {
+        fenilketonüri.style.display ="block";
+        document.getElementById("mylist").appendChild(fenilketonüri);
+      }
+      if (fenilketonüriNum == 0) {
+        fenilketonüri.style.display ="none";
+      }
+      if (sıralama[i] == biyotinidazeksikliğiNum && biyotinidazeksikliğiNum > 0) {
+        biyotinidazeksikliği.style.display ="block";
+        document.getElementById("mylist").appendChild(biyotinidazeksikliği);
+      }
+      if (biyotinidazeksikliğiNum == 0) {
+        biyotinidazeksikliği.style.display ="none";
+      }
+      if (sıralama[i] == konjenitalhipotiroidiNum && konjenitalhipotiroidiNum > 0) {
+        konjenitalhipotiroidi.style.display ="block";
+        document.getElementById("mylist").appendChild(konjenitalhipotiroidi);
+      }
+      if (konjenitalhipotiroidiNum == 0) {
+        konjenitalhipotiroidi.style.display ="none";
+      }
     if (sıralama[i] == ttpNum && ttpNum > 0) {
       ttp.style.display = "block";
       document.getElementById("mylist").appendChild(ttp);
