@@ -99,15 +99,6 @@ function lhermittebulgusu(){
     }
   }
 }
-      ptozis[i].style.color = "Maroon";
-    }
-  }
-  else {
-    for (var i = 0; i < ptozis.length; i++) {
-      ptozis[i].style.color = "black";
-    }
-  }
-}
 
 function diplopi(){
   let diplopi = document.getElementsByClassName("diplopi");
